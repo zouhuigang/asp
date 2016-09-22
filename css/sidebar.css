@@ -1,0 +1,29 @@
+#scrollsidebar{
+	position:absolute;
+	z-index:999;
+	top:120px;
+	right:5px;
+	width:110px;
+}
+#side_content{width:110px; height:auto; overflow:hidden; float:left;}
+#side_content .side_list {width:110px;overflow:hidden;}
+#show_btn{ width:0; height:112px; overflow:hidden; margin-top:50px; float:right; cursor:pointer;}
+#show_btn span { display:none;}
+#close_btn{width:24px;height:24px;cursor:pointer;}
+.side_title,.side_bottom,#close_btn,#show_btn {}
+.side_title {height:46px;}
+.side_bottom { height:8px;}
+.side_center {font-family:Verdana, Geneva, sans-serif; padding:5px 0px; font-size:12px;}
+#close_btn { float:right; display:block; width:21px; height:16px; margin:17px 10px 0 0; _margin:17px 5px 0 0;}
+#close_btn span { display:none;}
+.side_center .qqserver p { text-align:center; padding:5px 0;}
+.phoneserver  {font-size:14px; text-align:center;}
+.phoneserver p { padding:2px 0; _height:16px;}
+.msgserver { text-align:center; margin-bottom:5px;}
+.msgserver a { padding-left:20px;}
+#side_content hr { border-width:0 0 1px 0; height:1px; margin:10px 0;}
+
+
+
+
+/* green skin  */

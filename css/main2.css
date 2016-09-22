@@ -1,0 +1,77 @@
+ *{
+    margin: 0;
+    padding: 0;
+ }
+/*nav导航盒子*/
+div.nav{
+    width: 840px; font-size:16px;
+    height:43px;
+    line-height:43px;
+    text-align: center;
+     position: relative;
+ 	margin:40px auto 0 auto; background:url(../bg_menu1.jpg) no-repeat left center;
+}
+/*nav-main*/
+ul.nav-main{
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+}
+ul.nav-main span{
+    display: inline-block;
+    margin-left:48px;
+    width: 7px;
+    height: 7px;
+    
+}
+/*图标向上旋转*/
+ /*导航条设置*/
+ul.nav-main>li{
+    width: 140px;
+    height: 100%; color:#000000;
+    display: block;
+    float: left;
+     margin-right:0px;
+    cursor: pointer;
+}
+ul.nav-main>li:hover{
+   background: url('../11.png') no-repeat;
+}
+/*隐藏盒子设置*/
+div.hidden-box{
+    width: 170px;
+   
+	
+    border-top: 0;
+    position: absolute;
+    display:none;
+	background:#ECECEC;
+    top:43px;
+}
+.hidden-box>ul{
+    list-style-type: none;
+    color: #643519;
+    cursor: pointer;
+}
+.hidden-box li{ border-bottom: 1px solid #DCDCDC;}
+.hidden-box li:hover{
+    background: #D0D0D0;
+    color: #fff;
+}
+/*隐藏盒子位置设置*/
+.hidden-loc-index{
+    left: 140px;
+}
+.hidden-loc-us{
+    left: 279px;
+}
+.hidden-loc-info{
+    left: 420px;
+}
+.box04{
+	left:560px;
+}
+
+.box05{
+	left:700px;
+}

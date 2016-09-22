@@ -1,0 +1,4457 @@
+From: =?gb2312?B?0tHTySBJbnRlcm5ldCBFeHBsb3JlciAxMSCxo7Tm?=
+Subject: KindEditor 4.x Documentation
+Date: Wed, 12 Feb 2014 21:56:32 +0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_007F_01CF283D.4A77E040"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.1.7601.17609
+
+这是 MIME 格式的多方邮件。
+
+------=_NextPart_000_007F_01CF283D.4A77E040
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://kindeditor.net/docs/node.html
+
+=EF=BB=BF<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" =
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><HTML=20
+xmlns=3D"http://www.w3.org/1999/xhtml"><HEAD><META =
+content=3D"IE=3D11.0000"=20
+http-equiv=3D"X-UA-Compatible">
+    =20
+<META http-equiv=3D"Content-Type" content=3D"text/html; =
+charset=3Dutf-8">    =20
+<TITLE>KindEditor 4.x Documentation</TITLE>         <LINK =
+href=3D"http://kindeditor.net/docs/_static/classy.css"=20
+rel=3D"stylesheet" type=3D"text/css">     <LINK =
+href=3D"http://kindeditor.net/docs/_static/pygments.css"=20
+rel=3D"stylesheet" type=3D"text/css">        =20
+<SCRIPT type=3D"text/javascript">=0A=
+      var DOCUMENTATION_OPTIONS =3D {=0A=
+        URL_ROOT:    '',=0A=
+        VERSION:     '4.x',=0A=
+        COLLAPSE_INDEX: false,=0A=
+        FILE_SUFFIX: '.html',=0A=
+        HAS_SOURCE:  true=0A=
+      };=0A=
+    </SCRIPT>
+    =20
+<SCRIPT src=3D"http://kindeditor.net/docs/_static/jquery.js" =
+type=3D"text/javascript"></SCRIPT>
+    =20
+<SCRIPT src=3D"http://kindeditor.net/docs/_static/underscore.js" =
+type=3D"text/javascript"></SCRIPT>
+    =20
+<SCRIPT src=3D"http://kindeditor.net/docs/_static/doctools.js" =
+type=3D"text/javascript"></SCRIPT>
+     <LINK title=3D"KindEditor 4.x documentation" href=3D"index.html" =
+rel=3D"top">    =20
+<LINK title=3D"Range API" href=3D"range.html" rel=3D"next">     <LINK =
+title=3D"=E9=80=89=E6=8B=A9=E5=99=A8(Selector) API"=20
+href=3D"selector.html" rel=3D"prev">  =20
+<META name=3D"GENERATOR" content=3D"MSHTML 11.00.9600.16428"></HEAD>  =20
+<BODY>
+<DIV class=3D"related">
+<H3>Navigation</H3>
+<UL>
+  <LI class=3D"right" style=3D"margin-right: 10px;"><A title=3D"General =
+Index"=20
+  accesskey=3D"I" =
+href=3D"http://kindeditor.net/docs/genindex.html">index</A></LI>  =20
+       =20
+  <LI class=3D"right"><A title=3D"Range API" accesskey=3D"N" =
+href=3D"http://kindeditor.net/docs/range.html">next</A>=20
+  |</LI>        =20
+  <LI class=3D"right"><A title=3D"=E9=80=89=E6=8B=A9=E5=99=A8(Selector) =
+API" accesskey=3D"P" =
+href=3D"http://kindeditor.net/docs/selector.html">previous</A>=20
+  |</LI>        =20
+  <LI><A href=3D"http://kindeditor.net/docs/index.html">KindEditor 4.x=20
+  documentation</A> =C2=BB</LI>       </UL></DIV>
+<DIV class=3D"document">
+<DIV class=3D"documentwrapper">
+<DIV class=3D"bodywrapper">
+<DIV class=3D"body">
+<DIV class=3D"section" id=3D"node-api">
+<H1><A class=3D"toc-backref" =
+href=3D"http://kindeditor.net/docs/node.html#id1">Node=20
+API</A><A title=3D"Permalink to this headline" class=3D"headerlink" =
+href=3D"http://kindeditor.net/docs/node.html#node-api">=C2=B6</A></H1>
+<DIV class=3D"contents topic" id=3D"contents">
+<P class=3D"topic-title first">Contents</P>
+<UL class=3D"simple">
+  <LI><A class=3D"reference internal" id=3D"id1" =
+href=3D"http://kindeditor.net/docs/node.html#node-api">Node=20
+  API</A>
+  <UL>=20
+    <LI><A class=3D"reference internal" id=3D"id2" =
+href=3D"http://kindeditor.net/docs/node.html#k-expr-root">K(expr=20
+    , root)</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id3" =
+href=3D"http://kindeditor.net/docs/node.html#length">length</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id4" =
+href=3D"http://kindeditor.net/docs/node.html#doc">doc</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id5" =
+href=3D"http://kindeditor.net/docs/node.html#name">name</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id6" =
+href=3D"http://kindeditor.net/docs/node.html#type">type</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id7" =
+href=3D"http://kindeditor.net/docs/node.html#bind-type-fn">bind(type=20
+    , fn)</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id8" =
+href=3D"http://kindeditor.net/docs/node.html#unbind-type-fn">unbind([type=
+=20
+    , fn])</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id9" =
+href=3D"http://kindeditor.net/docs/node.html#fire-type">fire(type)</A></L=
+I>
+    <LI><A class=3D"reference internal" id=3D"id10" =
+href=3D"http://kindeditor.net/docs/node.html#hasattr-key">hasAttr(key)</A=
+></LI>
+    <LI><A class=3D"reference internal" id=3D"id11" =
+href=3D"http://kindeditor.net/docs/node.html#attr">attr()</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id12" =
+href=3D"http://kindeditor.net/docs/node.html#attr-key">attr(key)</A></LI>=
+
+    <LI><A class=3D"reference internal" id=3D"id13" =
+href=3D"http://kindeditor.net/docs/node.html#attr-key-val">attr(key,=20
+    val)</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id14" =
+href=3D"http://kindeditor.net/docs/node.html#attr-obj">attr(obj)</A></LI>=
+
+    <LI><A class=3D"reference internal" id=3D"id15" =
+href=3D"http://kindeditor.net/docs/node.html#removeattr-key">removeAttr(k=
+ey)</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id16" =
+href=3D"http://kindeditor.net/docs/node.html#get-i">get([i])</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id17" =
+href=3D"http://kindeditor.net/docs/node.html#eq-i">eq(i)</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id18" =
+href=3D"http://kindeditor.net/docs/node.html#hasclass-cls">hasClass(cls)<=
+/A></LI>
+    <LI><A class=3D"reference internal" id=3D"id19" =
+href=3D"http://kindeditor.net/docs/node.html#addclass-cls">addClass(cls)<=
+/A></LI>
+    <LI><A class=3D"reference internal" id=3D"id20" =
+href=3D"http://kindeditor.net/docs/node.html#removeclass-cls">removeClass=
+(cls)</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id21" =
+href=3D"http://kindeditor.net/docs/node.html#html">html()</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id22" =
+href=3D"http://kindeditor.net/docs/node.html#html-val">html(val)</A></LI>=
+
+    <LI><A class=3D"reference internal" id=3D"id23" =
+href=3D"http://kindeditor.net/docs/node.html#hasval">hasVal()</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id24" =
+href=3D"http://kindeditor.net/docs/node.html#val">val()</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id25" =
+href=3D"http://kindeditor.net/docs/node.html#val-val">val(val)</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id26" =
+href=3D"http://kindeditor.net/docs/node.html#css">css()</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id27" =
+href=3D"http://kindeditor.net/docs/node.html#css-key">css(key)</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id28" =
+href=3D"http://kindeditor.net/docs/node.html#css-key-val">css(key,=20
+    val)</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id29" =
+href=3D"http://kindeditor.net/docs/node.html#css-obj">css(obj)</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id30" =
+href=3D"http://kindeditor.net/docs/node.html#width">width()</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id31" =
+href=3D"http://kindeditor.net/docs/node.html#width-val">width(val)</A></L=
+I>
+    <LI><A class=3D"reference internal" id=3D"id32" =
+href=3D"http://kindeditor.net/docs/node.html#height">height()</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id33" =
+href=3D"http://kindeditor.net/docs/node.html#height-val">height(val)</A><=
+/LI>
+    <LI><A class=3D"reference internal" id=3D"id34" =
+href=3D"http://kindeditor.net/docs/node.html#opacity-val">opacity(val)</A=
+></LI>
+    <LI><A class=3D"reference internal" id=3D"id35" =
+href=3D"http://kindeditor.net/docs/node.html#data-key">data(key)</A></LI>=
+
+    <LI><A class=3D"reference internal" id=3D"id36" =
+href=3D"http://kindeditor.net/docs/node.html#data-key-val">data(key,=20
+    val)</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id37" =
+href=3D"http://kindeditor.net/docs/node.html#pos">pos()</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id38" =
+href=3D"http://kindeditor.net/docs/node.html#clone-bool">clone(bool)</A><=
+/LI>
+    <LI><A class=3D"reference internal" id=3D"id39" =
+href=3D"http://kindeditor.net/docs/node.html#append-expr">append(expr)</A=
+></LI>
+    <LI><A class=3D"reference internal" id=3D"id40" =
+href=3D"http://kindeditor.net/docs/node.html#before-expr">before(expr)</A=
+></LI>
+    <LI><A class=3D"reference internal" id=3D"id41" =
+href=3D"http://kindeditor.net/docs/node.html#after-expr">after(expr)</A><=
+/LI>
+    <LI><A class=3D"reference internal" id=3D"id42" =
+href=3D"http://kindeditor.net/docs/node.html#replacewith-expr">replaceWit=
+h(expr)</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id43" =
+href=3D"http://kindeditor.net/docs/node.html#remove-keepchilds">remove([k=
+eepChilds])</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id44" =
+href=3D"http://kindeditor.net/docs/node.html#show-val">show([val])</A></L=
+I>
+    <LI><A class=3D"reference internal" id=3D"id45" =
+href=3D"http://kindeditor.net/docs/node.html#hide">hide()</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id46" =
+href=3D"http://kindeditor.net/docs/node.html#outer">outer()</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id47" =
+href=3D"http://kindeditor.net/docs/node.html#issingle">isSingle()</A></LI=
+>
+    <LI><A class=3D"reference internal" id=3D"id48" =
+href=3D"http://kindeditor.net/docs/node.html#isinline">isInline()</A></LI=
+>
+    <LI><A class=3D"reference internal" id=3D"id49" =
+href=3D"http://kindeditor.net/docs/node.html#isblock">isBlock()</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id50" =
+href=3D"http://kindeditor.net/docs/node.html#contains-othernode">contains=
+(otherNode)</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id51" =
+href=3D"http://kindeditor.net/docs/node.html#parent">parent()</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id52" =
+href=3D"http://kindeditor.net/docs/node.html#children">children()</A></LI=
+>
+    <LI><A class=3D"reference internal" id=3D"id53" =
+href=3D"http://kindeditor.net/docs/node.html#first">first()</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id54" =
+href=3D"http://kindeditor.net/docs/node.html#last">last()</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id55" =
+href=3D"http://kindeditor.net/docs/node.html#index">index()</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id56" =
+href=3D"http://kindeditor.net/docs/node.html#prev">prev()</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id57" =
+href=3D"http://kindeditor.net/docs/node.html#next">next()</A></LI>
+    <LI><A class=3D"reference internal" id=3D"id58" =
+href=3D"http://kindeditor.net/docs/node.html#scan-fn-order">scan(fn=20
+    [, order])</A></LI></UL></LI></UL></DIV>
+<DIV class=3D"section" id=3D"k-expr-root"><SPAN id=3D"k"></SPAN><SPAN=20
+id=3D"index-0"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id2">K(expr , root)</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#k-expr-root">=C2=B6</A></H2>=
+
+<P>=E5=88=9B=E5=BB=BA=E6=88=96=E9=80=89=E5=8F=96KNode=E5=AF=B9=E8=B1=A1=EF=
+=BC=8CKNode=E6=98=AF=E5=8E=9F=E7=94=9Fnode=E7=9A=84=E5=B0=81=E8=A3=85=EF=BC=
+=8CKNode=E5=AF=B9=E8=B1=A1=E6=8B=A5=E6=9C=89=E4=BB=A5=E4=B8=8B=E5=B1=9E=E6=
+=80=A7=E5=92=8C=E6=96=B9=E6=B3=95=E3=80=82</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>string|node expr: =
+DOM=E5=85=83=E7=B4=A0=E3=80=81=E9=80=89=E6=8B=A9=E5=99=A8=E8=A1=A8=E8=BE=BE=
+=E5=BC=8F=E3=80=81HTML=E4=BB=A3=E7=A0=81</LI>
+      <LI>element root: =
+DOM=E6=A0=B9=E5=85=83=E7=B4=A0=EF=BC=8C=E5=9C=A8root=E8=8C=83=E5=9B=B4=E5=
+=86=85=E9=80=89=E6=8B=A9DOM=E5=85=83=E7=B4=A0</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: KNode</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">node</SPAN> <SPAN class=3D"o">=3D</SPAN> <SPAN =
+class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'&lt;div&gt;abc&lt;/div&gt;'</SPAN><SPAN =
+class=3D"p">);</SPAN>=0A=
+<SPAN class=3D"nx">node</SPAN> <SPAN class=3D"o">=3D</SPAN> <SPAN =
+class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN class=3D"s1">'#id =
+div'</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+<SPAN class=3D"nx">node</SPAN> <SPAN class=3D"o">=3D</SPAN> <SPAN =
+class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"nb">document</SPAN><SPAN class=3D"p">.</SPAN><SPAN =
+class=3D"nx">getElementById</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'id'</SPAN><SPAN class=3D"p">));</SPAN>=0A=
+<SPAN class=3D"nx">firstNode</SPAN> <SPAN class=3D"o">=3D</SPAN> <SPAN =
+class=3D"nx">node</SPAN><SPAN class=3D"p">[</SPAN><SPAN =
+class=3D"mi">0</SPAN><SPAN class=3D"p">];</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"length"><SPAN =
+id=3D"knode-length"></SPAN><SPAN id=3D"index-1"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id3">length</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink" =
+href=3D"http://kindeditor.net/docs/node.html#length">=C2=B6</A></H2>
+<P>node=E6=95=B0=E9=87=8F</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"kd">var</SPAN> <SPAN class=3D"nx">length</SPAN> =
+<SPAN class=3D"o">=3D</SPAN> <SPAN class=3D"nx">K</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"s1">'#id div'</SPAN><SPAN =
+class=3D"p">).</SPAN><SPAN class=3D"nx">length</SPAN><SPAN =
+class=3D"p">;</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"doc"><SPAN id=3D"knode-doc"></SPAN><SPAN=20
+id=3D"index-2"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id4">doc</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink" =
+href=3D"http://kindeditor.net/docs/node.html#doc">=C2=B6</A></H2>
+<P>=E7=AC=AC=E4=B8=80=E4=B8=AAnode=E7=9A=84document=E5=AF=B9=E8=B1=A1=E3=80=
+=82</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"kd">var</SPAN> <SPAN class=3D"nx">doc</SPAN> <SPAN =
+class=3D"o">=3D</SPAN> <SPAN class=3D"nx">K</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"s1">'#id div'</SPAN><SPAN =
+class=3D"p">).</SPAN><SPAN class=3D"nx">doc</SPAN><SPAN =
+class=3D"p">;</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"name"><SPAN id=3D"knode-name"></SPAN><SPAN=20
+id=3D"index-3"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id5">name</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink" =
+href=3D"http://kindeditor.net/docs/node.html#name">=C2=B6</A></H2>
+<P>=E7=AC=AC=E4=B8=80=E4=B8=AAnode=E7=9A=84nodeName=E3=80=82</P></DIV>
+<DIV class=3D"section" id=3D"type"><SPAN id=3D"knode-type"></SPAN><SPAN=20
+id=3D"index-4"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id6">type</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink" =
+href=3D"http://kindeditor.net/docs/node.html#type">=C2=B6</A></H2>
+<P>=E7=AC=AC=E4=B8=80=E4=B8=AAnode=E7=9A=84nodeType=E3=80=821: Element, =
+3: textNode</P></DIV>
+<DIV class=3D"section" id=3D"bind-type-fn"><SPAN =
+id=3D"knode-bind"></SPAN><SPAN id=3D"index-5"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id7">bind(type , fn)</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#bind-type-fn">=C2=B6</A></H2=
+>
+<P>=E5=B0=86=E6=8C=87=E5=AE=9A=E5=87=BD=E6=95=B0=E7=BB=91=E5=AE=9A=E5=88=B0=
+=E6=89=80=E6=9C=89KNode=E7=9A=84=E6=8C=87=E5=AE=9A=E4=BA=8B=E4=BB=B6=E4=B8=
+=8A=E3=80=82</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>string type: =E4=BA=8B=E4=BB=B6=E7=B1=BB=E5=9E=8B</LI>
+      <LI>function fn: =
+=E5=9B=9E=E8=B0=83=E5=87=BD=E6=95=B0</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: KNode</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id div'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">bind</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'click'</SPAN><SPAN class=3D"p">,</SPAN> <SPAN =
+class=3D"kd">function</SPAN><SPAN class=3D"p">()</SPAN> <SPAN =
+class=3D"p">{</SPAN>=0A=
+        <SPAN class=3D"nx">alert</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"k">this</SPAN><SPAN class=3D"p">.</SPAN><SPAN =
+class=3D"nx">nodeName</SPAN> <SPAN class=3D"o">+</SPAN> <SPAN =
+class=3D"s1">': clicked'</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+<SPAN class=3D"p">});</SPAN>=0A=
+<SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id div'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">click</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"kd">function</SPAN><SPAN class=3D"p">()</SPAN> <SPAN =
+class=3D"p">{</SPAN>=0A=
+        <SPAN class=3D"nx">alert</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"k">this</SPAN><SPAN class=3D"p">.</SPAN><SPAN =
+class=3D"nx">nodeName</SPAN> <SPAN class=3D"o">+</SPAN> <SPAN =
+class=3D"s1">': clicked'</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+<SPAN class=3D"p">});</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"unbind-type-fn"><SPAN =
+id=3D"knode-unbind"></SPAN><SPAN=20
+id=3D"index-6"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id8">unbind([type , =
+fn])</A><A title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#unbind-type-fn">=C2=B6</A></=
+H2>
+<P>=E7=A7=BB=E9=99=A4=E5=B7=B2=E7=BB=91=E5=AE=9A=E7=9A=84=E4=BA=8B=E4=BB=B6=
+=E5=87=BD=E6=95=B0=E3=80=82</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>string type: =E4=BA=8B=E4=BB=B6=E7=B1=BB=E5=9E=8B</LI>
+      <LI>function fn: =
+=E5=9B=9E=E8=B0=83=E5=87=BD=E6=95=B0</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: KNode</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">unbind</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'click'</SPAN><SPAN class=3D"p">,</SPAN> <SPAN =
+class=3D"nx">functionName</SPAN><SPAN class=3D"p">);</SPAN> <SPAN =
+class=3D"c1">//=E7=A7=BB=E9=99=A4=E6=8C=87=E5=AE=9A=E7=9A=84=E4=BA=8B=E4=BB=
+=B6=E5=87=BD=E6=95=B0</SPAN>=0A=
+<SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">unbind</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'click'</SPAN><SPAN class=3D"p">);</SPAN> <SPAN =
+class=3D"c1">//=E7=A7=BB=E9=99=A4=E6=89=80=E6=9C=89click=E4=BA=8B=E4=BB=B6=
+=E5=87=BD=E6=95=B0</SPAN>=0A=
+<SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">unbind</SPAN><SPAN class=3D"p">();</SPAN> <SPAN =
+class=3D"c1">//=E7=A7=BB=E9=99=A4=E6=89=80=E6=9C=89=E4=BA=8B=E4=BB=B6=E5=87=
+=BD=E6=95=B0</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"fire-type"><SPAN =
+id=3D"knode-fire"></SPAN><SPAN id=3D"index-7"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id9">fire(type)</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#fire-type">=C2=B6</A></H2>
+<P>=E6=89=A7=E8=A1=8C=E7=BB=91=E5=AE=9A=E5=9C=A8=E7=AC=AC=E4=B8=80=E4=B8=AA=
+node=E4=B8=8A=E7=9A=84=E4=BA=8B=E4=BB=B6=E5=87=BD=E6=95=B0=E3=80=82</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>string type: =
+=E4=BA=8B=E4=BB=B6=E7=B1=BB=E5=9E=8B</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: KNode</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">fire</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'click'</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+<SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">click</SPAN><SPAN class=3D"p">();</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"hasattr-key"><SPAN =
+id=3D"knode-hasattr"></SPAN><SPAN id=3D"index-8"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id10">hasAttr(key)</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#hasattr-key">=C2=B6</A></H2>=
+
+<P>=E5=88=A4=E6=96=AD=E7=AC=AC=E4=B8=80=E4=B8=AAnode=E6=98=AF=E5=90=A6=E6=
+=8B=A5=E6=9C=89=E6=8C=87=E5=AE=9A=E5=B1=9E=E6=80=A7=E3=80=82</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>string key: =
+=E5=B1=9E=E6=80=A7=E5=90=8D</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: boolean</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"kd">var</SPAN> <SPAN class=3D"nx">bool</SPAN> <SPAN =
+class=3D"o">=3D</SPAN> <SPAN class=3D"nx">K</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"s1">'#id'</SPAN><SPAN =
+class=3D"p">).</SPAN><SPAN class=3D"nx">hasAttr</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"s1">'border'</SPAN><SPAN =
+class=3D"p">);</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"attr"><SPAN id=3D"knode-attr"></SPAN><SPAN=20
+id=3D"index-9"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id11">attr()</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink" =
+href=3D"http://kindeditor.net/docs/node.html#attr">=C2=B6</A></H2>
+<P>=E5=8F=96=E5=BE=97=E7=AC=AC=E4=B8=80=E4=B8=AAnode=E7=9A=84=E6=89=80=E6=
+=9C=89=E5=B1=9E=E6=80=A7.</P>
+<UL class=3D"simple">
+  <LI>=E5=8F=82=E6=95=B0: =E6=97=A0</LI>
+  <LI>=E8=BF=94=E5=9B=9E: object</LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"kd">var</SPAN> <SPAN class=3D"nx">attrList</SPAN> =
+<SPAN class=3D"o">=3D</SPAN> <SPAN class=3D"nx">K</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"s1">'#id'</SPAN><SPAN =
+class=3D"p">).</SPAN><SPAN class=3D"nx">attr</SPAN><SPAN =
+class=3D"p">();</SPAN> <SPAN class=3D"c1">//return key-value data</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"attr-key">
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id12">attr(key)</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#attr-key">=C2=B6</A></H2>
+<P>=E5=8F=96=E5=BE=97=E7=AC=AC=E4=B8=80=E4=B8=AAnode=E7=9A=84=E6=8C=87=E5=
+=AE=9A=E5=B1=9E=E6=80=A7.</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>string key: =
+=E5=B1=9E=E6=80=A7=E5=90=8D</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: string</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"kd">var</SPAN> <SPAN class=3D"nx">border</SPAN> =
+<SPAN class=3D"o">=3D</SPAN> <SPAN class=3D"nx">K</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"s1">'#id'</SPAN><SPAN =
+class=3D"p">).</SPAN><SPAN class=3D"nx">attr</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"s1">'border'</SPAN><SPAN =
+class=3D"p">);</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"attr-key-val">
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id13">attr(key, val)</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#attr-key-val">=C2=B6</A></H2=
+>
+<P>=E8=AE=BE=E7=BD=AE=E6=89=80=E6=9C=89node=E7=9A=84=E5=B1=9E=E6=80=A7=E3=
+=80=82</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>string key: =E5=B1=9E=E6=80=A7=E5=90=8D</LI>
+      <LI>string val: =
+=E5=B1=9E=E6=80=A7=E5=80=BC</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: KNode</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id img'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">attr</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'border'</SPAN><SPAN class=3D"p">,</SPAN> <SPAN =
+class=3D"mi">1</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"attr-obj">
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id14">attr(obj)</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#attr-obj">=C2=B6</A></H2>
+<P>=E8=AE=BE=E7=BD=AE=E6=89=80=E6=9C=89node=E7=9A=84=E5=A4=9A=E4=B8=AA=E5=
+=B1=9E=E6=80=A7=E3=80=82</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>object obj: =
+key-value=E6=95=B0=E7=BB=84</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: KNode</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id img'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">attr</SPAN><SPAN class=3D"p">({</SPAN>=0A=
+        <SPAN class=3D"s1">'width'</SPAN> <SPAN class=3D"o">:</SPAN> =
+<SPAN class=3D"s1">'100px'</SPAN><SPAN class=3D"p">,</SPAN>=0A=
+        <SPAN class=3D"s1">'border'</SPAN> <SPAN class=3D"o">:</SPAN> =
+<SPAN class=3D"mi">1</SPAN>=0A=
+<SPAN class=3D"p">});</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"removeattr-key"><SPAN=20
+id=3D"knode-removeattr"></SPAN><SPAN id=3D"index-10"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id15">removeAttr(key)</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#removeattr-key">=C2=B6</A></=
+H2>
+<P>=E7=A7=BB=E9=99=A4=E6=89=80=E6=9C=89node=E7=9A=84=E6=8C=87=E5=AE=9A=E5=
+=B1=9E=E6=80=A7.</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>string key: =
+=E5=B1=9E=E6=80=A7=E5=90=8D</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: KNode</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id img'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">removeAttr</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'border'</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"get-i"><SPAN id=3D"knode-get"></SPAN><SPAN=20
+id=3D"index-11"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id16">get([i])</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink" =
+href=3D"http://kindeditor.net/docs/node.html#get-i">=C2=B6</A></H2>
+<P>=E5=8F=96=E5=BE=97=E5=8E=9F=E7=94=9Fnode=EF=BC=8C=E5=BD=93KNode=E7=9A=84=
+length=E4=B8=BA0=E6=97=B6=EF=BC=8C=E8=BF=94=E5=9B=9Enull.</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>int i: =
+offset=EF=BC=8C=E9=BB=98=E8=AE=A4=E5=80=BC=E4=B8=BA0</LI></UL></DD></DL><=
+/LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: node</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">div1</SPAN> <SPAN class=3D"o">=3D</SPAN> <SPAN =
+class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN class=3D"s1">'#id =
+div'</SPAN><SPAN class=3D"p">).</SPAN><SPAN class=3D"nx">get</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"mi">0</SPAN><SPAN =
+class=3D"p">);</SPAN>=0A=
+<SPAN class=3D"nx">div2</SPAN> <SPAN class=3D"o">=3D</SPAN> <SPAN =
+class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN class=3D"s1">'#id =
+div'</SPAN><SPAN class=3D"p">).</SPAN><SPAN class=3D"nx">get</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"mi">1</SPAN><SPAN =
+class=3D"p">);</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"eq-i"><SPAN id=3D"knode-eq"></SPAN><SPAN=20
+id=3D"index-12"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id17">eq(i)</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink" =
+href=3D"http://kindeditor.net/docs/node.html#eq-i">=C2=B6</A></H2>
+<P>=E5=B0=86KNode=E5=AF=B9=E8=B1=A1=E8=BD=AC=E6=8D=A2=E6=88=90length=E4=B8=
+=BA1=E7=9A=84KNode=E5=AF=B9=E8=B1=A1=E3=80=82</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>int i: The index of the element in the KNode=20
+  object.</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: KNode</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'div'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">eq</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"mi">2</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">addClass</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'blue'</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"hasclass-cls"><SPAN =
+id=3D"knode-hasclass"></SPAN><SPAN=20
+id=3D"index-13"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id18">hasClass(cls)</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#hasclass-cls">=C2=B6</A></H2=
+>
+<P>=E5=88=A4=E6=96=AD=E7=AC=AC=E4=B8=80=E4=B8=AAnode=E6=98=AF=E5=90=A6=E6=
+=8B=A5=E6=9C=89=E6=8C=87=E5=AE=9Aclass=E3=80=82</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>string cls: className</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: boolean</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"kd">var</SPAN> <SPAN class=3D"nx">bool</SPAN> <SPAN =
+class=3D"o">=3D</SPAN> <SPAN class=3D"nx">K</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"s1">'#id'</SPAN><SPAN =
+class=3D"p">).</SPAN><SPAN class=3D"nx">hasClass</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"s1">'class-name'</SPAN><SPAN =
+class=3D"p">);</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"addclass-cls"><SPAN =
+id=3D"knode-addclass"></SPAN><SPAN=20
+id=3D"index-14"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id19">addClass(cls)</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#addclass-cls">=C2=B6</A></H2=
+>
+<P>=E5=B0=86=E6=8C=87=E5=AE=9AclassName=E6=B7=BB=E5=8A=A0=E5=88=B0=E6=89=80=
+=E6=9C=89node=E3=80=82</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>string cls: className</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: KNode</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">addClass</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'class-name'</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"removeclass-cls"><SPAN=20
+id=3D"knode-removeclass"></SPAN><SPAN id=3D"index-15"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id20">removeClass(cls)</A><A=
+ title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#removeclass-cls">=C2=B6</A><=
+/H2>
+<P>=E7=A7=BB=E9=99=A4=E6=89=80=E6=9C=89node=E4=B8=8A=E7=9A=84=E6=8C=87=E5=
+=AE=9AclassName=E3=80=82</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>string cls: className</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: KNode</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">removeClass</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'class-name'</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"html"><SPAN id=3D"knode-html"></SPAN><SPAN=20
+id=3D"index-16"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id21">html()</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink" =
+href=3D"http://kindeditor.net/docs/node.html#html">=C2=B6</A></H2>
+<P>=E5=8F=96=E5=BE=97=E7=AC=AC=E4=B8=80=E4=B8=AAnode=E7=9A=84innerHTML=E3=
+=80=82</P>
+<UL class=3D"simple">
+  <LI>=E5=8F=82=E6=95=B0: =E6=97=A0</LI>
+  <LI>=E8=BF=94=E5=9B=9E: string</LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"kd">var</SPAN> <SPAN class=3D"nx">html</SPAN> <SPAN =
+class=3D"o">=3D</SPAN> <SPAN class=3D"nx">K</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"s1">'#id'</SPAN><SPAN =
+class=3D"p">).</SPAN><SPAN class=3D"nx">html</SPAN><SPAN =
+class=3D"p">();</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"html-val">
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id22">html(val)</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#html-val">=C2=B6</A></H2>
+<P>=E8=AE=BE=E7=BD=AE=E6=89=80=E6=9C=89node=E7=9A=84innerHTML=E3=80=82</P=
+>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>string val: =
+HTML=E5=AD=97=E7=AC=A6=E4=B8=B2</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: KNode</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">html</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'&lt;strong&gt;abc&lt;/strong&gt;'</SPAN><SPAN =
+class=3D"p">);</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"hasval"><SPAN =
+id=3D"knode-hasval"></SPAN><SPAN id=3D"index-17"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id23">hasVal()</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink" =
+href=3D"http://kindeditor.net/docs/node.html#hasval">=C2=B6</A></H2>
+<P>=E5=88=A4=E6=96=AD=E7=AC=AC=E4=B8=80=E4=B8=AAnode=E6=98=AF=E5=90=A6=E6=
+=8B=A5=E6=9C=89value=E5=B1=9E=E6=80=A7=E3=80=82</P>
+<UL class=3D"simple">
+  <LI>=E5=8F=82=E6=95=B0: =E6=97=A0</LI>
+  <LI>=E8=BF=94=E5=9B=9E: boolean</LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">bool</SPAN> <SPAN class=3D"o">=3D</SPAN> <SPAN =
+class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#textarea'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">hasVal</SPAN><SPAN class=3D"p">();</SPAN> <SPAN =
+class=3D"c1">//return true</SPAN>=0A=
+<SPAN class=3D"nx">bool</SPAN> <SPAN class=3D"o">=3D</SPAN> <SPAN =
+class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#div'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">hasVal</SPAN><SPAN class=3D"p">();</SPAN> <SPAN =
+class=3D"c1">//return false</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"val"><SPAN id=3D"knode-val"></SPAN><SPAN=20
+id=3D"index-18"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id24">val()</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink" =
+href=3D"http://kindeditor.net/docs/node.html#val">=C2=B6</A></H2>
+<P>=E5=8F=96=E5=BE=97=E7=AC=AC=E4=B8=80=E4=B8=AAnode=E7=9A=84value=E3=80=82=
+</P>
+<UL class=3D"simple">
+  <LI>=E5=8F=82=E6=95=B0: =E6=97=A0</LI>
+  <LI>=E8=BF=94=E5=9B=9E: string</LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"kd">var</SPAN> <SPAN class=3D"nx">value</SPAN> <SPAN =
+class=3D"o">=3D</SPAN> <SPAN class=3D"nx">K</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"s1">'#textarea'</SPAN><SPAN =
+class=3D"p">).</SPAN><SPAN class=3D"nx">val</SPAN><SPAN =
+class=3D"p">();</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"val-val">
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id25">val(val)</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#val-val">=C2=B6</A></H2>
+<P>=E8=AE=BE=E7=BD=AE=E6=89=80=E6=9C=89node=E7=9A=84value=E3=80=82</P>
+<UL class=3D"simple">
+  <LI>=E5=8F=82=E6=95=B0: =E6=97=A0</LI>
+  <LI>=E8=BF=94=E5=9B=9E: KNode</LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#textarea'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">val</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'abc'</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"css"><SPAN id=3D"knode-css"></SPAN><SPAN=20
+id=3D"index-19"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id26">css()</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink" =
+href=3D"http://kindeditor.net/docs/node.html#css">=C2=B6</A></H2>
+<P>=E5=8F=96=E5=BE=97=E7=AC=AC=E4=B8=80=E4=B8=AAnode=E7=9A=84=E6=89=80=E6=
+=9C=89CSS.</P>
+<UL class=3D"simple">
+  <LI>=E5=8F=82=E6=95=B0: =E6=97=A0</LI>
+  <LI>=E8=BF=94=E5=9B=9E: object</LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"kd">var</SPAN> <SPAN class=3D"nx">cssList</SPAN> =
+<SPAN class=3D"o">=3D</SPAN> <SPAN class=3D"nx">K</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"s1">'#id'</SPAN><SPAN =
+class=3D"p">).</SPAN><SPAN class=3D"nx">css</SPAN><SPAN =
+class=3D"p">();</SPAN> <SPAN class=3D"c1">//return key-value data</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"css-key">
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id27">css(key)</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#css-key">=C2=B6</A></H2>
+<P>=E5=8F=96=E5=BE=97=E7=AC=AC=E4=B8=80=E4=B8=AAnode=E7=9A=84=E6=8C=87=E5=
+=AE=9ACSS.</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>string key: CSS key</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: string</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"kd">var</SPAN> <SPAN class=3D"nx">padding</SPAN> =
+<SPAN class=3D"o">=3D</SPAN> <SPAN class=3D"nx">K</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"s1">'#id'</SPAN><SPAN =
+class=3D"p">).</SPAN><SPAN class=3D"nx">css</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"s1">'padding'</SPAN><SPAN =
+class=3D"p">);</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"css-key-val">
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id28">css(key, val)</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#css-key-val">=C2=B6</A></H2>=
+
+<P>=E8=AE=BE=E7=BD=AE=E6=89=80=E6=9C=89node=E7=9A=84CSS=E3=80=82</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>string key: CSS key</LI>
+      <LI>string val: CSS value</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: KNode</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id div'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">css</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'border'</SPAN><SPAN class=3D"p">,</SPAN> <SPAN =
+class=3D"s1">'1px solid #000'</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"css-obj">
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id29">css(obj)</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#css-obj">=C2=B6</A></H2>
+<P>=E8=AE=BE=E7=BD=AE=E6=89=80=E6=9C=89node=E7=9A=84=E5=A4=9A=E4=B8=AACSS=
+=E3=80=82</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>object obj: =
+key-value=E6=95=B0=E7=BB=84</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: KNode</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id div'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">css</SPAN><SPAN class=3D"p">({</SPAN>=0A=
+        <SPAN class=3D"s1">'width'</SPAN> <SPAN class=3D"o">:</SPAN> =
+<SPAN class=3D"s1">'100px'</SPAN><SPAN class=3D"p">,</SPAN>=0A=
+        <SPAN class=3D"s1">'height'</SPAN> <SPAN class=3D"o">:</SPAN> =
+<SPAN class=3D"s1">'50px'</SPAN><SPAN class=3D"p">,</SPAN>=0A=
+        <SPAN class=3D"s1">'padding'</SPAN> <SPAN class=3D"o">:</SPAN> =
+<SPAN class=3D"s1">'10px'</SPAN>=0A=
+<SPAN class=3D"p">});</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"width"><SPAN =
+id=3D"knode-width"></SPAN><SPAN id=3D"index-20"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id30">width()</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink" =
+href=3D"http://kindeditor.net/docs/node.html#width">=C2=B6</A></H2>
+<P>=E5=8F=96=E5=BE=97=E7=AC=AC=E4=B8=80=E4=B8=AAnode=E7=9A=84=E5=AE=BD=E5=
+=BA=A6(px).</P>
+<UL class=3D"simple">
+  <LI>=E5=8F=82=E6=95=B0: =E6=97=A0</LI>
+  <LI>=E8=BF=94=E5=9B=9E: int</LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"kd">var</SPAN> <SPAN class=3D"nx">width</SPAN> <SPAN =
+class=3D"o">=3D</SPAN> <SPAN class=3D"nx">K</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"s1">'#id'</SPAN><SPAN =
+class=3D"p">).</SPAN><SPAN class=3D"nx">width</SPAN><SPAN =
+class=3D"p">();</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"width-val">
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id31">width(val)</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#width-val">=C2=B6</A></H2>
+<P>=E8=AE=BE=E7=BD=AE=E6=89=80=E6=9C=89node=E7=9A=84=E5=AE=BD=E5=BA=A6=E3=
+=80=82</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>string val: =E5=AE=BD=E5=BA=A6</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: KNode</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id div'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">width</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"mi">200</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+<SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id div'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">width</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'200px'</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+<SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id div'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">width</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'100%'</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"height"><SPAN =
+id=3D"knode-height"></SPAN><SPAN id=3D"index-21"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id32">height()</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink" =
+href=3D"http://kindeditor.net/docs/node.html#height">=C2=B6</A></H2>
+<P>=E5=8F=96=E5=BE=97=E7=AC=AC=E4=B8=80=E4=B8=AAnode=E7=9A=84=E9=AB=98=E5=
+=BA=A6(px).</P>
+<UL class=3D"simple">
+  <LI>=E5=8F=82=E6=95=B0: =E6=97=A0</LI>
+  <LI>=E8=BF=94=E5=9B=9E: int</LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"kd">var</SPAN> <SPAN class=3D"nx">height</SPAN> =
+<SPAN class=3D"o">=3D</SPAN> <SPAN class=3D"nx">K</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"s1">'#id'</SPAN><SPAN =
+class=3D"p">).</SPAN><SPAN class=3D"nx">height</SPAN><SPAN =
+class=3D"p">();</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"height-val">
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id33">height(val)</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#height-val">=C2=B6</A></H2>
+<P>=E8=AE=BE=E7=BD=AE=E6=89=80=E6=9C=89node=E7=9A=84=E9=AB=98=E5=BA=A6=E3=
+=80=82</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>string val: =E9=AB=98=E5=BA=A6</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: KNode</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id div'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">height</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"mi">200</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+<SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id div'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">height</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'200px'</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+<SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id div'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">height</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'100%'</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"opacity-val"><SPAN =
+id=3D"knode-opacity"></SPAN><SPAN id=3D"index-22"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id34">opacity(val)</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#opacity-val">=C2=B6</A></H2>=
+
+<P>=E8=AE=BE=E7=BD=AE=E6=89=80=E6=9C=89node=E7=9A=84=E9=80=8F=E6=98=8E=E5=
+=BA=A6.</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>float val: =
+=E9=80=8F=E6=98=8E=E5=BA=A6=EF=BC=8C0~1</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: KNode</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">opacity</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"mf">0.5</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"data-key"><SPAN =
+id=3D"knode-data"></SPAN><SPAN id=3D"index-23"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id35">data(key)</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#data-key">=C2=B6</A></H2>
+<P>=E5=8F=96=E5=BE=97=E5=B7=B2=E7=BB=91=E5=AE=9A=E7=9A=84=E8=87=AA=E5=AE=9A=
+=E4=B9=89=E6=95=B0=E6=8D=AE=E3=80=82</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>string key: data key</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: string</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"kd">var</SPAN> <SPAN class=3D"nx">data</SPAN> <SPAN =
+class=3D"o">=3D</SPAN> <SPAN class=3D"nx">K</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"s1">'#id'</SPAN><SPAN =
+class=3D"p">).</SPAN><SPAN class=3D"nx">data</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"s1">'data_id'</SPAN><SPAN =
+class=3D"p">);</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"data-key-val">
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id36">data(key, val)</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#data-key-val">=C2=B6</A></H2=
+>
+<P>=E7=BB=91=E5=AE=9A=E8=87=AA=E5=AE=9A=E4=B9=89=E6=95=B0=E6=8D=AE=E3=80=82=
+</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>string key: data key</LI>
+      <LI>string val: data value</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: string</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">data</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'abc'</SPAN><SPAN class=3D"p">,</SPAN> <SPAN =
+class=3D"mi">1</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"pos"><SPAN id=3D"knode-pos"></SPAN><SPAN=20
+id=3D"index-24"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id37">pos()</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink" =
+href=3D"http://kindeditor.net/docs/node.html#pos">=C2=B6</A></H2>
+<P>=E5=8F=96=E5=BE=97=E7=AC=AC=E4=B8=80=E4=B8=AAnode=E5=9C=A8=E6=95=B4=E4=
+=B8=AAdocument=E4=B8=8A=E7=9A=84x=E5=9D=90=E6=A0=87=E5=92=8Cy=E5=9D=90=E6=
+=A0=87=E3=80=82</P>
+<UL class=3D"simple">
+  <LI>=E5=8F=82=E6=95=B0: =E6=97=A0</LI>
+  <LI>=E8=BF=94=E5=9B=9E: string</LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"kd">var</SPAN> <SPAN class=3D"nx">pos</SPAN> <SPAN =
+class=3D"o">=3D</SPAN> <SPAN class=3D"nx">K</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"s1">'#id'</SPAN><SPAN =
+class=3D"p">).</SPAN><SPAN class=3D"nx">pos</SPAN><SPAN =
+class=3D"p">();</SPAN>=0A=
+<SPAN class=3D"kd">var</SPAN> <SPAN class=3D"nx">x</SPAN> <SPAN =
+class=3D"o">=3D</SPAN> <SPAN class=3D"nx">pos</SPAN><SPAN =
+class=3D"p">.</SPAN><SPAN class=3D"nx">x</SPAN><SPAN class=3D"p">;</SPAN>=0A=
+<SPAN class=3D"kd">var</SPAN> <SPAN class=3D"nx">y</SPAN> <SPAN =
+class=3D"o">=3D</SPAN> <SPAN class=3D"nx">pos</SPAN><SPAN =
+class=3D"p">.</SPAN><SPAN class=3D"nx">y</SPAN><SPAN class=3D"p">;</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"clone-bool"><SPAN =
+id=3D"knode-clone"></SPAN><SPAN id=3D"index-25"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id38">clone(bool)</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#clone-bool">=C2=B6</A></H2>
+<P>=E5=A4=8D=E5=88=B6=E7=AC=AC=E4=B8=80=E4=B8=AAnode=EF=BC=8C=E5=B9=B6=E8=
+=BF=94=E5=9B=9E=E7=AC=AC=E4=B8=80=E4=B8=AAnode=E7=9A=84KNode=E3=80=82</P>=
+
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>boolean bool: =
+true=E6=97=B6=E5=A4=8D=E5=88=B6=E6=89=80=E6=9C=89=E5=AD=90=E8=8A=82=E7=82=
+=B9=EF=BC=8Cfalse=E6=97=B6=E5=8F=AA=E5=A4=8D=E5=88=B6=E7=88=B6=E8=8A=82=E7=
+=82=B9</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: =
+=E6=96=B0=E7=9A=84KNode</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"kd">var</SPAN> <SPAN class=3D"nx">newKNode</SPAN> =
+<SPAN class=3D"o">=3D</SPAN> <SPAN class=3D"nx">K</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"s1">'#id'</SPAN><SPAN =
+class=3D"p">).</SPAN><SPAN class=3D"nx">clone</SPAN><SPAN =
+class=3D"p">();</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"append-expr"><SPAN =
+id=3D"knode-append"></SPAN><SPAN id=3D"index-26"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id39">append(expr)</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#append-expr">=C2=B6</A></H2>=
+
+<P>element=E6=B7=BB=E5=8A=A0=E4=B8=80=E4=B8=AA=E5=AD=90=E8=8A=82=E7=82=B9=
+=E3=80=82</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>string|node expr: =
+DOM=E5=85=83=E7=B4=A0=E3=80=81=E9=80=89=E6=8B=A9=E5=99=A8=E8=A1=A8=E8=BE=BE=
+=E5=BC=8F=E3=80=81HTML=E4=BB=A3=E7=A0=81</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: KNode</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">append</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"nx">divNode</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+<SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">append</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'&lt;div class=3D"abc"&gt;def&lt;/div&gt;'</SPAN><SPAN =
+class=3D"p">);</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"before-expr"><SPAN =
+id=3D"knode-before"></SPAN><SPAN id=3D"index-27"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id40">before(expr)</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#before-expr">=C2=B6</A></H2>=
+
+<P>node=E7=9A=84=E5=89=8D=E9=9D=A2=E6=B7=BB=E5=8A=A0=E4=B8=80=E4=B8=AA=E8=
+=8A=82=E7=82=B9=E3=80=82</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>string|node expr: =
+DOM=E5=85=83=E7=B4=A0=E3=80=81=E9=80=89=E6=8B=A9=E5=99=A8=E8=A1=A8=E8=BE=BE=
+=E5=BC=8F=E3=80=81HTML=E4=BB=A3=E7=A0=81</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: KNode</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">before</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"nx">divNode</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+<SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">before</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'&lt;div class=3D"abc"&gt;def&lt;/div&gt;'</SPAN><SPAN =
+class=3D"p">);</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"after-expr"><SPAN =
+id=3D"knode-after"></SPAN><SPAN id=3D"index-28"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id41">after(expr)</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#after-expr">=C2=B6</A></H2>
+<P>node=E7=9A=84=E5=90=8E=E9=9D=A2=E6=B7=BB=E5=8A=A0=E4=B8=80=E4=B8=AA=E8=
+=8A=82=E7=82=B9=E3=80=82</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>string|node expr: =
+DOM=E5=85=83=E7=B4=A0=E3=80=81=E9=80=89=E6=8B=A9=E5=99=A8=E8=A1=A8=E8=BE=BE=
+=E5=BC=8F=E3=80=81HTML=E4=BB=A3=E7=A0=81</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: KNode</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">after</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"nx">divNode</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+<SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">after</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'&lt;div class=3D"abc"&gt;def&lt;/div&gt;'</SPAN><SPAN =
+class=3D"p">);</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"replacewith-expr"><SPAN=20
+id=3D"knode-replacewith"></SPAN><SPAN id=3D"index-29"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id42">replaceWith(expr)</A><=
+A title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#replacewith-expr">=C2=B6</A>=
+</H2>
+<P>=E6=9B=BF=E6=8D=A2node=E3=80=82</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>string|node expr: =
+DOM=E5=85=83=E7=B4=A0=E3=80=81=E9=80=89=E6=8B=A9=E5=99=A8=E8=A1=A8=E8=BE=BE=
+=E5=BC=8F=E3=80=81HTML=E4=BB=A3=E7=A0=81</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: KNode</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">replaceWith</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"nx">divNode</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+<SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">replaceWith</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'&lt;div class=3D"abc"&gt;def&lt;/div&gt;'</SPAN><SPAN =
+class=3D"p">);</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"remove-keepchilds"><SPAN =
+id=3D"knode-remove"></SPAN><SPAN=20
+id=3D"index-30"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id43">remove([keepChilds])</=
+A><A=20
+title=3D"Permalink to this headline" class=3D"headerlink" =
+href=3D"http://kindeditor.net/docs/node.html#remove-keepchilds">=C2=B6</A=
+></H2>
+<P>=E5=88=A0=E9=99=A4node=E3=80=82</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>boolean keepChilds: =
+=E6=98=AF=E5=90=A6=E4=BF=9D=E7=95=99=E5=AD=90=E8=8A=82=E7=82=B9=EF=BC=8Ct=
+rue=E6=88=96false=EF=BC=8C=E9=BB=98=E8=AE=A4=E5=80=BC=E4=B8=BAfalse</LI><=
+/UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: KNode</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">remove</SPAN><SPAN class=3D"p">();</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"show-val"><SPAN =
+id=3D"knode-show"></SPAN><SPAN id=3D"index-31"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id44">show([val])</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#show-val">=C2=B6</A></H2>
+<P>=E6=98=BE=E7=A4=BAelement=E3=80=82</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>string val: =
+display=E7=9A=84=E5=80=BC=EF=BC=8C=E9=BB=98=E8=AE=A4=E5=80=BC=E4=B8=BAblo=
+ck</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: KNode</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">show</SPAN><SPAN class=3D"p">();</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"hide"><SPAN id=3D"knode-hide"></SPAN><SPAN=20
+id=3D"index-32"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id45">hide()</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink" =
+href=3D"http://kindeditor.net/docs/node.html#hide">=C2=B6</A></H2>
+<P>=E9=9A=90=E8=97=8Felement=E3=80=82</P>
+<UL class=3D"simple">
+  <LI>=E5=8F=82=E6=95=B0: =E6=97=A0</LI>
+  <LI>=E8=BF=94=E5=9B=9E: KNode</LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">hide</SPAN><SPAN class=3D"p">();</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"outer"><SPAN =
+id=3D"knode-outer"></SPAN><SPAN id=3D"index-33"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id46">outer()</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink" =
+href=3D"http://kindeditor.net/docs/node.html#outer">=C2=B6</A></H2>
+<P>=E5=8F=96=E5=BE=97=E7=AC=AC=E4=B8=80=E4=B8=AAelement=E7=9A=84outerHTML=
+=E3=80=82</P>
+<UL class=3D"simple">
+  <LI>=E5=8F=82=E6=95=B0: =E6=97=A0</LI>
+  <LI>=E8=BF=94=E5=9B=9E: string</LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"kd">var</SPAN> <SPAN class=3D"nx">html</SPAN> <SPAN =
+class=3D"o">=3D</SPAN> <SPAN class=3D"nx">K</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"s1">'#id'</SPAN><SPAN =
+class=3D"p">).</SPAN><SPAN class=3D"nx">outer</SPAN><SPAN =
+class=3D"p">();</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"issingle"><SPAN =
+id=3D"knode-issingle"></SPAN><SPAN id=3D"index-34"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id47">isSingle()</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#issingle">=C2=B6</A></H2>
+<P>=E5=88=A4=E6=96=AD=E7=AC=AC=E4=B8=80=E4=B8=AAelement=E6=98=AF=E5=90=A6=
+=E6=9C=89=E9=97=AD=E5=90=88=E6=A0=87=E7=AD=BE=E3=80=82</P>
+<UL class=3D"simple">
+  <LI>=E5=8F=82=E6=95=B0: =E6=97=A0</LI>
+  <LI>=E8=BF=94=E5=9B=9E: boolean</LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"k">if</SPAN> <SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'div'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">isSingle</SPAN><SPAN class=3D"p">())</SPAN> <SPAN =
+class=3D"p">{</SPAN>=0A=
+        <SPAN class=3D"nx">console</SPAN><SPAN class=3D"p">.</SPAN><SPAN =
+class=3D"nx">log</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'false'</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+<SPAN class=3D"p">}</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"isinline"><SPAN =
+id=3D"knode-isinline"></SPAN><SPAN id=3D"index-35"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id48">isInline()</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#isinline">=C2=B6</A></H2>
+<P>=E5=88=A4=E6=96=AD=E7=AC=AC=E4=B8=80=E4=B8=AAelement=E6=98=AF=E4=B8=8D=
+=E6=98=AFinline element=E3=80=82</P>
+<UL class=3D"simple">
+  <LI>=E5=8F=82=E6=95=B0: =E6=97=A0</LI>
+  <LI>=E8=BF=94=E5=9B=9E: boolean</LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"k">if</SPAN> <SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'div'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">isInline</SPAN><SPAN class=3D"p">())</SPAN> <SPAN =
+class=3D"p">{</SPAN>=0A=
+        <SPAN class=3D"nx">console</SPAN><SPAN class=3D"p">.</SPAN><SPAN =
+class=3D"nx">log</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'false'</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+<SPAN class=3D"p">}</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"isblock"><SPAN =
+id=3D"knode-isblock"></SPAN><SPAN id=3D"index-36"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id49">isBlock()</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#isblock">=C2=B6</A></H2>
+<P>=E5=88=A4=E6=96=AD=E7=AC=AC=E4=B8=80=E4=B8=AAelement=E6=98=AF=E4=B8=8D=
+=E6=98=AFblock element=E3=80=82</P>
+<UL class=3D"simple">
+  <LI>=E5=8F=82=E6=95=B0: =E6=97=A0</LI>
+  <LI>=E8=BF=94=E5=9B=9E: boolean</LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"k">if</SPAN> <SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'div'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">isBlock</SPAN><SPAN class=3D"p">())</SPAN> <SPAN =
+class=3D"p">{</SPAN>=0A=
+        <SPAN class=3D"nx">console</SPAN><SPAN class=3D"p">.</SPAN><SPAN =
+class=3D"nx">log</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'true'</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+<SPAN class=3D"p">}</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"contains-othernode"><SPAN=20
+id=3D"knode-contains"></SPAN><SPAN id=3D"index-37"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id50">contains(otherNode)</A=
+><A=20
+title=3D"Permalink to this headline" class=3D"headerlink" =
+href=3D"http://kindeditor.net/docs/node.html#contains-othernode">=C2=B6</=
+A></H2>
+<P>=E5=88=A4=E6=96=AD=E7=AC=AC=E4=B8=80=E4=B8=AAelement=E6=98=AF=E5=90=A6=
+=E5=8C=85=E5=90=AB=E6=8C=87=E5=AE=9Anode=E3=80=82</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>node otherNode: =
+=E4=BB=BB=E6=84=8F=E8=8A=82=E7=82=B9</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: boolean</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"k">if</SPAN> <SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'div#id'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">contains</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'div#id p'</SPAN><SPAN class=3D"p">)[</SPAN><SPAN =
+class=3D"mi">0</SPAN><SPAN class=3D"p">]))</SPAN> <SPAN =
+class=3D"p">{</SPAN>=0A=
+        <SPAN class=3D"nx">console</SPAN><SPAN class=3D"p">.</SPAN><SPAN =
+class=3D"nx">log</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'true'</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+<SPAN class=3D"p">}</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"parent"><SPAN =
+id=3D"knode-parent"></SPAN><SPAN id=3D"index-38"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id51">parent()</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink" =
+href=3D"http://kindeditor.net/docs/node.html#parent">=C2=B6</A></H2>
+<P>=E5=8F=96=E5=BE=97=E7=AC=AC=E4=B8=80=E4=B8=AAnode=E7=9A=84=E7=88=B6=E8=
+=8A=82=E7=82=B9=E3=80=82</P>
+<UL class=3D"simple">
+  <LI>=E5=8F=82=E6=95=B0: =E6=97=A0</LI>
+  <LI>=E8=BF=94=E5=9B=9E: KNode</LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"kd">var</SPAN> <SPAN class=3D"nx">parentNode</SPAN> =
+<SPAN class=3D"o">=3D</SPAN> <SPAN class=3D"nx">K</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"s1">'#id'</SPAN><SPAN =
+class=3D"p">).</SPAN><SPAN class=3D"nx">parent</SPAN><SPAN =
+class=3D"p">();</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"children"><SPAN =
+id=3D"knode-children"></SPAN><SPAN id=3D"index-39"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id52">children()</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#children">=C2=B6</A></H2>
+<P>=E5=8F=96=E5=BE=97=E7=AC=AC=E4=B8=80=E4=B8=AAnode=E7=9A=84=E5=AD=90=E8=
+=8A=82=E7=82=B9=E5=88=97=E8=A1=A8=E3=80=82</P>
+<UL class=3D"simple">
+  <LI>=E5=8F=82=E6=95=B0: =E6=97=A0</LI>
+  <LI>=E8=BF=94=E5=9B=9E: KNode</LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'#id'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">children</SPAN><SPAN class=3D"p">().</SPAN><SPAN =
+class=3D"nx">css</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'color'</SPAN><SPAN class=3D"p">,</SPAN> <SPAN =
+class=3D"s1">'red'</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"first"><SPAN =
+id=3D"knode-first"></SPAN><SPAN id=3D"index-40"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id53">first()</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink" =
+href=3D"http://kindeditor.net/docs/node.html#first">=C2=B6</A></H2>
+<P>=E5=8F=96=E5=BE=97=E7=AC=AC=E4=B8=80=E4=B8=AAnode=E7=9A=84=E7=AC=AC=E4=
+=B8=80=E4=B8=AA=E5=AD=90=E8=8A=82=E7=82=B9=E3=80=82</P>
+<UL class=3D"simple">
+  <LI>=E5=8F=82=E6=95=B0: =E6=97=A0</LI>
+  <LI>=E8=BF=94=E5=9B=9E: KNode</LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"kd">var</SPAN> <SPAN class=3D"nx">firstNode</SPAN> =
+<SPAN class=3D"o">=3D</SPAN> <SPAN class=3D"nx">K</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"s1">'#id'</SPAN><SPAN =
+class=3D"p">).</SPAN><SPAN class=3D"nx">first</SPAN><SPAN =
+class=3D"p">();</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"last"><SPAN id=3D"knode-last"></SPAN><SPAN=20
+id=3D"index-41"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id54">last()</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink" =
+href=3D"http://kindeditor.net/docs/node.html#last">=C2=B6</A></H2>
+<P>=E5=8F=96=E5=BE=97=E7=AC=AC=E4=B8=80=E4=B8=AAnode=E7=9A=84=E6=9C=80=E5=
+=90=8E=E4=B8=80=E4=B8=AA=E5=AD=90=E8=8A=82=E7=82=B9=E3=80=82</P>
+<UL class=3D"simple">
+  <LI>=E5=8F=82=E6=95=B0: =E6=97=A0</LI>
+  <LI>=E8=BF=94=E5=9B=9E: KNode</LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"kd">var</SPAN> <SPAN class=3D"nx">lastNode</SPAN> =
+<SPAN class=3D"o">=3D</SPAN> <SPAN class=3D"nx">K</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"s1">'#id'</SPAN><SPAN =
+class=3D"p">).</SPAN><SPAN class=3D"nx">last</SPAN><SPAN =
+class=3D"p">();</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"index"><SPAN =
+id=3D"knode-index"></SPAN><SPAN id=3D"index-42"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id55">index()</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink" =
+href=3D"http://kindeditor.net/docs/node.html#index">=C2=B6</A></H2>
+<P>=E5=8F=96=E5=BE=97=E7=AC=AC=E4=B8=80=E4=B8=AAnode=E5=9C=A8=E7=88=B6=E8=
+=8A=82=E7=82=B9=E4=B8=AD=E7=9A=84=E5=81=8F=E7=A7=BB=E4=BD=8D=E7=BD=AE=E3=80=
+=82</P>
+<UL class=3D"simple">
+  <LI>=E5=8F=82=E6=95=B0: =E6=97=A0</LI>
+  <LI>=E8=BF=94=E5=9B=9E: int</LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"kd">var</SPAN> <SPAN class=3D"nx">index</SPAN> <SPAN =
+class=3D"o">=3D</SPAN> <SPAN class=3D"nx">K</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"s1">'div#id p'</SPAN><SPAN =
+class=3D"p">).</SPAN><SPAN class=3D"nx">index</SPAN><SPAN =
+class=3D"p">();</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"prev"><SPAN id=3D"knode-prev"></SPAN><SPAN=20
+id=3D"index-43"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id56">prev()</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink" =
+href=3D"http://kindeditor.net/docs/node.html#prev">=C2=B6</A></H2>
+<P>=E5=8F=96=E5=BE=97=E7=AC=AC=E4=B8=80=E4=B8=AAnode=E7=9A=84=E4=B8=8A=E4=
+=B8=80=E4=B8=AA=E8=8A=82=E7=82=B9=E3=80=82</P>
+<UL class=3D"simple">
+  <LI>=E5=8F=82=E6=95=B0: =E6=97=A0</LI>
+  <LI>=E8=BF=94=E5=9B=9E: KNode</LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"kd">var</SPAN> <SPAN class=3D"nx">prevNode</SPAN> =
+<SPAN class=3D"o">=3D</SPAN> <SPAN class=3D"nx">K</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"s1">'#id'</SPAN><SPAN =
+class=3D"p">).</SPAN><SPAN class=3D"nx">prev</SPAN><SPAN =
+class=3D"p">();</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"next"><SPAN id=3D"knode-next"></SPAN><SPAN=20
+id=3D"index-44"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id57">next()</A><A =
+title=3D"Permalink to this headline"=20
+class=3D"headerlink" =
+href=3D"http://kindeditor.net/docs/node.html#next">=C2=B6</A></H2>
+<P>=E5=8F=96=E5=BE=97=E7=AC=AC=E4=B8=80=E4=B8=AAnode=E7=9A=84=E4=B8=8B=E4=
+=B8=80=E4=B8=AA=E8=8A=82=E7=82=B9=E3=80=82</P>
+<UL class=3D"simple">
+  <LI>=E5=8F=82=E6=95=B0: =E6=97=A0</LI>
+  <LI>=E8=BF=94=E5=9B=9E: KNode</LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"kd">var</SPAN> <SPAN class=3D"nx">nextNode</SPAN> =
+<SPAN class=3D"o">=3D</SPAN> <SPAN class=3D"nx">K</SPAN><SPAN =
+class=3D"p">(</SPAN><SPAN class=3D"s1">'#id'</SPAN><SPAN =
+class=3D"p">).</SPAN><SPAN class=3D"nx">next</SPAN><SPAN =
+class=3D"p">();</SPAN>=0A=
+</PRE></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"scan-fn-order"><SPAN =
+id=3D"knode-scan"></SPAN><SPAN id=3D"index-45"></SPAN>
+<H2><A class=3D"toc-backref"=20
+href=3D"http://kindeditor.net/docs/node.html#id58">scan(fn [, =
+order])</A><A title=3D"Permalink to this headline"=20
+class=3D"headerlink"=20
+href=3D"http://kindeditor.net/docs/node.html#scan-fn-order">=C2=B6</A></H=
+2>
+<P>=E9=81=8D=E5=8E=86=E7=AC=AC=E4=B8=80=E4=B8=AAnode=E7=9A=84=E6=89=80=E6=
+=9C=89=E5=AD=90=E8=8A=82=E7=82=B9=E3=80=82</P>
+<UL>
+  <LI>
+  <DL class=3D"first docutils">
+    <DT>=E5=8F=82=E6=95=B0:</DT>
+    <DD>
+    <UL class=3D"first last simple">
+      <LI>function fn: =E5=9B=9E=E8=B0=83=E5=87=BD=E6=95=B0</LI>
+      <LI>boolean order: =
+=E9=81=8D=E5=8E=86=E6=96=B9=E5=90=91=EF=BC=8Ctrue=E4=B8=BA=E9=A1=BA=E5=BA=
+=8F=EF=BC=8Cfalse=E4=B8=BA=E9=80=86=E5=BA=8F=EF=BC=8C=E9=BB=98=E8=AE=A4=E5=
+=80=BC=E4=B8=BAtrue</LI></UL></DD></DL></LI>
+  <LI>
+  <P class=3D"first">=E8=BF=94=E5=9B=9E: KNode</P></LI></UL>
+<P>=E7=A4=BA=E4=BE=8B:</P>
+<DIV class=3D"highlight-js">
+<DIV class=3D"highlight">
+<PRE><SPAN class=3D"nx">K</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"s1">'div#id'</SPAN><SPAN class=3D"p">).</SPAN><SPAN =
+class=3D"nx">scan</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"kd">function</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"nx">node</SPAN><SPAN class=3D"p">)</SPAN> <SPAN =
+class=3D"p">(</SPAN>=0A=
+        <SPAN class=3D"nx">console</SPAN><SPAN class=3D"p">.</SPAN><SPAN =
+class=3D"nx">log</SPAN><SPAN class=3D"p">(</SPAN><SPAN =
+class=3D"nx">node</SPAN><SPAN class=3D"p">);</SPAN>=0A=
+<SPAN class=3D"p">));</SPAN>=0A=
+</PRE></DIV></DIV></DIV></DIV></DIV></DIV></DIV>
+<DIV class=3D"clearer"></DIV></DIV>
+<DIV class=3D"related">
+<H3>Navigation</H3>
+<UL>
+  <LI class=3D"right" style=3D"margin-right: 10px;"><A title=3D"General =
+Index" href=3D"http://kindeditor.net/docs/genindex.html">index</A></LI>=20
+         =20
+  <LI class=3D"right"><A title=3D"Range API" =
+href=3D"http://kindeditor.net/docs/range.html">next</A>=20
+  |</LI>        =20
+  <LI class=3D"right"><A title=3D"=E9=80=89=E6=8B=A9=E5=99=A8(Selector) =
+API" href=3D"http://kindeditor.net/docs/selector.html">previous</A>=20
+  |</LI>        =20
+  <LI><A href=3D"http://kindeditor.net/docs/index.html">KindEditor 4.x=20
+  documentation</A> =C2=BB</LI>       </UL></DIV>
+<DIV class=3D"footer">        =C2=A9 Copyright kindsoft.net.     =
+</DIV></BODY></HTML>
+
+------=_NextPart_000_007F_01CF283D.4A77E040
+Content-Type: text/css;
+	charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://kindeditor.net/docs/basic.css
+
+div.clearer {
+	clear: both;
+}
+div.related {
+	width: 100%; font-size: 90%;
+}
+div.related h3 {
+	display: none;
+}
+div.related ul {
+	list-style: none; margin: 0px; padding: 0px 0px 0px 10px;
+}
+div.related li {
+	display: inline;
+}
+div.related li.right {
+	margin-right: 5px; float: right;
+}
+div.sphinxsidebarwrapper {
+	padding: 10px 5px 0px 10px;
+}
+div.sphinxsidebar {
+	width: 230px; font-size: 90%; margin-left: -100%; float: left;
+}
+div.sphinxsidebar ul {
+	list-style: none;
+}
+div.sphinxsidebar ul ul {
+	list-style: square; margin-left: 20px;
+}
+div.sphinxsidebar ul.want-points {
+	list-style: square; margin-left: 20px;
+}
+div.sphinxsidebar ul ul {
+	margin-top: 0px; margin-bottom: 0px;
+}
+div.sphinxsidebar form {
+	margin-top: 10px;
+}
+div.sphinxsidebar input {
+	border: 1px solid rgb(152, 219, 204); border-image: none; font-family: =
+sans-serif; font-size: 1em;
+}
+div.sphinxsidebar #searchbox input[type=3D'text'] {
+	width: 170px;
+}
+div.sphinxsidebar #searchbox input[type=3D'submit'] {
+	width: 30px;
+}
+img {
+	border: 0px currentColor; border-image: none;
+}
+ul.search {
+	margin: 10px 0px 0px 20px; padding: 0px;
+}
+ul.search li {
+	background-position: 0px 7px; padding: 5px 0px 5px 20px; =
+background-image: url("file.png"); background-repeat: no-repeat;
+}
+ul.search li a {
+	font-weight: bold;
+}
+ul.search li div.context {
+	margin: 2px 0px 0px 30px; text-align: left; color: rgb(136, 136, 136);
+}
+ul.keywordmatches li.goodmatch a {
+	font-weight: bold;
+}
+table.contentstable {
+	width: 90%;
+}
+table.contentstable p.biglink {
+	line-height: 150%;
+}
+a.biglink {
+	font-size: 1.3em;
+}
+span.linkdescr {
+	padding-top: 5px; font-size: 90%; font-style: italic;
+}
+table.indextable {
+	width: 100%;
+}
+table.indextable td {
+	text-align: left; vertical-align: top;
+}
+table.indextable dl {
+	margin-top: 0px; margin-bottom: 0px;
+}
+table.indextable dd {
+	margin-top: 0px; margin-bottom: 0px;
+}
+table.indextable tr.pcap {
+	height: 10px;
+}
+table.indextable tr.cap {
+	margin-top: 10px; background-color: rgb(242, 242, 242);
+}
+img.toggler {
+	margin-top: 3px; margin-right: 3px; cursor: pointer;
+}
+div.modindex-jumpbox {
+	margin: 1em 0px; padding: 0.4em; border-top-color: rgb(221, 221, 221); =
+border-bottom-color: rgb(221, 221, 221); border-top-width: 1px; =
+border-bottom-width: 1px; border-top-style: solid; border-bottom-style: =
+solid;
+}
+div.genindex-jumpbox {
+	margin: 1em 0px; padding: 0.4em; border-top-color: rgb(221, 221, 221); =
+border-bottom-color: rgb(221, 221, 221); border-top-width: 1px; =
+border-bottom-width: 1px; border-top-style: solid; border-bottom-style: =
+solid;
+}
+a.headerlink {
+	visibility: hidden;
+}
+h1:hover > a.headerlink {
+	visibility: visible;
+}
+h2:hover > a.headerlink {
+	visibility: visible;
+}
+h3:hover > a.headerlink {
+	visibility: visible;
+}
+h4:hover > a.headerlink {
+	visibility: visible;
+}
+h5:hover > a.headerlink {
+	visibility: visible;
+}
+h6:hover > a.headerlink {
+	visibility: visible;
+}
+dt:hover > a.headerlink {
+	visibility: visible;
+}
+div.body p.caption {
+	text-align: inherit;
+}
+div.body td {
+	text-align: left;
+}
+.field-list ul {
+	padding-left: 1em;
+}
+.first {
+	margin-top: 0px !important;
+}
+p.rubric {
+	font-weight: bold; margin-top: 30px;
+}
+img.align-left {
+	clear: left; margin-right: 1em; float: left;
+}
+.align-left.figure {
+	clear: left; margin-right: 1em; float: left;
+}
+object.align-left {
+	clear: left; margin-right: 1em; float: left;
+}
+img.align-right {
+	clear: right; margin-left: 1em; float: right;
+}
+.align-right.figure {
+	clear: right; margin-left: 1em; float: right;
+}
+object.align-right {
+	clear: right; margin-left: 1em; float: right;
+}
+img.align-center {
+	margin-right: auto; margin-left: auto; display: block;
+}
+.align-center.figure {
+	margin-right: auto; margin-left: auto; display: block;
+}
+object.align-center {
+	margin-right: auto; margin-left: auto; display: block;
+}
+.align-left {
+	text-align: left;
+}
+.align-center {
+	text-align: center;
+}
+.align-right {
+	text-align: right;
+}
+div.sidebar {
+	margin: 0px 0px 0.5em 1em; padding: 7px 7px 0px; border: 1px solid =
+rgb(221, 221, 187); border-image: none; width: 40%; float: right; =
+background-color: rgb(255, 255, 238);
+}
+p.sidebar-title {
+	font-weight: bold;
+}
+div.topic {
+	margin: 10px 0px; padding: 7px 7px 0px; border: 1px solid rgb(204, 204, =
+204); border-image: none;
+}
+p.topic-title {
+	font-size: 1.1em; font-weight: bold; margin-top: 10px;
+}
+div.admonition {
+	padding: 7px; margin-top: 10px; margin-bottom: 10px;
+}
+div.admonition dt {
+	font-weight: bold;
+}
+div.admonition dl {
+	margin-bottom: 0px;
+}
+p.admonition-title {
+	margin: 0px 10px 5px 0px; font-weight: bold;
+}
+div.body p.centered {
+	text-align: center; margin-top: 25px;
+}
+table.docutils {
+	border: 0px currentColor; border-image: none; border-collapse: =
+collapse;
+}
+table.docutils td {
+	border-width: 0px 0px 1px; border-style: none none solid; border-color: =
+currentColor currentColor rgb(170, 170, 170); padding: 1px 8px 1px 5px;
+}
+table.docutils th {
+	border-width: 0px 0px 1px; border-style: none none solid; border-color: =
+currentColor currentColor rgb(170, 170, 170); padding: 1px 8px 1px 5px;
+}
+table.field-list td {
+	border: 0px currentColor !important; border-image: none !important;
+}
+table.field-list th {
+	border: 0px currentColor !important; border-image: none !important;
+}
+table.footnote td {
+	border: 0px currentColor !important; border-image: none !important;
+}
+table.footnote th {
+	border: 0px currentColor !important; border-image: none !important;
+}
+th {
+	text-align: left; padding-right: 5px;
+}
+table.citation {
+	margin-left: 1px; border-left-color: gray; border-left-width: 1px; =
+border-left-style: solid;
+}
+table.citation td {
+	border-bottom-color: currentColor; border-bottom-width: medium; =
+border-bottom-style: none;
+}
+ol.arabic {
+	list-style: decimal;
+}
+ol.loweralpha {
+	list-style: lower-alpha;
+}
+ol.upperalpha {
+	list-style: upper-alpha;
+}
+ol.lowerroman {
+	list-style: lower-roman;
+}
+ol.upperroman {
+	list-style: upper-roman;
+}
+dl {
+	margin-bottom: 15px;
+}
+dd p {
+	margin-top: 0px;
+}
+dd ul {
+	margin-bottom: 10px;
+}
+dd table {
+	margin-bottom: 10px;
+}
+dd {
+	margin-top: 3px; margin-bottom: 10px; margin-left: 30px;
+}
+dt:target {
+	background-color: rgb(251, 229, 78);
+}
+.highlighted {
+	background-color: rgb(251, 229, 78);
+}
+dl.glossary dt {
+	font-size: 1.1em; font-weight: bold;
+}
+.field-list ul {
+	margin: 0px; padding-left: 1em;
+}
+.field-list p {
+	margin: 0px;
+}
+.refcount {
+	color: rgb(0, 102, 0);
+}
+.optional {
+	font-size: 1.3em;
+}
+.versionmodified {
+	font-style: italic;
+}
+.system-message {
+	padding: 5px; border: 3px solid red; border-image: none; =
+background-color: rgb(255, 221, 170);
+}
+:target.footnote {
+	background-color: rgb(255, 255, 170);
+}
+.line-block {
+	margin-top: 1em; margin-bottom: 1em; display: block;
+}
+.line-block .line-block {
+	margin-top: 0px; margin-bottom: 0px; margin-left: 1.5em;
+}
+.guilabel {
+	font-family: sans-serif;
+}
+.menuselection {
+	font-family: sans-serif;
+}
+.accelerator {
+	text-decoration: underline;
+}
+.classifier {
+	font-style: oblique;
+}
+abbr {
+	border-bottom-color: currentColor; border-bottom-width: 1px; =
+border-bottom-style: dotted; cursor: help;
+}
+acronym {
+	border-bottom-color: currentColor; border-bottom-width: 1px; =
+border-bottom-style: dotted; cursor: help;
+}
+pre {
+	overflow: auto; -ms-overflow-y: hidden;
+}
+td.linenos pre {
+	padding: 5px 0px; border: 0px currentColor; border-image: none; color: =
+rgb(170, 170, 170); background-color: transparent;
+}
+table.highlighttable {
+	margin-left: 0.5em;
+}
+table.highlighttable td {
+	padding: 0px 0.5em;
+}
+tt.descname {
+	font-size: 1.2em; font-weight: bold; background-color: transparent;
+}
+tt.descclassname {
+	background-color: transparent;
+}
+tt.xref {
+	font-weight: bold; background-color: transparent;
+}
+a tt {
+	font-weight: bold; background-color: transparent;
+}
+h1 tt {
+	background-color: transparent;
+}
+h2 tt {
+	background-color: transparent;
+}
+h3 tt {
+	background-color: transparent;
+}
+h4 tt {
+	background-color: transparent;
+}
+h5 tt {
+	background-color: transparent;
+}
+h6 tt {
+	background-color: transparent;
+}
+.viewcode-link {
+	float: right;
+}
+.viewcode-back {
+	font-family: sans-serif; float: right;
+}
+div:target.viewcode-block {
+	margin: -1px -10px; padding: 0px 10px;
+}
+img.math {
+	vertical-align: middle;
+}
+div.body div.math p {
+	text-align: center;
+}
+span.eqno {
+	float: right;
+}
+@media print
+{
+div.document {
+	margin: 0px !important; width: 100%;
+}
+div.documentwrapper {
+	margin: 0px !important; width: 100%;
+}
+div.bodywrapper {
+	margin: 0px !important; width: 100%;
+}
+div.sphinxsidebar {
+	display: none;
+}
+div.related {
+	display: none;
+}
+div.footer {
+	display: none;
+}
+#top-link {
+	display: none;
+}
+}
+
+------=_NextPart_000_007F_01CF283D.4A77E040
+Content-Type: text/css;
+	charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://kindeditor.net/docs/_static/classy.css
+
+@import url( basic.css );
+body {
+	background: white; margin: 0px; padding: 0px; color: rgb(0, 0, 0); =
+font-family: "sans serif",tahoma,verdana,helvetica; font-size: 14px;
+}
+div.documentwrapper {
+	width: 100%; float: left;
+}
+div.bodywrapper {
+	margin: 40px auto 0px; width: 950px;
+}
+hr {
+	border: 1px solid rgb(177, 180, 182); border-image: none;
+}
+div.body {
+	padding: 0px 0px 30px; color: rgb(62, 67, 73); background-color: =
+rgb(255, 255, 255);
+}
+img.floatingflask {
+	padding: 0px 0px 10px 10px; float: right;
+}
+div.footer {
+	margin: 0px auto 40px; padding: 10px; width: 950px; text-align: right; =
+color: rgb(136, 136, 136); font-size: 14px;
+}
+div.footer a {
+	color: rgb(136, 136, 136); text-decoration: underline;
+}
+div.related {
+	margin: 0px auto; width: 950px; color: rgb(136, 136, 136); line-height: =
+32px; font-size: 14px;
+}
+div.related ul {
+	padding: 0px;
+}
+a {
+	color: rgb(24, 112, 169); text-decoration: none;
+}
+a:hover {
+	color: rgb(188, 42, 77);
+}
+div.body {
+	padding-bottom: 40px;
+}
+div.body h1 {
+	margin: 30px 0px 10px; padding: 0px; font-family: "sans =
+serif",tahoma,verdana,helvetica; font-weight: bold;
+}
+div.body h2 {
+	margin: 30px 0px 10px; padding: 0px; font-family: "sans =
+serif",tahoma,verdana,helvetica; font-weight: bold;
+}
+div.body h3 {
+	margin: 30px 0px 10px; padding: 0px; font-family: "sans =
+serif",tahoma,verdana,helvetica; font-weight: bold;
+}
+div.body h4 {
+	margin: 30px 0px 10px; padding: 0px; font-family: "sans =
+serif",tahoma,verdana,helvetica; font-weight: bold;
+}
+div.body h5 {
+	margin: 30px 0px 10px; padding: 0px; font-family: "sans =
+serif",tahoma,verdana,helvetica; font-weight: bold;
+}
+div.body h6 {
+	margin: 30px 0px 10px; padding: 0px; font-family: "sans =
+serif",tahoma,verdana,helvetica; font-weight: bold;
+}
+#classy-classes-for-javascript h1 {
+	background: url("classyjs.png") no-repeat center; margin: 0px; height: =
+460px; text-indent: -999999px;
+}
+div.body h1 {
+	font-size: 24px;
+}
+div.body h2 {
+	font-size: 20px;
+}
+div.body h3 {
+	font-size: 18px;
+}
+div.body h4 {
+	font-size: 14px;
+}
+div.body h5 {
+	font-size: 14px;
+}
+div.body h6 {
+	font-size: 14px;
+}
+a.headerlink {
+	padding: 0px 4px; color: white; text-decoration: none;
+}
+a.headerlink:hover {
+	background: rgb(234, 234, 234); color: rgb(68, 68, 68);
+}
+div.body p {
+	line-height: 1.4em;
+}
+div.body dd {
+	line-height: 1.4em;
+}
+div.body li {
+	line-height: 1.4em;
+}
+div.admonition {
+	background: rgb(250, 250, 250); margin: 20px 0px; padding: 10px; =
+border-top-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, =
+204); border-top-width: 1px; border-bottom-width: 1px; border-top-style: =
+solid; border-bottom-style: solid;
+}
+div.admonition p.admonition-title {
+	margin: 0px 0px 10px; padding: 0px; line-height: 1; font-family: "sans =
+serif",tahoma,verdana,helvetica; font-size: 18px; font-weight: normal;
+}
+div.admonition p.last {
+	margin-bottom: 0px;
+}
+div.highlight {
+	background-color: white;
+}
+dt:target {
+	background: rgb(250, 243, 232);
+}
+.highlight {
+	background: rgb(250, 243, 232);
+}
+div.note {
+	border: 1px solid rgb(204, 204, 204); border-image: none; =
+background-color: rgb(250, 250, 250);
+}
+div.seealso {
+	border: 1px solid rgb(255, 255, 102); border-image: none; =
+background-color: rgb(255, 255, 204);
+}
+div.topic {
+	margin: 10px 0px; padding: 7px; border: 1px solid rgb(204, 204, 204); =
+border-image: none; background-color: rgb(250, 250, 250);
+}
+div.warning {
+	border: 1px solid rgb(255, 102, 102); border-image: none; =
+background-color: rgb(255, 228, 228);
+}
+p.admonition-title {
+	display: inline;
+}
+p.admonition-title::after {
+	content: ":";
+}
+pre {
+	font-family: "Consolas", "Monaco", "Deja Vu Sans Mono", "Courier New", =
+Courier, monospace; font-size: 14px;
+}
+tt {
+	font-family: "Consolas", "Monaco", "Deja Vu Sans Mono", "Courier New", =
+Courier, monospace; font-size: 14px;
+}
+img.screenshot {
+=09
+}
+tt.descname {
+	font-size: 14px;
+}
+tt.descclassname {
+	font-size: 14px;
+}
+tt.descname {
+	padding-right: 0.08em;
+}
+img.screenshot {
+	box-shadow: 2px 2px 4px #eee; -moz-box-shadow: 2px 2px 4px #eee; =
+-webkit-box-shadow: 2px 2px 4px #eee;
+}
+table.docutils {
+	border: 1px solid rgb(136, 136, 136); border-image: none; box-shadow: =
+2px 2px 4px #eee; -moz-box-shadow: 2px 2px 4px #eee; -webkit-box-shadow: =
+2px 2px 4px #eee;
+}
+table.docutils td {
+	padding: 0.25em 0.7em; border: 1px solid rgb(136, 136, 136); =
+border-image: none;
+}
+table.docutils th {
+	padding: 0.25em 0.7em; border: 1px solid rgb(136, 136, 136); =
+border-image: none;
+}
+table.field-list {
+	border: currentColor; border-image: none; box-shadow: none; =
+-moz-box-shadow: none; -webkit-box-shadow: none;
+}
+table.footnote {
+	border: currentColor; border-image: none; box-shadow: none; =
+-moz-box-shadow: none; -webkit-box-shadow: none;
+}
+table.footnote {
+	margin: 15px 0px; border: 1px solid rgb(238, 238, 238); border-image: =
+none; width: 100%;
+}
+table.field-list th {
+	padding: 0px 0.8em 0px 0px; font-weight: normal;
+}
+table.field-list td {
+	padding: 0px;
+}
+table.field-list strong {
+	font-weight: normal;
+}
+table.footnote td {
+	padding: 0.5em;
+}
+dl {
+	margin: 0px; padding: 0px;
+}
+dl dd {
+	margin-left: 30px;
+}
+pre {
+	background: rgb(233, 245, 252); margin: 15px 0px; padding: 8px; =
+border-radius: 2px; border: 1px solid rgb(164, 212, 236); border-image: =
+none; line-height: 1.3em; -moz-border-radius: 2px; =
+-webkit-border-radius: 2px;
+}
+tt {
+	color: rgb(34, 34, 34); background-color: rgb(236, 240, 243);
+}
+tt.xref {
+	background-color: rgb(251, 251, 251);
+}
+a tt {
+	background-color: rgb(251, 251, 251);
+}
+a:hover tt {
+	background: rgb(238, 238, 238);
+}
+
+------=_NextPart_000_007F_01CF283D.4A77E040
+Content-Type: text/css;
+	charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://kindeditor.net/docs/_static/pygments.css
+
+.highlight .hll {
+	background-color: rgb(255, 255, 204);
+}
+.highlight {
+	background: rgb(248, 248, 248);
+}
+.highlight .c {
+	color: rgb(143, 89, 2); font-style: italic;
+}
+.highlight .err {
+	border: 1px solid rgb(239, 41, 41); border-image: none; color: rgb(164, =
+0, 0);
+}
+.highlight .g {
+	color: rgb(0, 0, 0);
+}
+.highlight .k {
+	color: rgb(0, 68, 97); font-weight: bold;
+}
+.highlight .l {
+	color: rgb(0, 0, 0);
+}
+.highlight .n {
+	color: rgb(0, 0, 0);
+}
+.highlight .o {
+	color: rgb(88, 40, 0);
+}
+.highlight .x {
+	color: rgb(0, 0, 0);
+}
+.highlight .p {
+	color: rgb(0, 0, 0); font-weight: bold;
+}
+.highlight .cm {
+	color: rgb(143, 89, 2); font-style: italic;
+}
+.highlight .cp {
+	color: rgb(143, 89, 2);
+}
+.highlight .c1 {
+	color: rgb(143, 89, 2); font-style: italic;
+}
+.highlight .cs {
+	color: rgb(143, 89, 2); font-style: italic;
+}
+.highlight .gd {
+	color: rgb(164, 0, 0);
+}
+.highlight .ge {
+	color: rgb(0, 0, 0); font-style: italic;
+}
+.highlight .gr {
+	color: rgb(239, 41, 41);
+}
+.highlight .gh {
+	color: rgb(0, 0, 128); font-weight: bold;
+}
+.highlight .gi {
+	color: rgb(0, 160, 0);
+}
+.highlight .go {
+	color: rgb(128, 128, 128);
+}
+.highlight .gp {
+	color: rgb(116, 83, 52);
+}
+.highlight .gs {
+	color: rgb(0, 0, 0); font-weight: bold;
+}
+.highlight .gu {
+	color: rgb(128, 0, 128); font-weight: bold;
+}
+.highlight .gt {
+	color: rgb(164, 0, 0); font-weight: bold;
+}
+.highlight .kc {
+	color: rgb(0, 68, 97); font-weight: bold;
+}
+.highlight .kd {
+	color: rgb(0, 68, 97); font-weight: bold;
+}
+.highlight .kn {
+	color: rgb(0, 68, 97); font-weight: bold;
+}
+.highlight .kp {
+	color: rgb(0, 68, 97); font-weight: bold;
+}
+.highlight .kr {
+	color: rgb(0, 68, 97); font-weight: bold;
+}
+.highlight .kt {
+	color: rgb(0, 68, 97); font-weight: bold;
+}
+.highlight .ld {
+	color: rgb(0, 0, 0);
+}
+.highlight .m {
+	color: rgb(153, 0, 0);
+}
+.highlight .s {
+	color: rgb(78, 154, 6);
+}
+.highlight .na {
+	color: rgb(196, 160, 0);
+}
+.highlight .nb {
+	color: rgb(0, 68, 97);
+}
+.highlight .nc {
+	color: rgb(0, 0, 0);
+}
+.highlight .no {
+	color: rgb(0, 0, 0);
+}
+.highlight .nd {
+	color: rgb(128, 128, 128);
+}
+.highlight .ni {
+	color: rgb(206, 92, 0);
+}
+.highlight .ne {
+	color: rgb(204, 0, 0); font-weight: bold;
+}
+.highlight .nf {
+	color: rgb(0, 0, 0);
+}
+.highlight .nl {
+	color: rgb(245, 121, 0);
+}
+.highlight .nn {
+	color: rgb(0, 0, 0);
+}
+.highlight .nx {
+	color: rgb(0, 0, 0);
+}
+.highlight .py {
+	color: rgb(0, 0, 0);
+}
+.highlight .nt {
+	color: rgb(0, 68, 97); font-weight: bold;
+}
+.highlight .nv {
+	color: rgb(0, 0, 0);
+}
+.highlight .ow {
+	color: rgb(0, 68, 97); font-weight: bold;
+}
+.highlight .w {
+	color: rgb(248, 248, 248); text-decoration: underline;
+}
+.highlight .mf {
+	color: rgb(153, 0, 0);
+}
+.highlight .mh {
+	color: rgb(153, 0, 0);
+}
+.highlight .mi {
+	color: rgb(153, 0, 0);
+}
+.highlight .mo {
+	color: rgb(153, 0, 0);
+}
+.highlight .sb {
+	color: rgb(78, 154, 6);
+}
+.highlight .sc {
+	color: rgb(78, 154, 6);
+}
+.highlight .sd {
+	color: rgb(143, 89, 2); font-style: italic;
+}
+.highlight .s2 {
+	color: rgb(78, 154, 6);
+}
+.highlight .se {
+	color: rgb(78, 154, 6);
+}
+.highlight .sh {
+	color: rgb(78, 154, 6);
+}
+.highlight .si {
+	color: rgb(78, 154, 6);
+}
+.highlight .sx {
+	color: rgb(78, 154, 6);
+}
+.highlight .sr {
+	color: rgb(78, 154, 6);
+}
+.highlight .s1 {
+	color: rgb(78, 154, 6);
+}
+.highlight .ss {
+	color: rgb(78, 154, 6);
+}
+.highlight .bp {
+	color: rgb(52, 101, 164);
+}
+.highlight .vc {
+	color: rgb(0, 0, 0);
+}
+.highlight .vg {
+	color: rgb(0, 0, 0);
+}
+.highlight .vi {
+	color: rgb(0, 0, 0);
+}
+.highlight .il {
+	color: rgb(153, 0, 0);
+}
+
+------=_NextPart_000_007F_01CF283D.4A77E040
+Content-Type: application/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://kindeditor.net/docs/_static/jquery.js
+
+/*!=0A=
+ * jQuery JavaScript Library v1.4.2=0A=
+ * http://jquery.com/=0A=
+ *=0A=
+ * Copyright 2010, John Resig=0A=
+ * Dual licensed under the MIT or GPL Version 2 licenses.=0A=
+ * http://jquery.org/license=0A=
+ *=0A=
+ * Includes Sizzle.js=0A=
+ * http://sizzlejs.com/=0A=
+ * Copyright 2010, The Dojo Foundation=0A=
+ * Released under the MIT, BSD, and GPL Licenses.=0A=
+ *=0A=
+ * Date: Sat Feb 13 22:33:48 2010 -0500=0A=
+ */=0A=
+(function(A,w){function =
+ma(){if(!c.isReady){try{s.documentElement.doScroll("left")}catch(a){setTi=
+meout(ma,1);return}c.ready()}}function =
+Qa(a,b){b.src?c.ajax({url:b.src,async:false,dataType:"script"}):c.globalE=
+val(b.text||b.textContent||b.innerHTML||"");b.parentNode&&b.parentNode.re=
+moveChild(b)}function X(a,b,d,f,e,j){var i=3Da.length;if(typeof =
+b=3D=3D=3D"object"){for(var o in b)X(a,o,b[o],f,e,d);return =
+a}if(d!=3D=3Dw){f=3D!j&&f&&c.isFunction(d);for(o=3D0;o<i;o++)e(a[o],b,f?d=
+.call(a[o],o,e(a[o],b)):d,j);return a}return i?=0A=
+e(a[0],b):w}function J(){return(new Date).getTime()}function Y(){return =
+false}function Z(){return true}function na(a,b,d){d[0].type=3Da;return =
+c.event.handle.apply(b,d)}function oa(a){var =
+b,d=3D[],f=3D[],e=3Darguments,j,i,o,k,n,r;i=3Dc.data(this,"events");if(!(=
+a.liveFired=3D=3D=3Dthis||!i||!i.live||a.button&&a.type=3D=3D=3D"click"))=
+{a.liveFired=3Dthis;var =
+u=3Di.live.slice(0);for(k=3D0;k<u.length;k++){i=3Du[k];i.origType.replace=
+(O,"")=3D=3D=3Da.type?f.push(i.selector):u.splice(k--,1)}j=3Dc(a.target).=
+closest(f,a.currentTarget);n=3D0;for(r=3D=0A=
+j.length;n<r;n++)for(k=3D0;k<u.length;k++){i=3Du[k];if(j[n].selector=3D=3D=
+=3Di.selector){o=3Dj[n].elem;f=3Dnull;if(i.preType=3D=3D=3D"mouseenter"||=
+i.preType=3D=3D=3D"mouseleave")f=3Dc(a.relatedTarget).closest(i.selector)=
+[0];if(!f||f!=3D=3Do)d.push({elem:o,handleObj:i})}}n=3D0;for(r=3Dd.length=
+;n<r;n++){j=3Dd[n];a.currentTarget=3Dj.elem;a.data=3Dj.handleObj.data;a.h=
+andleObj=3Dj.handleObj;if(j.handleObj.origHandler.apply(j.elem,e)=3D=3D=3D=
+false){b=3Dfalse;break}}return b}}function =
+pa(a,b){return"live."+(a&&a!=3D=3D"*"?a+".":"")+b.replace(/\./g,"`").repl=
+ace(/ /g,=0A=
+"&")}function =
+qa(a){return!a||!a.parentNode||a.parentNode.nodeType=3D=3D=3D11}function =
+ra(a,b){var =
+d=3D0;b.each(function(){if(this.nodeName=3D=3D=3D(a[d]&&a[d].nodeName)){v=
+ar f=3Dc.data(a[d++]),e=3Dc.data(this,f);if(f=3Df&&f.events){delete =
+e.handle;e.events=3D{};for(var j in f)for(var i in =
+f[j])c.event.add(this,j,f[j][i],f[j][i].data)}}})}function sa(a,b,d){var =
+f,e,j;b=3Db&&b[0]?b[0].ownerDocument||b[0]:s;if(a.length=3D=3D=3D1&&typeo=
+f =
+a[0]=3D=3D=3D"string"&&a[0].length<512&&b=3D=3D=3Ds&&!ta.test(a[0])&&(c.s=
+upport.checkClone||!ua.test(a[0]))){e=3D=0A=
+true;if(j=3Dc.fragments[a[0]])if(j!=3D=3D1)f=3Dj}if(!f){f=3Db.createDocum=
+entFragment();c.clean(a,b,f,d)}if(e)c.fragments[a[0]]=3Dj?f:1;return{frag=
+ment:f,cacheable:e}}function K(a,b){var =
+d=3D{};c.each(va.concat.apply([],va.slice(0,b)),function(){d[this]=3Da});=
+return d}function wa(a){return"scrollTo"in =
+a&&a.document?a:a.nodeType=3D=3D=3D9?a.defaultView||a.parentWindow:false}=
+var c=3Dfunction(a,b){return new =
+c.fn.init(a,b)},Ra=3DA.jQuery,Sa=3DA.$,s=3DA.document,T,Ta=3D/^[^<]*(<[\w=
+\W]+>)[^>]*$|^#([\w-]+)$/,Ua=3D/^.[^:#\[\.,]*$/,Va=3D/\S/,=0A=
+Wa=3D/^(\s|\u00A0)+|(\s|\u00A0)+$/g,Xa=3D/^<(\w+)\s*\/?>(?:<\/\1>)?$/,P=3D=
+navigator.userAgent,xa=3Dfalse,Q=3D[],L,$=3DObject.prototype.toString,aa=3D=
+Object.prototype.hasOwnProperty,ba=3DArray.prototype.push,R=3DArray.proto=
+type.slice,ya=3DArray.prototype.indexOf;c.fn=3Dc.prototype=3D{init:functi=
+on(a,b){var d,f;if(!a)return =
+this;if(a.nodeType){this.context=3Dthis[0]=3Da;this.length=3D1;return =
+this}if(a=3D=3D=3D"body"&&!b){this.context=3Ds;this[0]=3Ds.body;this.sele=
+ctor=3D"body";this.length=3D1;return this}if(typeof =
+a=3D=3D=3D"string")if((d=3DTa.exec(a))&&=0A=
+(d[1]||!b))if(d[1]){f=3Db?b.ownerDocument||b:s;if(a=3DXa.exec(a))if(c.isP=
+lainObject(b)){a=3D[s.createElement(a[1])];c.fn.attr.call(a,b,true)}else =
+a=3D[f.createElement(a[1])];else{a=3Dsa([d[1]],[f]);a=3D(a.cacheable?a.fr=
+agment.cloneNode(true):a.fragment).childNodes}return =
+c.merge(this,a)}else{if(b=3Ds.getElementById(d[2])){if(b.id!=3D=3Dd[2])re=
+turn =
+T.find(a);this.length=3D1;this[0]=3Db}this.context=3Ds;this.selector=3Da;=
+return this}else =
+if(!b&&/^\w+$/.test(a)){this.selector=3Da;this.context=3Ds;a=3Ds.getEleme=
+ntsByTagName(a);return c.merge(this,=0A=
+a)}else return!b||b.jquery?(b||T).find(a):c(b).find(a);else =
+if(c.isFunction(a))return =
+T.ready(a);if(a.selector!=3D=3Dw){this.selector=3Da.selector;this.context=
+=3Da.context}return =
+c.makeArray(a,this)},selector:"",jquery:"1.4.2",length:0,size:function(){=
+return this.length},toArray:function(){return =
+R.call(this,0)},get:function(a){return =
+a=3D=3Dnull?this.toArray():a<0?this.slice(a)[0]:this[a]},pushStack:functi=
+on(a,b,d){var =
+f=3Dc();c.isArray(a)?ba.apply(f,a):c.merge(f,a);f.prevObject=3Dthis;f.con=
+text=3Dthis.context;if(b=3D=3D=3D=0A=
+"find")f.selector=3Dthis.selector+(this.selector?" ":"")+d;else =
+if(b)f.selector=3Dthis.selector+"."+b+"("+d+")";return =
+f},each:function(a,b){return =
+c.each(this,a,b)},ready:function(a){c.bindReady();if(c.isReady)a.call(s,c=
+);else Q&&Q.push(a);return this},eq:function(a){return =
+a=3D=3D=3D-1?this.slice(a):this.slice(a,+a+1)},first:function(){return =
+this.eq(0)},last:function(){return this.eq(-1)},slice:function(){return =
+this.pushStack(R.apply(this,arguments),"slice",R.call(arguments).join(","=
+))},map:function(a){return this.pushStack(c.map(this,=0A=
+function(b,d){return a.call(b,d,b)}))},end:function(){return =
+this.prevObject||c(null)},push:ba,sort:[].sort,splice:[].splice};c.fn.ini=
+t.prototype=3Dc.fn;c.extend=3Dc.fn.extend=3Dfunction(){var =
+a=3Darguments[0]||{},b=3D1,d=3Darguments.length,f=3Dfalse,e,j,i,o;if(type=
+of a=3D=3D=3D"boolean"){f=3Da;a=3Darguments[1]||{};b=3D2}if(typeof =
+a!=3D=3D"object"&&!c.isFunction(a))a=3D{};if(d=3D=3D=3Db){a=3Dthis;--b}fo=
+r(;b<d;b++)if((e=3Darguments[b])!=3Dnull)for(j in =
+e){i=3Da[j];o=3De[j];if(a!=3D=3Do)if(f&&o&&(c.isPlainObject(o)||c.isArray=
+(o))){i=3Di&&(c.isPlainObject(i)||=0A=
+c.isArray(i))?i:c.isArray(o)?[]:{};a[j]=3Dc.extend(f,i,o)}else =
+if(o!=3D=3Dw)a[j]=3Do}return =
+a};c.extend({noConflict:function(a){A.$=3DSa;if(a)A.jQuery=3DRa;return =
+c},isReady:false,ready:function(){if(!c.isReady){if(!s.body)return =
+setTimeout(c.ready,13);c.isReady=3Dtrue;if(Q){for(var =
+a,b=3D0;a=3DQ[b++];)a.call(s,c);Q=3Dnull}c.fn.triggerHandler&&c(s).trigge=
+rHandler("ready")}},bindReady:function(){if(!xa){xa=3Dtrue;if(s.readyStat=
+e=3D=3D=3D"complete")return =
+c.ready();if(s.addEventListener){s.addEventListener("DOMContentLoaded",=0A=
+L,false);A.addEventListener("load",c.ready,false)}else =
+if(s.attachEvent){s.attachEvent("onreadystatechange",L);A.attachEvent("on=
+load",c.ready);var =
+a=3Dfalse;try{a=3DA.frameElement=3D=3Dnull}catch(b){}s.documentElement.do=
+Scroll&&a&&ma()}}},isFunction:function(a){return =
+$.call(a)=3D=3D=3D"[object Function]"},isArray:function(a){return =
+$.call(a)=3D=3D=3D"[object =
+Array]"},isPlainObject:function(a){if(!a||$.call(a)!=3D=3D"[object =
+Object]"||a.nodeType||a.setInterval)return =
+false;if(a.constructor&&!aa.call(a,"constructor")&&!aa.call(a.constructor=
+.prototype,=0A=
+"isPrototypeOf"))return false;var b;for(b in a);return =
+b=3D=3D=3Dw||aa.call(a,b)},isEmptyObject:function(a){for(var b in =
+a)return false;return true},error:function(a){throw =
+a;},parseJSON:function(a){if(typeof a!=3D=3D"string"||!a)return =
+null;a=3Dc.trim(a);if(/^[\],:{}\s]*$/.test(a.replace(/\\(?:["\\\/bfnrt]|u=
+[0-9a-fA-F]{4})/g,"@").replace(/"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\=
+d*)?(?:[eE][+\-]?\d+)?/g,"]").replace(/(?:^|:|,)(?:\s*\[)+/g,"")))return =
+A.JSON&&A.JSON.parse?A.JSON.parse(a):(new Function("return "+=0A=
+a))();else c.error("Invalid JSON: =
+"+a)},noop:function(){},globalEval:function(a){if(a&&Va.test(a)){var =
+b=3Ds.getElementsByTagName("head")[0]||s.documentElement,d=3Ds.createElem=
+ent("script");d.type=3D"text/javascript";if(c.support.scriptEval)d.append=
+Child(s.createTextNode(a));else =
+d.text=3Da;b.insertBefore(d,b.firstChild);b.removeChild(d)}},nodeName:fun=
+ction(a,b){return =
+a.nodeName&&a.nodeName.toUpperCase()=3D=3D=3Db.toUpperCase()},each:functi=
+on(a,b,d){var =
+f,e=3D0,j=3Da.length,i=3Dj=3D=3D=3Dw||c.isFunction(a);if(d)if(i)for(f in =
+a){if(b.apply(a[f],=0A=
+d)=3D=3D=3Dfalse)break}else =
+for(;e<j;){if(b.apply(a[e++],d)=3D=3D=3Dfalse)break}else if(i)for(f in =
+a){if(b.call(a[f],f,a[f])=3D=3D=3Dfalse)break}else =
+for(d=3Da[0];e<j&&b.call(d,e,d)!=3D=3Dfalse;d=3Da[++e]);return =
+a},trim:function(a){return(a||"").replace(Wa,"")},makeArray:function(a,b)=
+{b=3Db||[];if(a!=3Dnull)a.length=3D=3Dnull||typeof =
+a=3D=3D=3D"string"||c.isFunction(a)||typeof =
+a!=3D=3D"function"&&a.setInterval?ba.call(b,a):c.merge(b,a);return =
+b},inArray:function(a,b){if(b.indexOf)return b.indexOf(a);for(var =
+d=3D0,f=3Db.length;d<f;d++)if(b[d]=3D=3D=3D=0A=
+a)return d;return-1},merge:function(a,b){var =
+d=3Da.length,f=3D0;if(typeof b.length=3D=3D=3D"number")for(var =
+e=3Db.length;f<e;f++)a[d++]=3Db[f];else =
+for(;b[f]!=3D=3Dw;)a[d++]=3Db[f++];a.length=3Dd;return =
+a},grep:function(a,b,d){for(var =
+f=3D[],e=3D0,j=3Da.length;e<j;e++)!d!=3D=3D!b(a[e],e)&&f.push(a[e]);retur=
+n f},map:function(a,b,d){for(var =
+f=3D[],e,j=3D0,i=3Da.length;j<i;j++){e=3Db(a[j],j,d);if(e!=3Dnull)f[f.len=
+gth]=3De}return =
+f.concat.apply([],f)},guid:1,proxy:function(a,b,d){if(arguments.length=3D=
+=3D=3D2)if(typeof b=3D=3D=3D"string"){d=3Da;a=3Dd[b];b=3Dw}else if(b&&=0A=
+!c.isFunction(b)){d=3Db;b=3Dw}if(!b&&a)b=3Dfunction(){return =
+a.apply(d||this,arguments)};if(a)b.guid=3Da.guid=3Da.guid||b.guid||c.guid=
+++;return b},uaMatch:function(a){a=3Da.toLowerCase();a=3D/(webkit)[ =
+\/]([\w.]+)/.exec(a)||/(opera)(?:.*version)?[ =
+\/]([\w.]+)/.exec(a)||/(msie) =
+([\w.]+)/.exec(a)||!/compatible/.test(a)&&/(mozilla)(?:.*? =
+rv:([\w.]+))?/.exec(a)||[];return{browser:a[1]||"",version:a[2]||"0"}},br=
+owser:{}});P=3Dc.uaMatch(P);if(P.browser){c.browser[P.browser]=3Dtrue;c.b=
+rowser.version=3DP.version}if(c.browser.webkit)c.browser.safari=3D=0A=
+true;if(ya)c.inArray=3Dfunction(a,b){return =
+ya.call(b,a)};T=3Dc(s);if(s.addEventListener)L=3Dfunction(){s.removeEvent=
+Listener("DOMContentLoaded",L,false);c.ready()};else =
+if(s.attachEvent)L=3Dfunction(){if(s.readyState=3D=3D=3D"complete"){s.det=
+achEvent("onreadystatechange",L);c.ready()}};(function(){c.support=3D{};v=
+ar =
+a=3Ds.documentElement,b=3Ds.createElement("script"),d=3Ds.createElement("=
+div"),f=3D"script"+J();d.style.display=3D"none";d.innerHTML=3D"   =
+<link/><table></table><a href=3D'/a' =
+style=3D'color:red;float:left;opacity:.55;'>a</a><input =
+type=3D'checkbox'/>";=0A=
+var =
+e=3Dd.getElementsByTagName("*"),j=3Dd.getElementsByTagName("a")[0];if(!(!=
+e||!e.length||!j)){c.support=3D{leadingWhitespace:d.firstChild.nodeType=3D=
+=3D=3D3,tbody:!d.getElementsByTagName("tbody").length,htmlSerialize:!!d.g=
+etElementsByTagName("link").length,style:/red/.test(j.getAttribute("style=
+")),hrefNormalized:j.getAttribute("href")=3D=3D=3D"/a",opacity:/^0.55$/.t=
+est(j.style.opacity),cssFloat:!!j.style.cssFloat,checkOn:d.getElementsByT=
+agName("input")[0].value=3D=3D=3D"on",optSelected:s.createElement("select=
+").appendChild(s.createElement("option")).selected,=0A=
+parentNode:d.removeChild(d.appendChild(s.createElement("div"))).parentNod=
+e=3D=3D=3Dnull,deleteExpando:true,checkClone:false,scriptEval:false,noClo=
+neEvent:true,boxModel:null};b.type=3D"text/javascript";try{b.appendChild(=
+s.createTextNode("window."+f+"=3D1;"))}catch(i){}a.insertBefore(b,a.first=
+Child);if(A[f]){c.support.scriptEval=3Dtrue;delete A[f]}try{delete =
+b.test}catch(o){c.support.deleteExpando=3Dfalse}a.removeChild(b);if(d.att=
+achEvent&&d.fireEvent){d.attachEvent("onclick",function =
+k(){c.support.noCloneEvent=3D=0A=
+false;d.detachEvent("onclick",k)});d.cloneNode(true).fireEvent("onclick")=
+}d=3Ds.createElement("div");d.innerHTML=3D"<input type=3D'radio' =
+name=3D'radiotest' =
+checked=3D'checked'/>";a=3Ds.createDocumentFragment();a.appendChild(d.fir=
+stChild);c.support.checkClone=3Da.cloneNode(true).cloneNode(true).lastChi=
+ld.checked;c(function(){var =
+k=3Ds.createElement("div");k.style.width=3Dk.style.paddingLeft=3D"1px";s.=
+body.appendChild(k);c.boxModel=3Dc.support.boxModel=3Dk.offsetWidth=3D=3D=
+=3D2;s.body.removeChild(k).style.display=3D"none"});a=3Dfunction(k){var =
+n=3D=0A=
+s.createElement("div");k=3D"on"+k;var r=3Dk in =
+n;if(!r){n.setAttribute(k,"return;");r=3Dtypeof =
+n[k]=3D=3D=3D"function"}return =
+r};c.support.submitBubbles=3Da("submit");c.support.changeBubbles=3Da("cha=
+nge");a=3Db=3Dd=3De=3Dj=3Dnull}})();c.props=3D{"for":"htmlFor","class":"c=
+lassName",readonly:"readOnly",maxlength:"maxLength",cellspacing:"cellSpac=
+ing",rowspan:"rowSpan",colspan:"colSpan",tabindex:"tabIndex",usemap:"useM=
+ap",frameborder:"frameBorder"};var =
+G=3D"jQuery"+J(),Ya=3D0,za=3D{};c.extend({cache:{},expando:G,noData:{embe=
+d:true,object:true,=0A=
+applet:true},data:function(a,b,d){if(!(a.nodeName&&c.noData[a.nodeName.to=
+LowerCase()])){a=3Da=3D=3DA?za:a;var f=3Da[G],e=3Dc.cache;if(!f&&typeof =
+b=3D=3D=3D"string"&&d=3D=3D=3Dw)return null;f||(f=3D++Ya);if(typeof =
+b=3D=3D=3D"object"){a[G]=3Df;e[f]=3Dc.extend(true,{},b)}else =
+if(!e[f]){a[G]=3Df;e[f]=3D{}}a=3De[f];if(d!=3D=3Dw)a[b]=3Dd;return =
+typeof =
+b=3D=3D=3D"string"?a[b]:a}},removeData:function(a,b){if(!(a.nodeName&&c.n=
+oData[a.nodeName.toLowerCase()])){a=3Da=3D=3DA?za:a;var =
+d=3Da[G],f=3Dc.cache,e=3Df[d];if(b){if(e){delete =
+e[b];c.isEmptyObject(e)&&c.removeData(a)}}else{if(c.support.deleteExpando=
+)delete a[c.expando];=0A=
+else a.removeAttribute&&a.removeAttribute(c.expando);delete =
+f[d]}}}});c.fn.extend({data:function(a,b){if(typeof =
+a=3D=3D=3D"undefined"&&this.length)return c.data(this[0]);else if(typeof =
+a=3D=3D=3D"object")return this.each(function(){c.data(this,a)});var =
+d=3Da.split(".");d[1]=3Dd[1]?"."+d[1]:"";if(b=3D=3D=3Dw){var =
+f=3Dthis.triggerHandler("getData"+d[1]+"!",[d[0]]);if(f=3D=3D=3Dw&&this.l=
+ength)f=3Dc.data(this[0],a);return =
+f=3D=3D=3Dw&&d[1]?this.data(d[0]):f}else return =
+this.trigger("setData"+d[1]+"!",[d[0],b]).each(function(){c.data(this,=0A=
+a,b)})},removeData:function(a){return =
+this.each(function(){c.removeData(this,a)})}});c.extend({queue:function(a=
+,b,d){if(a){b=3D(b||"fx")+"queue";var f=3Dc.data(a,b);if(!d)return =
+f||[];if(!f||c.isArray(d))f=3Dc.data(a,b,c.makeArray(d));else =
+f.push(d);return f}},dequeue:function(a,b){b=3Db||"fx";var =
+d=3Dc.queue(a,b),f=3Dd.shift();if(f=3D=3D=3D"inprogress")f=3Dd.shift();if=
+(f){b=3D=3D=3D"fx"&&d.unshift("inprogress");f.call(a,function(){c.dequeue=
+(a,b)})}}});c.fn.extend({queue:function(a,b){if(typeof =
+a!=3D=3D"string"){b=3Da;a=3D"fx"}if(b=3D=3D=3D=0A=
+w)return c.queue(this[0],a);return this.each(function(){var =
+d=3Dc.queue(this,a,b);a=3D=3D=3D"fx"&&d[0]!=3D=3D"inprogress"&&c.dequeue(=
+this,a)})},dequeue:function(a){return =
+this.each(function(){c.dequeue(this,a)})},delay:function(a,b){a=3Dc.fx?c.=
+fx.speeds[a]||a:a;b=3Db||"fx";return this.queue(b,function(){var =
+d=3Dthis;setTimeout(function(){c.dequeue(d,b)},a)})},clearQueue:function(=
+a){return this.queue(a||"fx",[])}});var =
+Aa=3D/[\n\t]/g,ca=3D/\s+/,Za=3D/\r/g,$a=3D/href|src|style/,ab=3D/(button|=
+input)/i,bb=3D/(button|input|object|select|textarea)/i,=0A=
+cb=3D/^(a|area)$/i,Ba=3D/radio|checkbox/;c.fn.extend({attr:function(a,b){=
+return X(this,a,b,true,c.attr)},removeAttr:function(a){return =
+this.each(function(){c.attr(this,a,"");this.nodeType=3D=3D=3D1&&this.remo=
+veAttribute(a)})},addClass:function(a){if(c.isFunction(a))return =
+this.each(function(n){var =
+r=3Dc(this);r.addClass(a.call(this,n,r.attr("class")))});if(a&&typeof =
+a=3D=3D=3D"string")for(var =
+b=3D(a||"").split(ca),d=3D0,f=3Dthis.length;d<f;d++){var =
+e=3Dthis[d];if(e.nodeType=3D=3D=3D1)if(e.className){for(var j=3D" =
+"+e.className+" ",=0A=
+i=3De.className,o=3D0,k=3Db.length;o<k;o++)if(j.indexOf(" "+b[o]+" =
+")<0)i+=3D" "+b[o];e.className=3Dc.trim(i)}else e.className=3Da}return =
+this},removeClass:function(a){if(c.isFunction(a))return =
+this.each(function(k){var =
+n=3Dc(this);n.removeClass(a.call(this,k,n.attr("class")))});if(a&&typeof =
+a=3D=3D=3D"string"||a=3D=3D=3Dw)for(var =
+b=3D(a||"").split(ca),d=3D0,f=3Dthis.length;d<f;d++){var =
+e=3Dthis[d];if(e.nodeType=3D=3D=3D1&&e.className)if(a){for(var j=3D(" =
+"+e.className+" ").replace(Aa," =
+"),i=3D0,o=3Db.length;i<o;i++)j=3Dj.replace(" "+b[i]+" ",=0A=
+" ");e.className=3Dc.trim(j)}else e.className=3D""}return =
+this},toggleClass:function(a,b){var d=3Dtypeof a,f=3Dtypeof =
+b=3D=3D=3D"boolean";if(c.isFunction(a))return this.each(function(e){var =
+j=3Dc(this);j.toggleClass(a.call(this,e,j.attr("class"),b),b)});return =
+this.each(function(){if(d=3D=3D=3D"string")for(var =
+e,j=3D0,i=3Dc(this),o=3Db,k=3Da.split(ca);e=3Dk[j++];){o=3Df?o:!i.hasClas=
+s(e);i[o?"addClass":"removeClass"](e)}else =
+if(d=3D=3D=3D"undefined"||d=3D=3D=3D"boolean"){this.className&&c.data(thi=
+s,"__className__",this.className);this.className=3D=0A=
+this.className||a=3D=3D=3Dfalse?"":c.data(this,"__className__")||""}})},h=
+asClass:function(a){a=3D" "+a+" ";for(var =
+b=3D0,d=3Dthis.length;b<d;b++)if((" "+this[b].className+" =
+").replace(Aa," ").indexOf(a)>-1)return true;return =
+false},val:function(a){if(a=3D=3D=3Dw){var =
+b=3Dthis[0];if(b){if(c.nodeName(b,"option"))return(b.attributes.value||{}=
+).specified?b.value:b.text;if(c.nodeName(b,"select")){var =
+d=3Db.selectedIndex,f=3D[],e=3Db.options;b=3Db.type=3D=3D=3D"select-one";=
+if(d<0)return null;var j=3Db?d:0;for(d=3Db?d+1:e.length;j<d;j++){var i=3D=0A=
+e[j];if(i.selected){a=3Dc(i).val();if(b)return a;f.push(a)}}return =
+f}if(Ba.test(b.type)&&!c.support.checkOn)return =
+b.getAttribute("value")=3D=3D=3Dnull?"on":b.value;return(b.value||"").rep=
+lace(Za,"")}return w}var o=3Dc.isFunction(a);return =
+this.each(function(k){var =
+n=3Dc(this),r=3Da;if(this.nodeType=3D=3D=3D1){if(o)r=3Da.call(this,k,n.va=
+l());if(typeof =
+r=3D=3D=3D"number")r+=3D"";if(c.isArray(r)&&Ba.test(this.type))this.check=
+ed=3Dc.inArray(n.val(),r)>=3D0;else if(c.nodeName(this,"select")){var =
+u=3Dc.makeArray(r);c("option",this).each(function(){this.selected=3D=0A=
+c.inArray(c(this).val(),u)>=3D0});if(!u.length)this.selectedIndex=3D-1}el=
+se =
+this.value=3Dr}})}});c.extend({attrFn:{val:true,css:true,html:true,text:t=
+rue,data:true,width:true,height:true,offset:true},attr:function(a,b,d,f){=
+if(!a||a.nodeType=3D=3D=3D3||a.nodeType=3D=3D=3D8)return w;if(f&&b in =
+c.attrFn)return c(a)[b](d);f=3Da.nodeType!=3D=3D1||!c.isXMLDoc(a);var =
+e=3Dd!=3D=3Dw;b=3Df&&c.props[b]||b;if(a.nodeType=3D=3D=3D1){var =
+j=3D$a.test(b);if(b in =
+a&&f&&!j){if(e){b=3D=3D=3D"type"&&ab.test(a.nodeName)&&a.parentNode&&c.er=
+ror("type property can't be changed");=0A=
+a[b]=3Dd}if(c.nodeName(a,"form")&&a.getAttributeNode(b))return =
+a.getAttributeNode(b).nodeValue;if(b=3D=3D=3D"tabIndex")return(b=3Da.getA=
+ttributeNode("tabIndex"))&&b.specified?b.value:bb.test(a.nodeName)||cb.te=
+st(a.nodeName)&&a.href?0:w;return =
+a[b]}if(!c.support.style&&f&&b=3D=3D=3D"style"){if(e)a.style.cssText=3D""=
++d;return =
+a.style.cssText}e&&a.setAttribute(b,""+d);a=3D!c.support.hrefNormalized&&=
+f&&j?a.getAttribute(b,2):a.getAttribute(b);return =
+a=3D=3D=3Dnull?w:a}return c.style(a,b,d)}});var =
+O=3D/\.(.*)$/,db=3Dfunction(a){return a.replace(/[^\w\s\.\|`]/g,=0A=
+function(b){return"\\"+b})};c.event=3D{add:function(a,b,d,f){if(!(a.nodeT=
+ype=3D=3D=3D3||a.nodeType=3D=3D=3D8)){if(a.setInterval&&a!=3D=3DA&&!a.fra=
+meElement)a=3DA;var =
+e,j;if(d.handler){e=3Dd;d=3De.handler}if(!d.guid)d.guid=3Dc.guid++;if(j=3D=
+c.data(a)){var =
+i=3Dj.events=3Dj.events||{},o=3Dj.handle;if(!o)j.handle=3Do=3Dfunction(){=
+return typeof =
+c!=3D=3D"undefined"&&!c.event.triggered?c.event.handle.apply(o.elem,argum=
+ents):w};o.elem=3Da;b=3Db.split(" ");for(var =
+k,n=3D0,r;k=3Db[n++];){j=3De?c.extend({},e):{handler:d,data:f};if(k.index=
+Of(".")>-1){r=3Dk.split(".");=0A=
+k=3Dr.shift();j.namespace=3Dr.slice(0).sort().join(".")}else{r=3D[];j.nam=
+espace=3D""}j.type=3Dk;j.guid=3Dd.guid;var =
+u=3Di[k],z=3Dc.event.special[k]||{};if(!u){u=3Di[k]=3D[];if(!z.setup||z.s=
+etup.call(a,f,r,o)=3D=3D=3Dfalse)if(a.addEventListener)a.addEventListener=
+(k,o,false);else =
+a.attachEvent&&a.attachEvent("on"+k,o)}if(z.add){z.add.call(a,j);if(!j.ha=
+ndler.guid)j.handler.guid=3Dd.guid}u.push(j);c.event.global[k]=3Dtrue}a=3D=
+null}}},global:{},remove:function(a,b,d,f){if(!(a.nodeType=3D=3D=3D3||a.n=
+odeType=3D=3D=3D8)){var e,j=3D0,i,o,k,n,r,u,z=3Dc.data(a),=0A=
+C=3Dz&&z.events;if(z&&C){if(b&&b.type){d=3Db.handler;b=3Db.type}if(!b||ty=
+peof b=3D=3D=3D"string"&&b.charAt(0)=3D=3D=3D"."){b=3Db||"";for(e in =
+C)c.event.remove(a,e+b)}else{for(b=3Db.split(" =
+");e=3Db[j++];){n=3De;i=3De.indexOf(".")<0;o=3D[];if(!i){o=3De.split(".")=
+;e=3Do.shift();k=3Dnew =
+RegExp("(^|\\.)"+c.map(o.slice(0).sort(),db).join("\\.(?:.*\\.)?")+"(\\.|=
+$)")}if(r=3DC[e])if(d){n=3Dc.event.special[e]||{};for(B=3Df||0;B<r.length=
+;B++){u=3Dr[B];if(d.guid=3D=3D=3Du.guid){if(i||k.test(u.namespace)){f=3D=3D=
+null&&r.splice(B--,1);n.remove&&n.remove.call(a,u)}if(f!=3D=0A=
+null)break}}if(r.length=3D=3D=3D0||f!=3Dnull&&r.length=3D=3D=3D1){if(!n.t=
+eardown||n.teardown.call(a,o)=3D=3D=3Dfalse)Ca(a,e,z.handle);delete =
+C[e]}}else for(var =
+B=3D0;B<r.length;B++){u=3Dr[B];if(i||k.test(u.namespace)){c.event.remove(=
+a,n,u.handler,B);r.splice(B--,1)}}}if(c.isEmptyObject(C)){if(b=3Dz.handle=
+)b.elem=3Dnull;delete z.events;delete =
+z.handle;c.isEmptyObject(z)&&c.removeData(a)}}}}},trigger:function(a,b,d,=
+f){var e=3Da.type||a;if(!f){a=3Dtypeof =
+a=3D=3D=3D"object"?a[G]?a:c.extend(c.Event(e),a):c.Event(e);if(e.indexOf(=
+"!")>=3D0){a.type=3D=0A=
+e=3De.slice(0,-1);a.exclusive=3Dtrue}if(!d){a.stopPropagation();c.event.g=
+lobal[e]&&c.each(c.cache,function(){this.events&&this.events[e]&&c.event.=
+trigger(a,b,this.handle.elem)})}if(!d||d.nodeType=3D=3D=3D3||d.nodeType=3D=
+=3D=3D8)return =
+w;a.result=3Dw;a.target=3Dd;b=3Dc.makeArray(b);b.unshift(a)}a.currentTarg=
+et=3Dd;(f=3Dc.data(d,"handle"))&&f.apply(d,b);f=3Dd.parentNode||d.ownerDo=
+cument;try{if(!(d&&d.nodeName&&c.noData[d.nodeName.toLowerCase()]))if(d["=
+on"+e]&&d["on"+e].apply(d,b)=3D=3D=3Dfalse)a.result=3Dfalse}catch(j){}if(=
+!a.isPropagationStopped()&&=0A=
+f)c.event.trigger(a,b,f,true);else =
+if(!a.isDefaultPrevented()){f=3Da.target;var =
+i,o=3Dc.nodeName(f,"a")&&e=3D=3D=3D"click",k=3Dc.event.special[e]||{};if(=
+(!k._default||k._default.call(d,a)=3D=3D=3Dfalse)&&!o&&!(f&&f.nodeName&&c=
+.noData[f.nodeName.toLowerCase()])){try{if(f[e]){if(i=3Df["on"+e])f["on"+=
+e]=3Dnull;c.event.triggered=3Dtrue;f[e]()}}catch(n){}if(i)f["on"+e]=3Di;c=
+.event.triggered=3Dfalse}}},handle:function(a){var =
+b,d,f,e;a=3Darguments[0]=3Dc.event.fix(a||A.event);a.currentTarget=3Dthis=
+;b=3Da.type.indexOf(".")<0&&!a.exclusive;=0A=
+if(!b){d=3Da.type.split(".");a.type=3Dd.shift();f=3Dnew =
+RegExp("(^|\\.)"+d.slice(0).sort().join("\\.(?:.*\\.)?")+"(\\.|$)")}e=3Dc=
+.data(this,"events");d=3De[a.type];if(e&&d){d=3Dd.slice(0);e=3D0;for(var =
+j=3Dd.length;e<j;e++){var =
+i=3Dd[e];if(b||f.test(i.namespace)){a.handler=3Di.handler;a.data=3Di.data=
+;a.handleObj=3Di;i=3Di.handler.apply(this,arguments);if(i!=3D=3Dw){a.resu=
+lt=3Di;if(i=3D=3D=3Dfalse){a.preventDefault();a.stopPropagation()}}if(a.i=
+sImmediatePropagationStopped())break}}}return a.result},props:"altKey =
+attrChange attrName bubbles button cancelable charCode clientX clientY =
+ctrlKey currentTarget data detail eventPhase fromElement handler keyCode =
+layerX layerY metaKey newValue offsetX offsetY originalTarget pageX =
+pageY prevValue relatedNode relatedTarget screenX screenY shiftKey =
+srcElement target toElement view wheelDelta which".split(" "),=0A=
+fix:function(a){if(a[G])return a;var b=3Da;a=3Dc.Event(b);for(var =
+d=3Dthis.props.length,f;d;){f=3Dthis.props[--d];a[f]=3Db[f]}if(!a.target)=
+a.target=3Da.srcElement||s;if(a.target.nodeType=3D=3D=3D3)a.target=3Da.ta=
+rget.parentNode;if(!a.relatedTarget&&a.fromElement)a.relatedTarget=3Da.fr=
+omElement=3D=3D=3Da.target?a.toElement:a.fromElement;if(a.pageX=3D=3Dnull=
+&&a.clientX!=3Dnull){b=3Ds.documentElement;d=3Ds.body;a.pageX=3Da.clientX=
++(b&&b.scrollLeft||d&&d.scrollLeft||0)-(b&&b.clientLeft||d&&d.clientLeft|=
+|0);a.pageY=3Da.clientY+(b&&b.scrollTop||=0A=
+d&&d.scrollTop||0)-(b&&b.clientTop||d&&d.clientTop||0)}if(!a.which&&(a.ch=
+arCode||a.charCode=3D=3D=3D0?a.charCode:a.keyCode))a.which=3Da.charCode||=
+a.keyCode;if(!a.metaKey&&a.ctrlKey)a.metaKey=3Da.ctrlKey;if(!a.which&&a.b=
+utton!=3D=3Dw)a.which=3Da.button&1?1:a.button&2?3:a.button&4?2:0;return =
+a},guid:1E8,proxy:c.proxy,special:{ready:{setup:c.bindReady,teardown:c.no=
+op},live:{add:function(a){c.event.add(this,a.origType,c.extend({},a,{hand=
+ler:oa}))},remove:function(a){var =
+b=3Dtrue,d=3Da.origType.replace(O,"");c.each(c.data(this,=0A=
+"events").live||[],function(){if(d=3D=3D=3Dthis.origType.replace(O,""))re=
+turn =
+b=3Dfalse});b&&c.event.remove(this,a.origType,oa)}},beforeunload:{setup:f=
+unction(a,b,d){if(this.setInterval)this.onbeforeunload=3Dd;return =
+false},teardown:function(a,b){if(this.onbeforeunload=3D=3D=3Db)this.onbef=
+oreunload=3Dnull}}}};var =
+Ca=3Ds.removeEventListener?function(a,b,d){a.removeEventListener(b,d,fals=
+e)}:function(a,b,d){a.detachEvent("on"+b,d)};c.Event=3Dfunction(a){if(!th=
+is.preventDefault)return new c.Event(a);if(a&&a.type){this.originalEvent=3D=0A=
+a;this.type=3Da.type}else =
+this.type=3Da;this.timeStamp=3DJ();this[G]=3Dtrue};c.Event.prototype=3D{p=
+reventDefault:function(){this.isDefaultPrevented=3DZ;var =
+a=3Dthis.originalEvent;if(a){a.preventDefault&&a.preventDefault();a.retur=
+nValue=3Dfalse}},stopPropagation:function(){this.isPropagationStopped=3DZ=
+;var =
+a=3Dthis.originalEvent;if(a){a.stopPropagation&&a.stopPropagation();a.can=
+celBubble=3Dtrue}},stopImmediatePropagation:function(){this.isImmediatePr=
+opagationStopped=3DZ;this.stopPropagation()},isDefaultPrevented:Y,isPropa=
+gationStopped:Y,=0A=
+isImmediatePropagationStopped:Y};var Da=3Dfunction(a){var =
+b=3Da.relatedTarget;try{for(;b&&b!=3D=3Dthis;)b=3Db.parentNode;if(b!=3D=3D=
+this){a.type=3Da.data;c.event.handle.apply(this,arguments)}}catch(d){}},E=
+a=3Dfunction(a){a.type=3Da.data;c.event.handle.apply(this,arguments)};c.e=
+ach({mouseenter:"mouseover",mouseleave:"mouseout"},function(a,b){c.event.=
+special[a]=3D{setup:function(d){c.event.add(this,b,d&&d.selector?Ea:Da,a)=
+},teardown:function(d){c.event.remove(this,b,d&&d.selector?Ea:Da)}}});if(=
+!c.support.submitBubbles)c.event.special.submit=3D=0A=
+{setup:function(){if(this.nodeName.toLowerCase()!=3D=3D"form"){c.event.ad=
+d(this,"click.specialSubmit",function(a){var =
+b=3Da.target,d=3Db.type;if((d=3D=3D=3D"submit"||d=3D=3D=3D"image")&&c(b).=
+closest("form").length)return =
+na("submit",this,arguments)});c.event.add(this,"keypress.specialSubmit",f=
+unction(a){var =
+b=3Da.target,d=3Db.type;if((d=3D=3D=3D"text"||d=3D=3D=3D"password")&&c(b)=
+.closest("form").length&&a.keyCode=3D=3D=3D13)return =
+na("submit",this,arguments)})}else return =
+false},teardown:function(){c.event.remove(this,".specialSubmit")}};=0A=
+if(!c.support.changeBubbles){var =
+da=3D/textarea|input|select/i,ea,Fa=3Dfunction(a){var =
+b=3Da.type,d=3Da.value;if(b=3D=3D=3D"radio"||b=3D=3D=3D"checkbox")d=3Da.c=
+hecked;else =
+if(b=3D=3D=3D"select-multiple")d=3Da.selectedIndex>-1?c.map(a.options,fun=
+ction(f){return f.selected}).join("-"):"";else =
+if(a.nodeName.toLowerCase()=3D=3D=3D"select")d=3Da.selectedIndex;return =
+d},fa=3Dfunction(a,b){var =
+d=3Da.target,f,e;if(!(!da.test(d.nodeName)||d.readOnly)){f=3Dc.data(d,"_c=
+hange_data");e=3DFa(d);if(a.type!=3D=3D"focusout"||d.type!=3D=3D"radio")c=
+.data(d,"_change_data",=0A=
+e);if(!(f=3D=3D=3Dw||e=3D=3D=3Df))if(f!=3Dnull||e){a.type=3D"change";retu=
+rn =
+c.event.trigger(a,b,d)}}};c.event.special.change=3D{filters:{focusout:fa,=
+click:function(a){var =
+b=3Da.target,d=3Db.type;if(d=3D=3D=3D"radio"||d=3D=3D=3D"checkbox"||b.nod=
+eName.toLowerCase()=3D=3D=3D"select")return =
+fa.call(this,a)},keydown:function(a){var =
+b=3Da.target,d=3Db.type;if(a.keyCode=3D=3D=3D13&&b.nodeName.toLowerCase()=
+!=3D=3D"textarea"||a.keyCode=3D=3D=3D32&&(d=3D=3D=3D"checkbox"||d=3D=3D=3D=
+"radio")||d=3D=3D=3D"select-multiple")return =
+fa.call(this,a)},beforeactivate:function(a){a=3Da.target;c.data(a,=0A=
+"_change_data",Fa(a))}},setup:function(){if(this.type=3D=3D=3D"file")retu=
+rn false;for(var a in =
+ea)c.event.add(this,a+".specialChange",ea[a]);return =
+da.test(this.nodeName)},teardown:function(){c.event.remove(this,".special=
+Change");return =
+da.test(this.nodeName)}};ea=3Dc.event.special.change.filters}s.addEventLi=
+stener&&c.each({focus:"focusin",blur:"focusout"},function(a,b){function =
+d(f){f=3Dc.event.fix(f);f.type=3Db;return =
+c.event.handle.call(this,f)}c.event.special[b]=3D{setup:function(){this.a=
+ddEventListener(a,=0A=
+d,true)},teardown:function(){this.removeEventListener(a,d,true)}}});c.eac=
+h(["bind","one"],function(a,b){c.fn[b]=3Dfunction(d,f,e){if(typeof =
+d=3D=3D=3D"object"){for(var j in d)this[b](j,f,d[j],e);return =
+this}if(c.isFunction(f)){e=3Df;f=3Dw}var =
+i=3Db=3D=3D=3D"one"?c.proxy(e,function(k){c(this).unbind(k,i);return =
+e.apply(this,arguments)}):e;if(d=3D=3D=3D"unload"&&b!=3D=3D"one")this.one=
+(d,f,e);else{j=3D0;for(var =
+o=3Dthis.length;j<o;j++)c.event.add(this[j],d,i,f)}return =
+this}});c.fn.extend({unbind:function(a,b){if(typeof a=3D=3D=3D"object"&&=0A=
+!a.preventDefault)for(var d in a)this.unbind(d,a[d]);else{d=3D0;for(var =
+f=3Dthis.length;d<f;d++)c.event.remove(this[d],a,b)}return =
+this},delegate:function(a,b,d,f){return =
+this.live(b,d,f,a)},undelegate:function(a,b,d){return =
+arguments.length=3D=3D=3D0?this.unbind("live"):this.die(b,null,d,a)},trig=
+ger:function(a,b){return =
+this.each(function(){c.event.trigger(a,b,this)})},triggerHandler:function=
+(a,b){if(this[0]){a=3Dc.Event(a);a.preventDefault();a.stopPropagation();c=
+.event.trigger(a,b,this[0]);return a.result}},=0A=
+toggle:function(a){for(var =
+b=3Darguments,d=3D1;d<b.length;)c.proxy(a,b[d++]);return =
+this.click(c.proxy(a,function(f){var =
+e=3D(c.data(this,"lastToggle"+a.guid)||0)%d;c.data(this,"lastToggle"+a.gu=
+id,e+1);f.preventDefault();return =
+b[e].apply(this,arguments)||false}))},hover:function(a,b){return =
+this.mouseenter(a).mouseleave(b||a)}});var =
+Ga=3D{focus:"focusin",blur:"focusout",mouseenter:"mouseover",mouseleave:"=
+mouseout"};c.each(["live","die"],function(a,b){c.fn[b]=3Dfunction(d,f,e,j=
+){var i,o=3D0,k,n,r=3Dj||this.selector,=0A=
+u=3Dj?this:c(this.context);if(c.isFunction(f)){e=3Df;f=3Dw}for(d=3D(d||""=
+).split(" =
+");(i=3Dd[o++])!=3Dnull;){j=3DO.exec(i);k=3D"";if(j){k=3Dj[0];i=3Di.repla=
+ce(O,"")}if(i=3D=3D=3D"hover")d.push("mouseenter"+k,"mouseleave"+k);else{=
+n=3Di;if(i=3D=3D=3D"focus"||i=3D=3D=3D"blur"){d.push(Ga[i]+k);i+=3Dk}else=
+ =
+i=3D(Ga[i]||i)+k;b=3D=3D=3D"live"?u.each(function(){c.event.add(this,pa(i=
+,r),{data:f,selector:r,handler:e,origType:i,origHandler:e,preType:n})}):u=
+.unbind(pa(i,r),e)}}return this}});c.each("blur focus focusin focusout =
+load resize scroll unload click dblclick mousedown mouseup mousemove =
+mouseover mouseout mouseenter mouseleave change select submit keydown =
+keypress keyup error".split(" "),=0A=
+function(a,b){c.fn[b]=3Dfunction(d){return =
+d?this.bind(b,d):this.trigger(b)};if(c.attrFn)c.attrFn[b]=3Dtrue});A.atta=
+chEvent&&!A.addEventListener&&A.attachEvent("onunload",function(){for(var=
+ a in =
+c.cache)if(c.cache[a].handle)try{c.event.remove(c.cache[a].handle.elem)}c=
+atch(b){}});(function(){function a(g){for(var =
+h=3D"",l,m=3D0;g[m];m++){l=3Dg[m];if(l.nodeType=3D=3D=3D3||l.nodeType=3D=3D=
+=3D4)h+=3Dl.nodeValue;else =
+if(l.nodeType!=3D=3D8)h+=3Da(l.childNodes)}return h}function =
+b(g,h,l,m,q,p){q=3D0;for(var v=3Dm.length;q<v;q++){var t=3Dm[q];=0A=
+if(t){t=3Dt[g];for(var =
+y=3Dfalse;t;){if(t.sizcache=3D=3D=3Dl){y=3Dm[t.sizset];break}if(t.nodeTyp=
+e=3D=3D=3D1&&!p){t.sizcache=3Dl;t.sizset=3Dq}if(t.nodeName.toLowerCase()=3D=
+=3D=3Dh){y=3Dt;break}t=3Dt[g]}m[q]=3Dy}}}function =
+d(g,h,l,m,q,p){q=3D0;for(var v=3Dm.length;q<v;q++){var =
+t=3Dm[q];if(t){t=3Dt[g];for(var =
+y=3Dfalse;t;){if(t.sizcache=3D=3D=3Dl){y=3Dm[t.sizset];break}if(t.nodeTyp=
+e=3D=3D=3D1){if(!p){t.sizcache=3Dl;t.sizset=3Dq}if(typeof =
+h!=3D=3D"string"){if(t=3D=3D=3Dh){y=3Dtrue;break}}else =
+if(k.filter(h,[t]).length>0){y=3Dt;break}}t=3Dt[g]}m[q]=3Dy}}}var =
+f=3D/((?:\((?:\([^()]+\)|[^()]+)+\)|\[(?:\[[^[\]]*\]|['"][^'"]*['"]|[^[\]=
+'"]+)+\]|\\.|[^ >+~,(\[\\]+)+|[>+~])(\s*,\s*)?((?:.|\r|\n)*)/g,=0A=
+e=3D0,j=3DObject.prototype.toString,i=3Dfalse,o=3Dtrue;[0,0].sort(functio=
+n(){o=3Dfalse;return 0});var k=3Dfunction(g,h,l,m){l=3Dl||[];var =
+q=3Dh=3Dh||s;if(h.nodeType!=3D=3D1&&h.nodeType!=3D=3D9)return[];if(!g||ty=
+peof g!=3D=3D"string")return l;for(var =
+p=3D[],v,t,y,S,H=3Dtrue,M=3Dx(h),I=3Dg;(f.exec(""),v=3Df.exec(I))!=3D=3Dn=
+ull;){I=3Dv[3];p.push(v[1]);if(v[2]){S=3Dv[3];break}}if(p.length>1&&r.exe=
+c(g))if(p.length=3D=3D=3D2&&n.relative[p[0]])t=3Dga(p[0]+p[1],h);else =
+for(t=3Dn.relative[p[0]]?[h]:k(p.shift(),h);p.length;){g=3Dp.shift();if(n=
+.relative[g])g+=3Dp.shift();=0A=
+t=3Dga(g,t)}else{if(!m&&p.length>1&&h.nodeType=3D=3D=3D9&&!M&&n.match.ID.=
+test(p[0])&&!n.match.ID.test(p[p.length-1])){v=3Dk.find(p.shift(),h,M);h=3D=
+v.expr?k.filter(v.expr,v.set)[0]:v.set[0]}if(h){v=3Dm?{expr:p.pop(),set:z=
+(m)}:k.find(p.pop(),p.length=3D=3D=3D1&&(p[0]=3D=3D=3D"~"||p[0]=3D=3D=3D"=
++")&&h.parentNode?h.parentNode:h,M);t=3Dv.expr?k.filter(v.expr,v.set):v.s=
+et;if(p.length>0)y=3Dz(t);else H=3Dfalse;for(;p.length;){var =
+D=3Dp.pop();v=3DD;if(n.relative[D])v=3Dp.pop();else =
+D=3D"";if(v=3D=3Dnull)v=3Dh;n.relative[D](y,v,M)}}else =
+y=3D[]}y||(y=3Dt);y||k.error(D||=0A=
+g);if(j.call(y)=3D=3D=3D"[object =
+Array]")if(H)if(h&&h.nodeType=3D=3D=3D1)for(g=3D0;y[g]!=3Dnull;g++){if(y[=
+g]&&(y[g]=3D=3D=3Dtrue||y[g].nodeType=3D=3D=3D1&&E(h,y[g])))l.push(t[g])}=
+else =
+for(g=3D0;y[g]!=3Dnull;g++)y[g]&&y[g].nodeType=3D=3D=3D1&&l.push(t[g]);el=
+se l.push.apply(l,y);else z(y,l);if(S){k(S,q,l,m);k.uniqueSort(l)}return =
+l};k.uniqueSort=3Dfunction(g){if(B){i=3Do;g.sort(B);if(i)for(var =
+h=3D1;h<g.length;h++)g[h]=3D=3D=3Dg[h-1]&&g.splice(h--,1)}return =
+g};k.matches=3Dfunction(g,h){return =
+k(g,null,null,h)};k.find=3Dfunction(g,h,l){var m,q;if(!g)return[];=0A=
+for(var p=3D0,v=3Dn.order.length;p<v;p++){var =
+t=3Dn.order[p];if(q=3Dn.leftMatch[t].exec(g)){var =
+y=3Dq[1];q.splice(1,1);if(y.substr(y.length-1)!=3D=3D"\\"){q[1]=3D(q[1]||=
+"").replace(/\\/g,"");m=3Dn.find[t](q,h,l);if(m!=3Dnull){g=3Dg.replace(n.=
+match[t],"");break}}}}m||(m=3Dh.getElementsByTagName("*"));return{set:m,e=
+xpr:g}};k.filter=3Dfunction(g,h,l,m){for(var =
+q=3Dg,p=3D[],v=3Dh,t,y,S=3Dh&&h[0]&&x(h[0]);g&&h.length;){for(var H in =
+n.filter)if((t=3Dn.leftMatch[H].exec(g))!=3Dnull&&t[2]){var =
+M=3Dn.filter[H],I,D;D=3Dt[1];y=3Dfalse;t.splice(1,1);if(D.substr(D.length=
+-=0A=
+1)!=3D=3D"\\"){if(v=3D=3D=3Dp)p=3D[];if(n.preFilter[H])if(t=3Dn.preFilter=
+[H](t,v,l,p,m,S)){if(t=3D=3D=3Dtrue)continue}else =
+y=3DI=3Dtrue;if(t)for(var =
+U=3D0;(D=3Dv[U])!=3Dnull;U++)if(D){I=3DM(D,t,U,v);var =
+Ha=3Dm^!!I;if(l&&I!=3Dnull)if(Ha)y=3Dtrue;else v[U]=3Dfalse;else =
+if(Ha){p.push(D);y=3Dtrue}}if(I!=3D=3Dw){l||(v=3Dp);g=3Dg.replace(n.match=
+[H],"");if(!y)return[];break}}}if(g=3D=3D=3Dq)if(y=3D=3Dnull)k.error(g);e=
+lse break;q=3Dg}return v};k.error=3Dfunction(g){throw"Syntax error, =
+unrecognized expression: "+g;};var =
+n=3Dk.selectors=3D{order:["ID","NAME","TAG"],match:{ID:/#((?:[\w\u00c0-\u=
+FFFF-]|\\.)+)/,=0A=
+CLASS:/\.((?:[\w\u00c0-\uFFFF-]|\\.)+)/,NAME:/\[name=3D['"]*((?:[\w\u00c0=
+-\uFFFF-]|\\.)+)['"]*\]/,ATTR:/\[\s*((?:[\w\u00c0-\uFFFF-]|\\.)+)\s*(?:(\=
+S?=3D)\s*(['"]*)(.*?)\3|)\s*\]/,TAG:/^((?:[\w\u00c0-\uFFFF\*-]|\\.)+)/,CH=
+ILD:/:(only|nth|last|first)-child(?:\((even|odd|[\dn+-]*)\))?/,POS:/:(nth=
+|eq|gt|lt|first|last|even|odd)(?:\((\d*)\))?(?=3D[^-]|$)/,PSEUDO:/:((?:[\=
+w\u00c0-\uFFFF-]|\\.)+)(?:\((['"]?)((?:\([^\)]+\)|[^\(\)]*)+)\2\))?/},lef=
+tMatch:{},attrMap:{"class":"className","for":"htmlFor"},attrHandle:{href:=
+function(g){return g.getAttribute("href")}},=0A=
+relative:{"+":function(g,h){var l=3Dtypeof =
+h=3D=3D=3D"string",m=3Dl&&!/\W/.test(h);l=3Dl&&!m;if(m)h=3Dh.toLowerCase(=
+);m=3D0;for(var =
+q=3Dg.length,p;m<q;m++)if(p=3Dg[m]){for(;(p=3Dp.previousSibling)&&p.nodeT=
+ype!=3D=3D1;);g[m]=3Dl||p&&p.nodeName.toLowerCase()=3D=3D=3Dh?p||false:p=3D=
+=3D=3Dh}l&&k.filter(h,g,true)},">":function(g,h){var l=3Dtypeof =
+h=3D=3D=3D"string";if(l&&!/\W/.test(h)){h=3Dh.toLowerCase();for(var =
+m=3D0,q=3Dg.length;m<q;m++){var =
+p=3Dg[m];if(p){l=3Dp.parentNode;g[m]=3Dl.nodeName.toLowerCase()=3D=3D=3Dh=
+?l:false}}}else{m=3D0;for(q=3Dg.length;m<q;m++)if(p=3Dg[m])g[m]=3D=0A=
+l?p.parentNode:p.parentNode=3D=3D=3Dh;l&&k.filter(h,g,true)}},"":function=
+(g,h,l){var m=3De++,q=3Dd;if(typeof =
+h=3D=3D=3D"string"&&!/\W/.test(h)){var =
+p=3Dh=3Dh.toLowerCase();q=3Db}q("parentNode",h,m,g,p,l)},"~":function(g,h=
+,l){var m=3De++,q=3Dd;if(typeof h=3D=3D=3D"string"&&!/\W/.test(h)){var =
+p=3Dh=3Dh.toLowerCase();q=3Db}q("previousSibling",h,m,g,p,l)}},find:{ID:f=
+unction(g,h,l){if(typeof =
+h.getElementById!=3D=3D"undefined"&&!l)return(g=3Dh.getElementById(g[1]))=
+?[g]:[]},NAME:function(g,h){if(typeof =
+h.getElementsByName!=3D=3D"undefined"){var l=3D[];=0A=
+h=3Dh.getElementsByName(g[1]);for(var =
+m=3D0,q=3Dh.length;m<q;m++)h[m].getAttribute("name")=3D=3D=3Dg[1]&&l.push=
+(h[m]);return l.length=3D=3D=3D0?null:l}},TAG:function(g,h){return =
+h.getElementsByTagName(g[1])}},preFilter:{CLASS:function(g,h,l,m,q,p){g=3D=
+" "+g[1].replace(/\\/g,"")+" ";if(p)return g;p=3D0;for(var =
+v;(v=3Dh[p])!=3Dnull;p++)if(v)if(q^(v.className&&(" "+v.className+" =
+").replace(/[\t\n]/g," ").indexOf(g)>=3D0))l||m.push(v);else =
+if(l)h[p]=3Dfalse;return false},ID:function(g){return =
+g[1].replace(/\\/g,"")},TAG:function(g){return g[1].toLowerCase()},=0A=
+CHILD:function(g){if(g[1]=3D=3D=3D"nth"){var =
+h=3D/(-?)(\d*)n((?:\+|-)?\d*)/.exec(g[2]=3D=3D=3D"even"&&"2n"||g[2]=3D=3D=
+=3D"odd"&&"2n+1"||!/\D/.test(g[2])&&"0n+"+g[2]||g[2]);g[2]=3Dh[1]+(h[2]||=
+1)-0;g[3]=3Dh[3]-0}g[0]=3De++;return =
+g},ATTR:function(g,h,l,m,q,p){h=3Dg[1].replace(/\\/g,"");if(!p&&n.attrMap=
+[h])g[1]=3Dn.attrMap[h];if(g[2]=3D=3D=3D"~=3D")g[4]=3D" "+g[4]+" =
+";return =
+g},PSEUDO:function(g,h,l,m,q){if(g[1]=3D=3D=3D"not")if((f.exec(g[3])||"")=
+.length>1||/^\w/.test(g[3]))g[3]=3Dk(g[3],null,null,h);else{g=3Dk.filter(=
+g[3],h,l,true^q);l||m.push.apply(m,=0A=
+g);return false}else =
+if(n.match.POS.test(g[0])||n.match.CHILD.test(g[0]))return true;return =
+g},POS:function(g){g.unshift(true);return =
+g}},filters:{enabled:function(g){return =
+g.disabled=3D=3D=3Dfalse&&g.type!=3D=3D"hidden"},disabled:function(g){ret=
+urn g.disabled=3D=3D=3Dtrue},checked:function(g){return =
+g.checked=3D=3D=3Dtrue},selected:function(g){return =
+g.selected=3D=3D=3Dtrue},parent:function(g){return!!g.firstChild},empty:f=
+unction(g){return!g.firstChild},has:function(g,h,l){return!!k(l[3],g).len=
+gth},header:function(g){return/h\d/i.test(g.nodeName)},=0A=
+text:function(g){return"text"=3D=3D=3Dg.type},radio:function(g){return"ra=
+dio"=3D=3D=3Dg.type},checkbox:function(g){return"checkbox"=3D=3D=3Dg.type=
+},file:function(g){return"file"=3D=3D=3Dg.type},password:function(g){retu=
+rn"password"=3D=3D=3Dg.type},submit:function(g){return"submit"=3D=3D=3Dg.=
+type},image:function(g){return"image"=3D=3D=3Dg.type},reset:function(g){r=
+eturn"reset"=3D=3D=3Dg.type},button:function(g){return"button"=3D=3D=3Dg.=
+type||g.nodeName.toLowerCase()=3D=3D=3D"button"},input:function(g){return=
+/input|select|textarea|button/i.test(g.nodeName)}},=0A=
+setFilters:{first:function(g,h){return =
+h=3D=3D=3D0},last:function(g,h,l,m){return =
+h=3D=3D=3Dm.length-1},even:function(g,h){return =
+h%2=3D=3D=3D0},odd:function(g,h){return =
+h%2=3D=3D=3D1},lt:function(g,h,l){return =
+h<l[3]-0},gt:function(g,h,l){return h>l[3]-0},nth:function(g,h,l){return =
+l[3]-0=3D=3D=3Dh},eq:function(g,h,l){return =
+l[3]-0=3D=3D=3Dh}},filter:{PSEUDO:function(g,h,l,m){var =
+q=3Dh[1],p=3Dn.filters[q];if(p)return p(g,l,h,m);else =
+if(q=3D=3D=3D"contains")return(g.textContent||g.innerText||a([g])||"").in=
+dexOf(h[3])>=3D0;else if(q=3D=3D=3D"not"){h=3D=0A=
+h[3];l=3D0;for(m=3Dh.length;l<m;l++)if(h[l]=3D=3D=3Dg)return =
+false;return true}else k.error("Syntax error, unrecognized expression: =
+"+q)},CHILD:function(g,h){var l=3Dh[1],m=3Dg;switch(l){case "only":case =
+"first":for(;m=3Dm.previousSibling;)if(m.nodeType=3D=3D=3D1)return =
+false;if(l=3D=3D=3D"first")return true;m=3Dg;case =
+"last":for(;m=3Dm.nextSibling;)if(m.nodeType=3D=3D=3D1)return =
+false;return true;case "nth":l=3Dh[2];var =
+q=3Dh[3];if(l=3D=3D=3D1&&q=3D=3D=3D0)return true;h=3Dh[0];var =
+p=3Dg.parentNode;if(p&&(p.sizcache!=3D=3Dh||!g.nodeIndex)){var =
+v=3D0;for(m=3Dp.firstChild;m;m=3D=0A=
+m.nextSibling)if(m.nodeType=3D=3D=3D1)m.nodeIndex=3D++v;p.sizcache=3Dh}g=3D=
+g.nodeIndex-q;return =
+l=3D=3D=3D0?g=3D=3D=3D0:g%l=3D=3D=3D0&&g/l>=3D0}},ID:function(g,h){return=
+ =
+g.nodeType=3D=3D=3D1&&g.getAttribute("id")=3D=3D=3Dh},TAG:function(g,h){r=
+eturn =
+h=3D=3D=3D"*"&&g.nodeType=3D=3D=3D1||g.nodeName.toLowerCase()=3D=3D=3Dh},=
+CLASS:function(g,h){return(" "+(g.className||g.getAttribute("class"))+" =
+").indexOf(h)>-1},ATTR:function(g,h){var =
+l=3Dh[1];g=3Dn.attrHandle[l]?n.attrHandle[l](g):g[l]!=3Dnull?g[l]:g.getAt=
+tribute(l);l=3Dg+"";var m=3Dh[2];h=3Dh[4];return =
+g=3D=3Dnull?m=3D=3D=3D"!=3D":m=3D=3D=3D=0A=
+"=3D"?l=3D=3D=3Dh:m=3D=3D=3D"*=3D"?l.indexOf(h)>=3D0:m=3D=3D=3D"~=3D"?(" =
+"+l+" =
+").indexOf(h)>=3D0:!h?l&&g!=3D=3Dfalse:m=3D=3D=3D"!=3D"?l!=3D=3Dh:m=3D=3D=
+=3D"^=3D"?l.indexOf(h)=3D=3D=3D0:m=3D=3D=3D"$=3D"?l.substr(l.length-h.len=
+gth)=3D=3D=3Dh:m=3D=3D=3D"|=3D"?l=3D=3D=3Dh||l.substr(0,h.length+1)=3D=3D=
+=3Dh+"-":false},POS:function(g,h,l,m){var =
+q=3Dn.setFilters[h[2]];if(q)return q(g,l,h,m)}}},r=3Dn.match.POS;for(var =
+u in n.match){n.match[u]=3Dnew =
+RegExp(n.match[u].source+/(?![^\[]*\])(?![^\(]*\))/.source);n.leftMatch[u=
+]=3Dnew =
+RegExp(/(^(?:.|\r|\n)*?)/.source+n.match[u].source.replace(/\\(\d+)/g,fun=
+ction(g,=0A=
+h){return"\\"+(h-0+1)}))}var =
+z=3Dfunction(g,h){g=3DArray.prototype.slice.call(g,0);if(h){h.push.apply(=
+h,g);return h}return =
+g};try{Array.prototype.slice.call(s.documentElement.childNodes,0)}catch(C=
+){z=3Dfunction(g,h){h=3Dh||[];if(j.call(g)=3D=3D=3D"[object =
+Array]")Array.prototype.push.apply(h,g);else if(typeof =
+g.length=3D=3D=3D"number")for(var =
+l=3D0,m=3Dg.length;l<m;l++)h.push(g[l]);else =
+for(l=3D0;g[l];l++)h.push(g[l]);return h}}var =
+B;if(s.documentElement.compareDocumentPosition)B=3Dfunction(g,h){if(!g.co=
+mpareDocumentPosition||=0A=
+!h.compareDocumentPosition){if(g=3D=3Dh)i=3Dtrue;return =
+g.compareDocumentPosition?-1:1}g=3Dg.compareDocumentPosition(h)&4?-1:g=3D=
+=3D=3Dh?0:1;if(g=3D=3D=3D0)i=3Dtrue;return g};else if("sourceIndex"in =
+s.documentElement)B=3Dfunction(g,h){if(!g.sourceIndex||!h.sourceIndex){if=
+(g=3D=3Dh)i=3Dtrue;return =
+g.sourceIndex?-1:1}g=3Dg.sourceIndex-h.sourceIndex;if(g=3D=3D=3D0)i=3Dtru=
+e;return g};else =
+if(s.createRange)B=3Dfunction(g,h){if(!g.ownerDocument||!h.ownerDocument)=
+{if(g=3D=3Dh)i=3Dtrue;return g.ownerDocument?-1:1}var =
+l=3Dg.ownerDocument.createRange(),m=3D=0A=
+h.ownerDocument.createRange();l.setStart(g,0);l.setEnd(g,0);m.setStart(h,=
+0);m.setEnd(h,0);g=3Dl.compareBoundaryPoints(Range.START_TO_END,m);if(g=3D=
+=3D=3D0)i=3Dtrue;return g};(function(){var =
+g=3Ds.createElement("div"),h=3D"script"+(new =
+Date).getTime();g.innerHTML=3D"<a name=3D'"+h+"'/>";var =
+l=3Ds.documentElement;l.insertBefore(g,l.firstChild);if(s.getElementById(=
+h)){n.find.ID=3Dfunction(m,q,p){if(typeof =
+q.getElementById!=3D=3D"undefined"&&!p)return(q=3Dq.getElementById(m[1]))=
+?q.id=3D=3D=3Dm[1]||typeof q.getAttributeNode!=3D=3D"undefined"&&=0A=
+q.getAttributeNode("id").nodeValue=3D=3D=3Dm[1]?[q]:w:[]};n.filter.ID=3Df=
+unction(m,q){var p=3Dtypeof =
+m.getAttributeNode!=3D=3D"undefined"&&m.getAttributeNode("id");return =
+m.nodeType=3D=3D=3D1&&p&&p.nodeValue=3D=3D=3Dq}}l.removeChild(g);l=3Dg=3D=
+null})();(function(){var =
+g=3Ds.createElement("div");g.appendChild(s.createComment(""));if(g.getEle=
+mentsByTagName("*").length>0)n.find.TAG=3Dfunction(h,l){l=3Dl.getElements=
+ByTagName(h[1]);if(h[1]=3D=3D=3D"*"){h=3D[];for(var =
+m=3D0;l[m];m++)l[m].nodeType=3D=3D=3D1&&h.push(l[m]);l=3Dh}return =
+l};g.innerHTML=3D"<a href=3D'#'></a>";=0A=
+if(g.firstChild&&typeof =
+g.firstChild.getAttribute!=3D=3D"undefined"&&g.firstChild.getAttribute("h=
+ref")!=3D=3D"#")n.attrHandle.href=3Dfunction(h){return =
+h.getAttribute("href",2)};g=3Dnull})();s.querySelectorAll&&function(){var=
+ g=3Dk,h=3Ds.createElement("div");h.innerHTML=3D"<p =
+class=3D'TEST'></p>";if(!(h.querySelectorAll&&h.querySelectorAll(".TEST")=
+.length=3D=3D=3D0)){k=3Dfunction(m,q,p,v){q=3Dq||s;if(!v&&q.nodeType=3D=3D=
+=3D9&&!x(q))try{return z(q.querySelectorAll(m),p)}catch(t){}return =
+g(m,q,p,v)};for(var l in g)k[l]=3Dg[l];h=3Dnull}}();=0A=
+(function(){var g=3Ds.createElement("div");g.innerHTML=3D"<div =
+class=3D'test e'></div><div =
+class=3D'test'></div>";if(!(!g.getElementsByClassName||g.getElementsByCla=
+ssName("e").length=3D=3D=3D0)){g.lastChild.className=3D"e";if(g.getElemen=
+tsByClassName("e").length!=3D=3D1){n.order.splice(1,0,"CLASS");n.find.CLA=
+SS=3Dfunction(h,l,m){if(typeof =
+l.getElementsByClassName!=3D=3D"undefined"&&!m)return =
+l.getElementsByClassName(h[1])};g=3Dnull}}})();var =
+E=3Ds.compareDocumentPosition?function(g,h){return!!(g.compareDocumentPos=
+ition(h)&16)}:=0A=
+function(g,h){return =
+g!=3D=3Dh&&(g.contains?g.contains(h):true)},x=3Dfunction(g){return(g=3D(g=
+?g.ownerDocument||g:0).documentElement)?g.nodeName!=3D=3D"HTML":false},ga=
+=3Dfunction(g,h){var =
+l=3D[],m=3D"",q;for(h=3Dh.nodeType?[h]:h;q=3Dn.match.PSEUDO.exec(g);){m+=3D=
+q[0];g=3Dg.replace(n.match.PSEUDO,"")}g=3Dn.relative[g]?g+"*":g;q=3D0;for=
+(var p=3Dh.length;q<p;q++)k(g,h[q],l);return =
+k.filter(m,l)};c.find=3Dk;c.expr=3Dk.selectors;c.expr[":"]=3Dc.expr.filte=
+rs;c.unique=3Dk.uniqueSort;c.text=3Da;c.isXMLDoc=3Dx;c.contains=3DE})();v=
+ar eb=3D/Until$/,fb=3D/^(?:parents|prevUntil|prevAll)/,=0A=
+gb=3D/,/;R=3DArray.prototype.slice;var =
+Ia=3Dfunction(a,b,d){if(c.isFunction(b))return =
+c.grep(a,function(e,j){return!!b.call(e,j,e)=3D=3D=3Dd});else =
+if(b.nodeType)return c.grep(a,function(e){return =
+e=3D=3D=3Db=3D=3D=3Dd});else if(typeof b=3D=3D=3D"string"){var =
+f=3Dc.grep(a,function(e){return =
+e.nodeType=3D=3D=3D1});if(Ua.test(b))return c.filter(b,f,!d);else =
+b=3Dc.filter(b,f)}return c.grep(a,function(e){return =
+c.inArray(e,b)>=3D0=3D=3D=3Dd})};c.fn.extend({find:function(a){for(var =
+b=3Dthis.pushStack("","find",a),d=3D0,f=3D0,e=3Dthis.length;f<e;f++){d=3D=
+b.length;=0A=
+c.find(a,this[f],b);if(f>0)for(var j=3Dd;j<b.length;j++)for(var =
+i=3D0;i<d;i++)if(b[i]=3D=3D=3Db[j]){b.splice(j--,1);break}}return =
+b},has:function(a){var b=3Dc(a);return this.filter(function(){for(var =
+d=3D0,f=3Db.length;d<f;d++)if(c.contains(this,b[d]))return =
+true})},not:function(a){return =
+this.pushStack(Ia(this,a,false),"not",a)},filter:function(a){return =
+this.pushStack(Ia(this,a,true),"filter",a)},is:function(a){return!!a&&c.f=
+ilter(a,this).length>0},closest:function(a,b){if(c.isArray(a)){var =
+d=3D[],f=3Dthis[0],e,j=3D=0A=
+{},i;if(f&&a.length){e=3D0;for(var =
+o=3Da.length;e<o;e++){i=3Da[e];j[i]||(j[i]=3Dc.expr.match.POS.test(i)?c(i=
+,b||this.context):i)}for(;f&&f.ownerDocument&&f!=3D=3Db;){for(i in =
+j){e=3Dj[i];if(e.jquery?e.index(f)>-1:c(f).is(e)){d.push({selector:i,elem=
+:f});delete j[i]}}f=3Df.parentNode}}return d}var =
+k=3Dc.expr.match.POS.test(a)?c(a,b||this.context):null;return =
+this.map(function(n,r){for(;r&&r.ownerDocument&&r!=3D=3Db;){if(k?k.index(=
+r)>-1:c(r).is(a))return r;r=3Dr.parentNode}return =
+null})},index:function(a){if(!a||typeof a=3D=3D=3D=0A=
+"string")return =
+c.inArray(this[0],a?c(a):this.parent().children());return =
+c.inArray(a.jquery?a[0]:a,this)},add:function(a,b){a=3Dtypeof =
+a=3D=3D=3D"string"?c(a,b||this.context):c.makeArray(a);b=3Dc.merge(this.g=
+et(),a);return =
+this.pushStack(qa(a[0])||qa(b[0])?b:c.unique(b))},andSelf:function(){retu=
+rn =
+this.add(this.prevObject)}});c.each({parent:function(a){return(a=3Da.pare=
+ntNode)&&a.nodeType!=3D=3D11?a:null},parents:function(a){return =
+c.dir(a,"parentNode")},parentsUntil:function(a,b,d){return =
+c.dir(a,"parentNode",=0A=
+d)},next:function(a){return =
+c.nth(a,2,"nextSibling")},prev:function(a){return =
+c.nth(a,2,"previousSibling")},nextAll:function(a){return =
+c.dir(a,"nextSibling")},prevAll:function(a){return =
+c.dir(a,"previousSibling")},nextUntil:function(a,b,d){return =
+c.dir(a,"nextSibling",d)},prevUntil:function(a,b,d){return =
+c.dir(a,"previousSibling",d)},siblings:function(a){return =
+c.sibling(a.parentNode.firstChild,a)},children:function(a){return =
+c.sibling(a.firstChild)},contents:function(a){return =
+c.nodeName(a,"iframe")?=0A=
+a.contentDocument||a.contentWindow.document:c.makeArray(a.childNodes)}},f=
+unction(a,b){c.fn[a]=3Dfunction(d,f){var =
+e=3Dc.map(this,b,d);eb.test(a)||(f=3Dd);if(f&&typeof =
+f=3D=3D=3D"string")e=3Dc.filter(f,e);e=3Dthis.length>1?c.unique(e):e;if((=
+this.length>1||gb.test(f))&&fb.test(a))e=3De.reverse();return =
+this.pushStack(e,a,R.call(arguments).join(","))}});c.extend({filter:funct=
+ion(a,b,d){if(d)a=3D":not("+a+")";return =
+c.find.matches(a,b)},dir:function(a,b,d){var =
+f=3D[];for(a=3Da[b];a&&a.nodeType!=3D=3D9&&(d=3D=3D=3Dw||a.nodeType!=3D=3D=
+1||!c(a).is(d));){a.nodeType=3D=3D=3D=0A=
+1&&f.push(a);a=3Da[b]}return f},nth:function(a,b,d){b=3Db||1;for(var =
+f=3D0;a;a=3Da[d])if(a.nodeType=3D=3D=3D1&&++f=3D=3D=3Db)break;return =
+a},sibling:function(a,b){for(var =
+d=3D[];a;a=3Da.nextSibling)a.nodeType=3D=3D=3D1&&a!=3D=3Db&&d.push(a);ret=
+urn d}});var Ja=3D/ =
+jQuery\d+=3D"(?:\d+|null)"/g,V=3D/^\s+/,Ka=3D/(<([\w:]+)[^>]*?)\/>/g,hb=3D=
+/^(?:area|br|col|embed|hr|img|input|link|meta|param)$/i,La=3D/<([\w:]+)/,=
+ib=3D/<tbody/i,jb=3D/<|&#?\w+;/,ta=3D/<script|<object|<embed|<option|<sty=
+le/i,ua=3D/checked\s*(?:[^=3D]|=3D\s*.checked.)/i,Ma=3Dfunction(a,b,d){re=
+turn hb.test(d)?=0A=
+a:b+"></"+d+">"},F=3D{option:[1,"<select =
+multiple=3D'multiple'>","</select>"],legend:[1,"<fieldset>","</fieldset>"=
+],thead:[1,"<table>","</table>"],tr:[2,"<table><tbody>","</tbody></table>=
+"],td:[3,"<table><tbody><tr>","</tr></tbody></table>"],col:[2,"<table><tb=
+ody></tbody><colgroup>","</colgroup></table>"],area:[1,"<map>","</map>"],=
+_default:[0,"",""]};F.optgroup=3DF.option;F.tbody=3DF.tfoot=3DF.colgroup=3D=
+F.caption=3DF.thead;F.th=3DF.td;if(!c.support.htmlSerialize)F._default=3D=
+[1,"div<div>","</div>"];c.fn.extend({text:function(a){if(c.isFunction(a))=
+return this.each(function(b){var d=3D=0A=
+c(this);d.text(a.call(this,b,d.text()))});if(typeof =
+a!=3D=3D"object"&&a!=3D=3Dw)return =
+this.empty().append((this[0]&&this[0].ownerDocument||s).createTextNode(a)=
+);return c.text(this)},wrapAll:function(a){if(c.isFunction(a))return =
+this.each(function(d){c(this).wrapAll(a.call(this,d))});if(this[0]){var =
+b=3Dc(a,this[0].ownerDocument).eq(0).clone(true);this[0].parentNode&&b.in=
+sertBefore(this[0]);b.map(function(){for(var =
+d=3Dthis;d.firstChild&&d.firstChild.nodeType=3D=3D=3D1;)d=3Dd.firstChild;=
+return d}).append(this)}return this},=0A=
+wrapInner:function(a){if(c.isFunction(a))return =
+this.each(function(b){c(this).wrapInner(a.call(this,b))});return =
+this.each(function(){var =
+b=3Dc(this),d=3Db.contents();d.length?d.wrapAll(a):b.append(a)})},wrap:fu=
+nction(a){return =
+this.each(function(){c(this).wrapAll(a)})},unwrap:function(){return =
+this.parent().each(function(){c.nodeName(this,"body")||c(this).replaceWit=
+h(this.childNodes)}).end()},append:function(){return =
+this.domManip(arguments,true,function(a){this.nodeType=3D=3D=3D1&&this.ap=
+pendChild(a)})},=0A=
+prepend:function(){return =
+this.domManip(arguments,true,function(a){this.nodeType=3D=3D=3D1&&this.in=
+sertBefore(a,this.firstChild)})},before:function(){if(this[0]&&this[0].pa=
+rentNode)return =
+this.domManip(arguments,false,function(b){this.parentNode.insertBefore(b,=
+this)});else if(arguments.length){var =
+a=3Dc(arguments[0]);a.push.apply(a,this.toArray());return =
+this.pushStack(a,"before",arguments)}},after:function(){if(this[0]&&this[=
+0].parentNode)return =
+this.domManip(arguments,false,function(b){this.parentNode.insertBefore(b,=0A=
+this.nextSibling)});else if(arguments.length){var =
+a=3Dthis.pushStack(this,"after",arguments);a.push.apply(a,c(arguments[0])=
+.toArray());return a}},remove:function(a,b){for(var =
+d=3D0,f;(f=3Dthis[d])!=3Dnull;d++)if(!a||c.filter(a,[f]).length){if(!b&&f=
+.nodeType=3D=3D=3D1){c.cleanData(f.getElementsByTagName("*"));c.cleanData=
+([f])}f.parentNode&&f.parentNode.removeChild(f)}return =
+this},empty:function(){for(var =
+a=3D0,b;(b=3Dthis[a])!=3Dnull;a++)for(b.nodeType=3D=3D=3D1&&c.cleanData(b=
+.getElementsByTagName("*"));b.firstChild;)b.removeChild(b.firstChild);=0A=
+return this},clone:function(a){var =
+b=3Dthis.map(function(){if(!c.support.noCloneEvent&&!c.isXMLDoc(this)){va=
+r =
+d=3Dthis.outerHTML,f=3Dthis.ownerDocument;if(!d){d=3Df.createElement("div=
+");d.appendChild(this.cloneNode(true));d=3Dd.innerHTML}return =
+c.clean([d.replace(Ja,"").replace(/=3D([^=3D"'>\s]+\/)>/g,'=3D"$1">').rep=
+lace(V,"")],f)[0]}else return =
+this.cloneNode(true)});if(a=3D=3D=3Dtrue){ra(this,b);ra(this.find("*"),b.=
+find("*"))}return b},html:function(a){if(a=3D=3D=3Dw)return =
+this[0]&&this[0].nodeType=3D=3D=3D1?this[0].innerHTML.replace(Ja,=0A=
+""):null;else if(typeof =
+a=3D=3D=3D"string"&&!ta.test(a)&&(c.support.leadingWhitespace||!V.test(a)=
+)&&!F[(La.exec(a)||["",""])[1].toLowerCase()]){a=3Da.replace(Ka,Ma);try{f=
+or(var =
+b=3D0,d=3Dthis.length;b<d;b++)if(this[b].nodeType=3D=3D=3D1){c.cleanData(=
+this[b].getElementsByTagName("*"));this[b].innerHTML=3Da}}catch(f){this.e=
+mpty().append(a)}}else c.isFunction(a)?this.each(function(e){var =
+j=3Dc(this),i=3Dj.html();j.empty().append(function(){return =
+a.call(this,e,i)})}):this.empty().append(a);return =
+this},replaceWith:function(a){if(this[0]&&=0A=
+this[0].parentNode){if(c.isFunction(a))return this.each(function(b){var =
+d=3Dc(this),f=3Dd.html();d.replaceWith(a.call(this,b,f))});if(typeof =
+a!=3D=3D"string")a=3Dc(a).detach();return this.each(function(){var =
+b=3Dthis.nextSibling,d=3Dthis.parentNode;c(this).remove();b?c(b).before(a=
+):c(d).append(a)})}else return =
+this.pushStack(c(c.isFunction(a)?a():a),"replaceWith",a)},detach:function=
+(a){return this.remove(a,true)},domManip:function(a,b,d){function =
+f(u){return c.nodeName(u,"table")?u.getElementsByTagName("tbody")[0]||=0A=
+u.appendChild(u.ownerDocument.createElement("tbody")):u}var =
+e,j,i=3Da[0],o=3D[],k;if(!c.support.checkClone&&arguments.length=3D=3D=3D=
+3&&typeof i=3D=3D=3D"string"&&ua.test(i))return =
+this.each(function(){c(this).domManip(a,b,d,true)});if(c.isFunction(i))re=
+turn this.each(function(u){var =
+z=3Dc(this);a[0]=3Di.call(this,u,b?z.html():w);z.domManip(a,b,d)});if(thi=
+s[0]){e=3Di&&i.parentNode;e=3Dc.support.parentNode&&e&&e.nodeType=3D=3D=3D=
+11&&e.childNodes.length=3D=3D=3Dthis.length?{fragment:e}:sa(a,this,o);k=3D=
+e.fragment;if(j=3Dk.childNodes.length=3D=3D=3D=0A=
+1?(k=3Dk.firstChild):k.firstChild){b=3Db&&c.nodeName(j,"tr");for(var =
+n=3D0,r=3Dthis.length;n<r;n++)d.call(b?f(this[n],j):this[n],n>0||e.cachea=
+ble||this.length>1?k.cloneNode(true):k)}o.length&&c.each(o,Qa)}return =
+this}});c.fragments=3D{};c.each({appendTo:"append",prependTo:"prepend",in=
+sertBefore:"before",insertAfter:"after",replaceAll:"replaceWith"},functio=
+n(a,b){c.fn[a]=3Dfunction(d){var f=3D[];d=3Dc(d);var =
+e=3Dthis.length=3D=3D=3D1&&this[0].parentNode;if(e&&e.nodeType=3D=3D=3D11=
+&&e.childNodes.length=3D=3D=3D1&&d.length=3D=3D=3D1){d[b](this[0]);=0A=
+return this}else{e=3D0;for(var j=3Dd.length;e<j;e++){var =
+i=3D(e>0?this.clone(true):this).get();c.fn[b].apply(c(d[e]),i);f=3Df.conc=
+at(i)}return =
+this.pushStack(f,a,d.selector)}}});c.extend({clean:function(a,b,d,f){b=3D=
+b||s;if(typeof =
+b.createElement=3D=3D=3D"undefined")b=3Db.ownerDocument||b[0]&&b[0].owner=
+Document||s;for(var e=3D[],j=3D0,i;(i=3Da[j])!=3Dnull;j++){if(typeof =
+i=3D=3D=3D"number")i+=3D"";if(i){if(typeof =
+i=3D=3D=3D"string"&&!jb.test(i))i=3Db.createTextNode(i);else if(typeof =
+i=3D=3D=3D"string"){i=3Di.replace(Ka,Ma);var o=3D(La.exec(i)||["",=0A=
+""])[1].toLowerCase(),k=3DF[o]||F._default,n=3Dk[0],r=3Db.createElement("=
+div");for(r.innerHTML=3Dk[1]+i+k[2];n--;)r=3Dr.lastChild;if(!c.support.tb=
+ody){n=3Dib.test(i);o=3Do=3D=3D=3D"table"&&!n?r.firstChild&&r.firstChild.=
+childNodes:k[1]=3D=3D=3D"<table>"&&!n?r.childNodes:[];for(k=3Do.length-1;=
+k>=3D0;--k)c.nodeName(o[k],"tbody")&&!o[k].childNodes.length&&o[k].parent=
+Node.removeChild(o[k])}!c.support.leadingWhitespace&&V.test(i)&&r.insertB=
+efore(b.createTextNode(V.exec(i)[0]),r.firstChild);i=3Dr.childNodes}if(i.=
+nodeType)e.push(i);else e=3D=0A=
+c.merge(e,i)}}if(d)for(j=3D0;e[j];j++)if(f&&c.nodeName(e[j],"script")&&(!=
+e[j].type||e[j].type.toLowerCase()=3D=3D=3D"text/javascript"))f.push(e[j]=
+.parentNode?e[j].parentNode.removeChild(e[j]):e[j]);else{e[j].nodeType=3D=
+=3D=3D1&&e.splice.apply(e,[j+1,0].concat(c.makeArray(e[j].getElementsByTa=
+gName("script"))));d.appendChild(e[j])}return =
+e},cleanData:function(a){for(var =
+b,d,f=3Dc.cache,e=3Dc.event.special,j=3Dc.support.deleteExpando,i=3D0,o;(=
+o=3Da[i])!=3Dnull;i++)if(d=3Do[c.expando]){b=3Df[d];if(b.events)for(var =
+k in b.events)e[k]?=0A=
+c.event.remove(o,k):Ca(o,k,b.handle);if(j)delete o[c.expando];else =
+o.removeAttribute&&o.removeAttribute(c.expando);delete f[d]}}});var =
+kb=3D/z-?index|font-?weight|opacity|zoom|line-?height/i,Na=3D/alpha\([^)]=
+*\)/,Oa=3D/opacity=3D([^)]*)/,ha=3D/float/i,ia=3D/-([a-z])/ig,lb=3D/([A-Z=
+])/g,mb=3D/^-?\d+(?:px)?$/i,nb=3D/^-?\d/,ob=3D{position:"absolute",visibi=
+lity:"hidden",display:"block"},pb=3D["Left","Right"],qb=3D["Top","Bottom"=
+],rb=3Ds.defaultView&&s.defaultView.getComputedStyle,Pa=3Dc.support.cssFl=
+oat?"cssFloat":"styleFloat",ja=3D=0A=
+function(a,b){return b.toUpperCase()};c.fn.css=3Dfunction(a,b){return =
+X(this,a,b,true,function(d,f,e){if(e=3D=3D=3Dw)return =
+c.curCSS(d,f);if(typeof =
+e=3D=3D=3D"number"&&!kb.test(f))e+=3D"px";c.style(d,f,e)})};c.extend({sty=
+le:function(a,b,d){if(!a||a.nodeType=3D=3D=3D3||a.nodeType=3D=3D=3D8)retu=
+rn =
+w;if((b=3D=3D=3D"width"||b=3D=3D=3D"height")&&parseFloat(d)<0)d=3Dw;var =
+f=3Da.style||a,e=3Dd!=3D=3Dw;if(!c.support.opacity&&b=3D=3D=3D"opacity"){=
+if(e){f.zoom=3D1;b=3DparseInt(d,10)+""=3D=3D=3D"NaN"?"":"alpha(opacity=3D=
+"+d*100+")";a=3Df.filter||c.curCSS(a,"filter")||"";f.filter=3D=0A=
+Na.test(a)?a.replace(Na,b):b}return =
+f.filter&&f.filter.indexOf("opacity=3D")>=3D0?parseFloat(Oa.exec(f.filter=
+)[1])/100+"":""}if(ha.test(b))b=3DPa;b=3Db.replace(ia,ja);if(e)f[b]=3Dd;r=
+eturn =
+f[b]},css:function(a,b,d,f){if(b=3D=3D=3D"width"||b=3D=3D=3D"height"){var=
+ e,j=3Db=3D=3D=3D"width"?pb:qb;function =
+i(){e=3Db=3D=3D=3D"width"?a.offsetWidth:a.offsetHeight;f!=3D=3D"border"&&=
+c.each(j,function(){f||(e-=3DparseFloat(c.curCSS(a,"padding"+this,true))|=
+|0);if(f=3D=3D=3D"margin")e+=3DparseFloat(c.curCSS(a,"margin"+this,true))=
+||0;else e-=3DparseFloat(c.curCSS(a,=0A=
+"border"+this+"Width",true))||0})}a.offsetWidth!=3D=3D0?i():c.swap(a,ob,i=
+);return Math.max(0,Math.round(e))}return =
+c.curCSS(a,b,d)},curCSS:function(a,b,d){var =
+f,e=3Da.style;if(!c.support.opacity&&b=3D=3D=3D"opacity"&&a.currentStyle)=
+{f=3DOa.test(a.currentStyle.filter||"")?parseFloat(RegExp.$1)/100+"":"";r=
+eturn =
+f=3D=3D=3D""?"1":f}if(ha.test(b))b=3DPa;if(!d&&e&&e[b])f=3De[b];else =
+if(rb){if(ha.test(b))b=3D"float";b=3Db.replace(lb,"-$1").toLowerCase();e=3D=
+a.ownerDocument.defaultView;if(!e)return =
+null;if(a=3De.getComputedStyle(a,null))f=3D=0A=
+a.getPropertyValue(b);if(b=3D=3D=3D"opacity"&&f=3D=3D=3D"")f=3D"1"}else =
+if(a.currentStyle){d=3Db.replace(ia,ja);f=3Da.currentStyle[b]||a.currentS=
+tyle[d];if(!mb.test(f)&&nb.test(f)){b=3De.left;var =
+j=3Da.runtimeStyle.left;a.runtimeStyle.left=3Da.currentStyle.left;e.left=3D=
+d=3D=3D=3D"fontSize"?"1em":f||0;f=3De.pixelLeft+"px";e.left=3Db;a.runtime=
+Style.left=3Dj}}return f},swap:function(a,b,d){var f=3D{};for(var e in =
+b){f[e]=3Da.style[e];a.style[e]=3Db[e]}d.call(a);for(e in =
+b)a.style[e]=3Df[e]}});if(c.expr&&c.expr.filters){c.expr.filters.hidden=3D=
+function(a){var b=3D=0A=
+a.offsetWidth,d=3Da.offsetHeight,f=3Da.nodeName.toLowerCase()=3D=3D=3D"tr=
+";return =
+b=3D=3D=3D0&&d=3D=3D=3D0&&!f?true:b>0&&d>0&&!f?false:c.curCSS(a,"display"=
+)=3D=3D=3D"none"};c.expr.filters.visible=3Dfunction(a){return!c.expr.filt=
+ers.hidden(a)}}var =
+sb=3DJ(),tb=3D/<script(.|\s)*?\/script>/gi,ub=3D/select|textarea/i,vb=3D/=
+color|date|datetime|email|hidden|month|number|password|range|search|tel|t=
+ext|time|url|week/i,N=3D/=3D\?(&|$)/,ka=3D/\?/,wb=3D/(\?|&)_=3D.*?(&|$)/,=
+xb=3D/^(\w+:)?\/\/([^\/?#]+)/,yb=3D/%20/g,zb=3Dc.fn.load;c.fn.extend({loa=
+d:function(a,b,d){if(typeof a!=3D=3D=0A=
+"string")return zb.call(this,a);else if(!this.length)return this;var =
+f=3Da.indexOf(" ");if(f>=3D0){var =
+e=3Da.slice(f,a.length);a=3Da.slice(0,f)}f=3D"GET";if(b)if(c.isFunction(b=
+)){d=3Db;b=3Dnull}else if(typeof =
+b=3D=3D=3D"object"){b=3Dc.param(b,c.ajaxSettings.traditional);f=3D"POST"}=
+var =
+j=3Dthis;c.ajax({url:a,type:f,dataType:"html",data:b,complete:function(i,=
+o){if(o=3D=3D=3D"success"||o=3D=3D=3D"notmodified")j.html(e?c("<div =
+/>").append(i.responseText.replace(tb,"")).find(e):i.responseText);d&&j.e=
+ach(d,[i.responseText,o,i])}});return this},=0A=
+serialize:function(){return =
+c.param(this.serializeArray())},serializeArray:function(){return =
+this.map(function(){return =
+this.elements?c.makeArray(this.elements):this}).filter(function(){return =
+this.name&&!this.disabled&&(this.checked||ub.test(this.nodeName)||vb.test=
+(this.type))}).map(function(a,b){a=3Dc(this).val();return =
+a=3D=3Dnull?null:c.isArray(a)?c.map(a,function(d){return{name:b.name,valu=
+e:d}}):{name:b.name,value:a}}).get()}});c.each("ajaxStart ajaxStop =
+ajaxComplete ajaxError ajaxSuccess ajaxSend".split(" "),=0A=
+function(a,b){c.fn[b]=3Dfunction(d){return =
+this.bind(b,d)}});c.extend({get:function(a,b,d,f){if(c.isFunction(b)){f=3D=
+f||d;d=3Db;b=3Dnull}return =
+c.ajax({type:"GET",url:a,data:b,success:d,dataType:f})},getScript:functio=
+n(a,b){return c.get(a,null,b,"script")},getJSON:function(a,b,d){return =
+c.get(a,b,d,"json")},post:function(a,b,d,f){if(c.isFunction(b)){f=3Df||d;=
+d=3Db;b=3D{}}return =
+c.ajax({type:"POST",url:a,data:b,success:d,dataType:f})},ajaxSetup:functi=
+on(a){c.extend(c.ajaxSettings,a)},ajaxSettings:{url:location.href,=0A=
+global:true,type:"GET",contentType:"application/x-www-form-urlencoded",pr=
+ocessData:true,async:true,xhr:A.XMLHttpRequest&&(A.location.protocol!=3D=3D=
+"file:"||!A.ActiveXObject)?function(){return new =
+A.XMLHttpRequest}:function(){try{return new =
+A.ActiveXObject("Microsoft.XMLHTTP")}catch(a){}},accepts:{xml:"applicatio=
+n/xml, text/xml",html:"text/html",script:"text/javascript, =
+application/javascript",json:"application/json, =
+text/javascript",text:"text/plain",_default:"*/*"}},lastModified:{},etag:=
+{},ajax:function(a){function b(){e.success&&=0A=
+e.success.call(k,o,i,x);e.global&&f("ajaxSuccess",[x,e])}function =
+d(){e.complete&&e.complete.call(k,x,i);e.global&&f("ajaxComplete",[x,e]);=
+e.global&&!--c.active&&c.event.trigger("ajaxStop")}function =
+f(q,p){(e.context?c(e.context):c.event).trigger(q,p)}var =
+e=3Dc.extend(true,{},c.ajaxSettings,a),j,i,o,k=3Da&&a.context||e,n=3De.ty=
+pe.toUpperCase();if(e.data&&e.processData&&typeof =
+e.data!=3D=3D"string")e.data=3Dc.param(e.data,e.traditional);if(e.dataTyp=
+e=3D=3D=3D"jsonp"){if(n=3D=3D=3D"GET")N.test(e.url)||(e.url+=3D(ka.test(e=
+.url)?=0A=
+"&":"?")+(e.jsonp||"callback")+"=3D?");else =
+if(!e.data||!N.test(e.data))e.data=3D(e.data?e.data+"&":"")+(e.jsonp||"ca=
+llback")+"=3D?";e.dataType=3D"json"}if(e.dataType=3D=3D=3D"json"&&(e.data=
+&&N.test(e.data)||N.test(e.url))){j=3De.jsonpCallback||"jsonp"+sb++;if(e.=
+data)e.data=3D(e.data+"").replace(N,"=3D"+j+"$1");e.url=3De.url.replace(N=
+,"=3D"+j+"$1");e.dataType=3D"script";A[j]=3DA[j]||function(q){o=3Dq;b();d=
+();A[j]=3Dw;try{delete =
+A[j]}catch(p){}z&&z.removeChild(C)}}if(e.dataType=3D=3D=3D"script"&&e.cac=
+he=3D=3D=3Dnull)e.cache=3Dfalse;if(e.cache=3D=3D=3D=0A=
+false&&n=3D=3D=3D"GET"){var =
+r=3DJ(),u=3De.url.replace(wb,"$1_=3D"+r+"$2");e.url=3Du+(u=3D=3D=3De.url?=
+(ka.test(e.url)?"&":"?")+"_=3D"+r:"")}if(e.data&&n=3D=3D=3D"GET")e.url+=3D=
+(ka.test(e.url)?"&":"?")+e.data;e.global&&!c.active++&&c.event.trigger("a=
+jaxStart");r=3D(r=3Dxb.exec(e.url))&&(r[1]&&r[1]!=3D=3Dlocation.protocol|=
+|r[2]!=3D=3Dlocation.host);if(e.dataType=3D=3D=3D"script"&&n=3D=3D=3D"GET=
+"&&r){var =
+z=3Ds.getElementsByTagName("head")[0]||s.documentElement,C=3Ds.createElem=
+ent("script");C.src=3De.url;if(e.scriptCharset)C.charset=3De.scriptCharse=
+t;if(!j){var B=3D=0A=
+false;C.onload=3DC.onreadystatechange=3Dfunction(){if(!B&&(!this.readySta=
+te||this.readyState=3D=3D=3D"loaded"||this.readyState=3D=3D=3D"complete")=
+){B=3Dtrue;b();d();C.onload=3DC.onreadystatechange=3Dnull;z&&C.parentNode=
+&&z.removeChild(C)}}}z.insertBefore(C,z.firstChild);return w}var =
+E=3Dfalse,x=3De.xhr();if(x){e.username?x.open(n,e.url,e.async,e.username,=
+e.password):x.open(n,e.url,e.async);try{if(e.data||a&&a.contentType)x.set=
+RequestHeader("Content-Type",e.contentType);if(e.ifModified){c.lastModifi=
+ed[e.url]&&x.setRequestHeader("If-Modified-Since",=0A=
+c.lastModified[e.url]);c.etag[e.url]&&x.setRequestHeader("If-None-Match",=
+c.etag[e.url])}r||x.setRequestHeader("X-Requested-With","XMLHttpRequest")=
+;x.setRequestHeader("Accept",e.dataType&&e.accepts[e.dataType]?e.accepts[=
+e.dataType]+", =
+*/*":e.accepts._default)}catch(ga){}if(e.beforeSend&&e.beforeSend.call(k,=
+x,e)=3D=3D=3Dfalse){e.global&&!--c.active&&c.event.trigger("ajaxStop");x.=
+abort();return false}e.global&&f("ajaxSend",[x,e]);var =
+g=3Dx.onreadystatechange=3Dfunction(q){if(!x||x.readyState=3D=3D=3D0||q=3D=
+=3D=3D"abort"){E||=0A=
+d();E=3Dtrue;if(x)x.onreadystatechange=3Dc.noop}else =
+if(!E&&x&&(x.readyState=3D=3D=3D4||q=3D=3D=3D"timeout")){E=3Dtrue;x.onrea=
+dystatechange=3Dc.noop;i=3Dq=3D=3D=3D"timeout"?"timeout":!c.httpSuccess(x=
+)?"error":e.ifModified&&c.httpNotModified(x,e.url)?"notmodified":"success=
+";var =
+p;if(i=3D=3D=3D"success")try{o=3Dc.httpData(x,e.dataType,e)}catch(v){i=3D=
+"parsererror";p=3Dv}if(i=3D=3D=3D"success"||i=3D=3D=3D"notmodified")j||b(=
+);else =
+c.handleError(e,x,i,p);d();q=3D=3D=3D"timeout"&&x.abort();if(e.async)x=3D=
+null}};try{var h=3Dx.abort;x.abort=3Dfunction(){x&&h.call(x);=0A=
+g("abort")}}catch(l){}e.async&&e.timeout>0&&setTimeout(function(){x&&!E&&=
+g("timeout")},e.timeout);try{x.send(n=3D=3D=3D"POST"||n=3D=3D=3D"PUT"||n=3D=
+=3D=3D"DELETE"?e.data:null)}catch(m){c.handleError(e,x,null,m);d()}e.asyn=
+c||g();return =
+x}},handleError:function(a,b,d,f){if(a.error)a.error.call(a.context||a,b,=
+d,f);if(a.global)(a.context?c(a.context):c.event).trigger("ajaxError",[b,=
+a,f])},active:0,httpSuccess:function(a){try{return!a.status&&location.pro=
+tocol=3D=3D=3D"file:"||a.status>=3D200&&a.status<300||a.status=3D=3D=3D30=
+4||a.status=3D=3D=3D=0A=
+1223||a.status=3D=3D=3D0}catch(b){}return =
+false},httpNotModified:function(a,b){var =
+d=3Da.getResponseHeader("Last-Modified"),f=3Da.getResponseHeader("Etag");=
+if(d)c.lastModified[b]=3Dd;if(f)c.etag[b]=3Df;return =
+a.status=3D=3D=3D304||a.status=3D=3D=3D0},httpData:function(a,b,d){var =
+f=3Da.getResponseHeader("content-type")||"",e=3Db=3D=3D=3D"xml"||!b&&f.in=
+dexOf("xml")>=3D0;a=3De?a.responseXML:a.responseText;e&&a.documentElement=
+.nodeName=3D=3D=3D"parsererror"&&c.error("parsererror");if(d&&d.dataFilte=
+r)a=3Dd.dataFilter(a,b);if(typeof a=3D=3D=3D"string")if(b=3D=3D=3D=0A=
+"json"||!b&&f.indexOf("json")>=3D0)a=3Dc.parseJSON(a);else =
+if(b=3D=3D=3D"script"||!b&&f.indexOf("javascript")>=3D0)c.globalEval(a);r=
+eturn a},param:function(a,b){function =
+d(i,o){if(c.isArray(o))c.each(o,function(k,n){b||/\[\]$/.test(i)?f(i,n):d=
+(i+"["+(typeof =
+n=3D=3D=3D"object"||c.isArray(n)?k:"")+"]",n)});else!b&&o!=3Dnull&&typeof=
+ =
+o=3D=3D=3D"object"?c.each(o,function(k,n){d(i+"["+k+"]",n)}):f(i,o)}funct=
+ion =
+f(i,o){o=3Dc.isFunction(o)?o():o;e[e.length]=3DencodeURIComponent(i)+"=3D=
+"+encodeURIComponent(o)}var =
+e=3D[];if(b=3D=3D=3Dw)b=3Dc.ajaxSettings.traditional;=0A=
+if(c.isArray(a)||a.jquery)c.each(a,function(){f(this.name,this.value)});e=
+lse for(var j in a)d(j,a[j]);return e.join("&").replace(yb,"+")}});var =
+la=3D{},Ab=3D/toggle|show|hide/,Bb=3D/^([+-]=3D)?([\d+-.]+)(.*)$/,W,va=3D=
+[["height","marginTop","marginBottom","paddingTop","paddingBottom"],["wid=
+th","marginLeft","marginRight","paddingLeft","paddingRight"],["opacity"]]=
+;c.fn.extend({show:function(a,b){if(a||a=3D=3D=3D0)return =
+this.animate(K("show",3),a,b);else{a=3D0;for(b=3Dthis.length;a<b;a++){var=
+ d=3Dc.data(this[a],"olddisplay");=0A=
+this[a].style.display=3Dd||"";if(c.css(this[a],"display")=3D=3D=3D"none")=
+{d=3Dthis[a].nodeName;var f;if(la[d])f=3Dla[d];else{var e=3Dc("<"+d+" =
+/>").appendTo("body");f=3De.css("display");if(f=3D=3D=3D"none")f=3D"block=
+";e.remove();la[d]=3Df}c.data(this[a],"olddisplay",f)}}a=3D0;for(b=3Dthis=
+.length;a<b;a++)this[a].style.display=3Dc.data(this[a],"olddisplay")||"";=
+return this}},hide:function(a,b){if(a||a=3D=3D=3D0)return =
+this.animate(K("hide",3),a,b);else{a=3D0;for(b=3Dthis.length;a<b;a++){var=
+ d=3Dc.data(this[a],"olddisplay");!d&&d!=3D=3D"none"&&c.data(this[a],=0A=
+"olddisplay",c.css(this[a],"display"))}a=3D0;for(b=3Dthis.length;a<b;a++)=
+this[a].style.display=3D"none";return =
+this}},_toggle:c.fn.toggle,toggle:function(a,b){var d=3Dtypeof =
+a=3D=3D=3D"boolean";if(c.isFunction(a)&&c.isFunction(b))this._toggle.appl=
+y(this,arguments);else a=3D=3Dnull||d?this.each(function(){var =
+f=3Dd?a:c(this).is(":hidden");c(this)[f?"show":"hide"]()}):this.animate(K=
+("toggle",3),a,b);return this},fadeTo:function(a,b,d){return =
+this.filter(":hidden").css("opacity",0).show().end().animate({opacity:b},=
+a,d)},=0A=
+animate:function(a,b,d,f){var =
+e=3Dc.speed(b,d,f);if(c.isEmptyObject(a))return =
+this.each(e.complete);return =
+this[e.queue=3D=3D=3Dfalse?"each":"queue"](function(){var =
+j=3Dc.extend({},e),i,o=3Dthis.nodeType=3D=3D=3D1&&c(this).is(":hidden"),k=
+=3Dthis;for(i in a){var =
+n=3Di.replace(ia,ja);if(i!=3D=3Dn){a[n]=3Da[i];delete =
+a[i];i=3Dn}if(a[i]=3D=3D=3D"hide"&&o||a[i]=3D=3D=3D"show"&&!o)return =
+j.complete.call(this);if((i=3D=3D=3D"height"||i=3D=3D=3D"width")&&this.st=
+yle){j.display=3Dc.css(this,"display");j.overflow=3Dthis.style.overflow}i=
+f(c.isArray(a[i])){(j.specialEasing=3D=0A=
+j.specialEasing||{})[i]=3Da[i][1];a[i]=3Da[i][0]}}if(j.overflow!=3Dnull)t=
+his.style.overflow=3D"hidden";j.curAnim=3Dc.extend({},a);c.each(a,functio=
+n(r,u){var z=3Dnew =
+c.fx(k,j,r);if(Ab.test(u))z[u=3D=3D=3D"toggle"?o?"show":"hide":u](a);else=
+{var C=3DBb.exec(u),B=3Dz.cur(true)||0;if(C){u=3DparseFloat(C[2]);var =
+E=3DC[3]||"px";if(E!=3D=3D"px"){k.style[r]=3D(u||1)+E;B=3D(u||1)/z.cur(tr=
+ue)*B;k.style[r]=3DB+E}if(C[1])u=3D(C[1]=3D=3D=3D"-=3D"?-1:1)*u+B;z.custo=
+m(B,u,E)}else z.custom(B,u,"")}});return true})},stop:function(a,b){var =
+d=3Dc.timers;a&&this.queue([]);=0A=
+this.each(function(){for(var =
+f=3Dd.length-1;f>=3D0;f--)if(d[f].elem=3D=3D=3Dthis){b&&d[f](true);d.spli=
+ce(f,1)}});b||this.dequeue();return =
+this}});c.each({slideDown:K("show",1),slideUp:K("hide",1),slideToggle:K("=
+toggle",1),fadeIn:{opacity:"show"},fadeOut:{opacity:"hide"}},function(a,b=
+){c.fn[a]=3Dfunction(d,f){return =
+this.animate(b,d,f)}});c.extend({speed:function(a,b,d){var f=3Da&&typeof =
+a=3D=3D=3D"object"?a:{complete:d||!d&&b||c.isFunction(a)&&a,duration:a,ea=
+sing:d&&b||b&&!c.isFunction(b)&&b};f.duration=3Dc.fx.off?0:typeof =
+f.duration=3D=3D=3D=0A=
+"number"?f.duration:c.fx.speeds[f.duration]||c.fx.speeds._default;f.old=3D=
+f.complete;f.complete=3Dfunction(){f.queue!=3D=3Dfalse&&c(this).dequeue()=
+;c.isFunction(f.old)&&f.old.call(this)};return =
+f},easing:{linear:function(a,b,d,f){return =
+d+f*a},swing:function(a,b,d,f){return(-Math.cos(a*Math.PI)/2+0.5)*f+d}},t=
+imers:[],fx:function(a,b,d){this.options=3Db;this.elem=3Da;this.prop=3Dd;=
+if(!b.orig)b.orig=3D{}}});c.fx.prototype=3D{update:function(){this.option=
+s.step&&this.options.step.call(this.elem,this.now,this);(c.fx.step[this.p=
+rop]||=0A=
+c.fx.step._default)(this);if((this.prop=3D=3D=3D"height"||this.prop=3D=3D=
+=3D"width")&&this.elem.style)this.elem.style.display=3D"block"},cur:funct=
+ion(a){if(this.elem[this.prop]!=3Dnull&&(!this.elem.style||this.elem.styl=
+e[this.prop]=3D=3Dnull))return =
+this.elem[this.prop];return(a=3DparseFloat(c.css(this.elem,this.prop,a)))=
+&&a>-10000?a:parseFloat(c.curCSS(this.elem,this.prop))||0},custom:functio=
+n(a,b,d){function f(j){return =
+e.step(j)}this.startTime=3DJ();this.start=3Da;this.end=3Db;this.unit=3Dd|=
+|this.unit||"px";this.now=3Dthis.start;=0A=
+this.pos=3Dthis.state=3D0;var =
+e=3Dthis;f.elem=3Dthis.elem;if(f()&&c.timers.push(f)&&!W)W=3DsetInterval(=
+c.fx.tick,13)},show:function(){this.options.orig[this.prop]=3Dc.style(thi=
+s.elem,this.prop);this.options.show=3Dtrue;this.custom(this.prop=3D=3D=3D=
+"width"||this.prop=3D=3D=3D"height"?1:0,this.cur());c(this.elem).show()},=
+hide:function(){this.options.orig[this.prop]=3Dc.style(this.elem,this.pro=
+p);this.options.hide=3Dtrue;this.custom(this.cur(),0)},step:function(a){v=
+ar =
+b=3DJ(),d=3Dtrue;if(a||b>=3Dthis.options.duration+this.startTime){this.no=
+w=3D=0A=
+this.end;this.pos=3Dthis.state=3D1;this.update();this.options.curAnim[thi=
+s.prop]=3Dtrue;for(var f in =
+this.options.curAnim)if(this.options.curAnim[f]!=3D=3Dtrue)d=3Dfalse;if(d=
+){if(this.options.display!=3Dnull){this.elem.style.overflow=3Dthis.option=
+s.overflow;a=3Dc.data(this.elem,"olddisplay");this.elem.style.display=3Da=
+?a:this.options.display;if(c.css(this.elem,"display")=3D=3D=3D"none")this=
+.elem.style.display=3D"block"}this.options.hide&&c(this.elem).hide();if(t=
+his.options.hide||this.options.show)for(var e in =
+this.options.curAnim)c.style(this.elem,=0A=
+e,this.options.orig[e]);this.options.complete.call(this.elem)}return =
+false}else{e=3Db-this.startTime;this.state=3De/this.options.duration;a=3D=
+this.options.easing||(c.easing.swing?"swing":"linear");this.pos=3Dc.easin=
+g[this.options.specialEasing&&this.options.specialEasing[this.prop]||a](t=
+his.state,e,0,1,this.options.duration);this.now=3Dthis.start+(this.end-th=
+is.start)*this.pos;this.update()}return =
+true}};c.extend(c.fx,{tick:function(){for(var =
+a=3Dc.timers,b=3D0;b<a.length;b++)a[b]()||a.splice(b--,1);a.length||=0A=
+c.fx.stop()},stop:function(){clearInterval(W);W=3Dnull},speeds:{slow:600,=
+fast:200,_default:400},step:{opacity:function(a){c.style(a.elem,"opacity"=
+,a.now)},_default:function(a){if(a.elem.style&&a.elem.style[a.prop]!=3Dnu=
+ll)a.elem.style[a.prop]=3D(a.prop=3D=3D=3D"width"||a.prop=3D=3D=3D"height=
+"?Math.max(0,a.now):a.now)+a.unit;else =
+a.elem[a.prop]=3Da.now}}});if(c.expr&&c.expr.filters)c.expr.filters.anima=
+ted=3Dfunction(a){return c.grep(c.timers,function(b){return =
+a=3D=3D=3Db.elem}).length};c.fn.offset=3D"getBoundingClientRect"in =
+s.documentElement?=0A=
+function(a){var b=3Dthis[0];if(a)return =
+this.each(function(e){c.offset.setOffset(this,a,e)});if(!b||!b.ownerDocum=
+ent)return null;if(b=3D=3D=3Db.ownerDocument.body)return =
+c.offset.bodyOffset(b);var =
+d=3Db.getBoundingClientRect(),f=3Db.ownerDocument;b=3Df.body;f=3Df.docume=
+ntElement;return{top:d.top+(self.pageYOffset||c.support.boxModel&&f.scrol=
+lTop||b.scrollTop)-(f.clientTop||b.clientTop||0),left:d.left+(self.pageXO=
+ffset||c.support.boxModel&&f.scrollLeft||b.scrollLeft)-(f.clientLeft||b.c=
+lientLeft||0)}}:function(a){var b=3D=0A=
+this[0];if(a)return =
+this.each(function(r){c.offset.setOffset(this,a,r)});if(!b||!b.ownerDocum=
+ent)return null;if(b=3D=3D=3Db.ownerDocument.body)return =
+c.offset.bodyOffset(b);c.offset.initialize();var =
+d=3Db.offsetParent,f=3Db,e=3Db.ownerDocument,j,i=3De.documentElement,o=3D=
+e.body;f=3D(e=3De.defaultView)?e.getComputedStyle(b,null):b.currentStyle;=
+for(var =
+k=3Db.offsetTop,n=3Db.offsetLeft;(b=3Db.parentNode)&&b!=3D=3Do&&b!=3D=3Di=
+;){if(c.offset.supportsFixedPosition&&f.position=3D=3D=3D"fixed")break;j=3D=
+e?e.getComputedStyle(b,null):b.currentStyle;=0A=
+k-=3Db.scrollTop;n-=3Db.scrollLeft;if(b=3D=3D=3Dd){k+=3Db.offsetTop;n+=3D=
+b.offsetLeft;if(c.offset.doesNotAddBorder&&!(c.offset.doesAddBorderForTab=
+leAndCells&&/^t(able|d|h)$/i.test(b.nodeName))){k+=3DparseFloat(j.borderT=
+opWidth)||0;n+=3DparseFloat(j.borderLeftWidth)||0}f=3Dd;d=3Db.offsetParen=
+t}if(c.offset.subtractsBorderForOverflowNotVisible&&j.overflow!=3D=3D"vis=
+ible"){k+=3DparseFloat(j.borderTopWidth)||0;n+=3DparseFloat(j.borderLeftW=
+idth)||0}f=3Dj}if(f.position=3D=3D=3D"relative"||f.position=3D=3D=3D"stat=
+ic"){k+=3Do.offsetTop;n+=3Do.offsetLeft}if(c.offset.supportsFixedPosition=
+&&=0A=
+f.position=3D=3D=3D"fixed"){k+=3DMath.max(i.scrollTop,o.scrollTop);n+=3DM=
+ath.max(i.scrollLeft,o.scrollLeft)}return{top:k,left:n}};c.offset=3D{init=
+ialize:function(){var =
+a=3Ds.body,b=3Ds.createElement("div"),d,f,e,j=3DparseFloat(c.curCSS(a,"ma=
+rginTop",true))||0;c.extend(b.style,{position:"absolute",top:0,left:0,mar=
+gin:0,border:0,width:"1px",height:"1px",visibility:"hidden"});b.innerHTML=
+=3D"<div style=3D'position:absolute;top:0;left:0;margin:0;border:5px =
+solid #000;padding:0;width:1px;height:1px;'><div></div></div><table =
+style=3D'position:absolute;top:0;left:0;margin:0;border:5px solid =
+#000;padding:0;width:1px;height:1px;' cellpadding=3D'0' =
+cellspacing=3D'0'><tr><td></td></tr></table>";=0A=
+a.insertBefore(b,a.firstChild);d=3Db.firstChild;f=3Dd.firstChild;e=3Dd.ne=
+xtSibling.firstChild.firstChild;this.doesNotAddBorder=3Df.offsetTop!=3D=3D=
+5;this.doesAddBorderForTableAndCells=3De.offsetTop=3D=3D=3D5;f.style.posi=
+tion=3D"fixed";f.style.top=3D"20px";this.supportsFixedPosition=3Df.offset=
+Top=3D=3D=3D20||f.offsetTop=3D=3D=3D15;f.style.position=3Df.style.top=3D"=
+";d.style.overflow=3D"hidden";d.style.position=3D"relative";this.subtract=
+sBorderForOverflowNotVisible=3Df.offsetTop=3D=3D=3D-5;this.doesNotInclude=
+MarginInBodyOffset=3Da.offsetTop!=3D=3Dj;a.removeChild(b);=0A=
+c.offset.initialize=3Dc.noop},bodyOffset:function(a){var =
+b=3Da.offsetTop,d=3Da.offsetLeft;c.offset.initialize();if(c.offset.doesNo=
+tIncludeMarginInBodyOffset){b+=3DparseFloat(c.curCSS(a,"marginTop",true))=
+||0;d+=3DparseFloat(c.curCSS(a,"marginLeft",true))||0}return{top:b,left:d=
+}},setOffset:function(a,b,d){if(/static/.test(c.curCSS(a,"position")))a.s=
+tyle.position=3D"relative";var =
+f=3Dc(a),e=3Df.offset(),j=3DparseInt(c.curCSS(a,"top",true),10)||0,i=3Dpa=
+rseInt(c.curCSS(a,"left",true),10)||0;if(c.isFunction(b))b=3Db.call(a,=0A=
+d,e);d=3D{top:b.top-e.top+j,left:b.left-e.left+i};"using"in =
+b?b.using.call(a,d):f.css(d)}};c.fn.extend({position:function(){if(!this[=
+0])return null;var =
+a=3Dthis[0],b=3Dthis.offsetParent(),d=3Dthis.offset(),f=3D/^body|html$/i.=
+test(b[0].nodeName)?{top:0,left:0}:b.offset();d.top-=3DparseFloat(c.curCS=
+S(a,"marginTop",true))||0;d.left-=3DparseFloat(c.curCSS(a,"marginLeft",tr=
+ue))||0;f.top+=3DparseFloat(c.curCSS(b[0],"borderTopWidth",true))||0;f.le=
+ft+=3DparseFloat(c.curCSS(b[0],"borderLeftWidth",true))||0;return{top:d.t=
+op-=0A=
+f.top,left:d.left-f.left}},offsetParent:function(){return =
+this.map(function(){for(var =
+a=3Dthis.offsetParent||s.body;a&&!/^body|html$/i.test(a.nodeName)&&c.css(=
+a,"position")=3D=3D=3D"static";)a=3Da.offsetParent;return =
+a})}});c.each(["Left","Top"],function(a,b){var =
+d=3D"scroll"+b;c.fn[d]=3Dfunction(f){var e=3Dthis[0],j;if(!e)return =
+null;if(f!=3D=3Dw)return =
+this.each(function(){if(j=3Dwa(this))j.scrollTo(!a?f:c(j).scrollLeft(),a?=
+f:c(j).scrollTop());else this[d]=3Df});else =
+return(j=3Dwa(e))?"pageXOffset"in j?j[a?"pageYOffset":=0A=
+"pageXOffset"]:c.support.boxModel&&j.document.documentElement[d]||j.docum=
+ent.body[d]:e[d]}});c.each(["Height","Width"],function(a,b){var =
+d=3Db.toLowerCase();c.fn["inner"+b]=3Dfunction(){return =
+this[0]?c.css(this[0],d,false,"padding"):null};c.fn["outer"+b]=3Dfunction=
+(f){return =
+this[0]?c.css(this[0],d,false,f?"margin":"border"):null};c.fn[d]=3Dfuncti=
+on(f){var e=3Dthis[0];if(!e)return =
+f=3D=3Dnull?null:this;if(c.isFunction(f))return =
+this.each(function(j){var =
+i=3Dc(this);i[d](f.call(this,j,i[d]()))});return"scrollTo"in=0A=
+e&&e.document?e.document.compatMode=3D=3D=3D"CSS1Compat"&&e.document.docu=
+mentElement["client"+b]||e.document.body["client"+b]:e.nodeType=3D=3D=3D9=
+?Math.max(e.documentElement["client"+b],e.body["scroll"+b],e.documentElem=
+ent["scroll"+b],e.body["offset"+b],e.documentElement["offset"+b]):f=3D=3D=
+=3Dw?c.css(e,d):this.css(d,typeof =
+f=3D=3D=3D"string"?f:f+"px")}});A.jQuery=3DA.$=3Dc})(window);=0A=
+
+------=_NextPart_000_007F_01CF283D.4A77E040
+Content-Type: application/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://kindeditor.net/docs/_static/underscore.js
+
+// Underscore.js 0.5.5=0A=
+// (c) 2009 Jeremy Ashkenas, DocumentCloud Inc.=0A=
+// Underscore is freely distributable under the terms of the MIT license.=0A=
+// Portions of Underscore are inspired by or borrowed from Prototype.js,=0A=
+// Oliver Steele's Functional, and John Resig's Micro-Templating.=0A=
+// For all details and documentation:=0A=
+// http://documentcloud.github.com/underscore/=0A=
+(function(){var =
+j=3Dthis,n=3Dj._,i=3Dfunction(a){this._wrapped=3Da},m=3Dtypeof =
+StopIteration!=3D=3D"undefined"?StopIteration:"__break__",b=3Dj._=3Dfunct=
+ion(a){return new i(a)};if(typeof =
+exports!=3D=3D"undefined")exports._=3Db;var =
+k=3DArray.prototype.slice,o=3DArray.prototype.unshift,p=3DObject.prototyp=
+e.toString,q=3DObject.prototype.hasOwnProperty,r=3DObject.prototype.prope=
+rtyIsEnumerable;b.VERSION=3D"0.5.5";b.each=3Dfunction(a,c,d){try{if(a.for=
+Each)a.forEach(c,d);else if(b.isArray(a)||b.isArguments(a))for(var =
+e=3D0,f=3Da.length;e<f;e++)c.call(d,=0A=
+a[e],e,a);else{var =
+g=3Db.keys(a);f=3Dg.length;for(e=3D0;e<f;e++)c.call(d,a[g[e]],g[e],a)}}ca=
+tch(h){if(h!=3Dm)throw h;}return =
+a};b.map=3Dfunction(a,c,d){if(a&&b.isFunction(a.map))return =
+a.map(c,d);var =
+e=3D[];b.each(a,function(f,g,h){e.push(c.call(d,f,g,h))});return =
+e};b.reduce=3Dfunction(a,c,d,e){if(a&&b.isFunction(a.reduce))return =
+a.reduce(b.bind(d,e),c);b.each(a,function(f,g,h){c=3Dd.call(e,c,f,g,h)});=
+return =
+c};b.reduceRight=3Dfunction(a,c,d,e){if(a&&b.isFunction(a.reduceRight))re=
+turn a.reduceRight(b.bind(d,e),c);=0A=
+var =
+f=3Db.clone(b.toArray(a)).reverse();b.each(f,function(g,h){c=3Dd.call(e,c=
+,g,h,a)});return c};b.detect=3Dfunction(a,c,d){var =
+e;b.each(a,function(f,g,h){if(c.call(d,f,g,h)){e=3Df;b.breakLoop()}});ret=
+urn e};b.select=3Dfunction(a,c,d){if(a&&b.isFunction(a.filter))return =
+a.filter(c,d);var =
+e=3D[];b.each(a,function(f,g,h){c.call(d,f,g,h)&&e.push(f)});return =
+e};b.reject=3Dfunction(a,c,d){var =
+e=3D[];b.each(a,function(f,g,h){!c.call(d,f,g,h)&&e.push(f)});return =
+e};b.all=3Dfunction(a,c,d){c=3Dc||b.identity;if(a&&b.isFunction(a.every))=
+return a.every(c,=0A=
+d);var =
+e=3Dtrue;b.each(a,function(f,g,h){(e=3De&&c.call(d,f,g,h))||b.breakLoop()=
+});return =
+e};b.any=3Dfunction(a,c,d){c=3Dc||b.identity;if(a&&b.isFunction(a.some))r=
+eturn a.some(c,d);var =
+e=3Dfalse;b.each(a,function(f,g,h){if(e=3Dc.call(d,f,g,h))b.breakLoop()})=
+;return e};b.include=3Dfunction(a,c){if(b.isArray(a))return =
+b.indexOf(a,c)!=3D-1;var =
+d=3Dfalse;b.each(a,function(e){if(d=3De=3D=3D=3Dc)b.breakLoop()});return =
+d};b.invoke=3Dfunction(a,c){var d=3Db.rest(arguments,2);return =
+b.map(a,function(e){return(c?e[c]:e).apply(e,d)})};b.pluck=3D=0A=
+function(a,c){return b.map(a,function(d){return =
+d[c]})};b.max=3Dfunction(a,c,d){if(!c&&b.isArray(a))return =
+Math.max.apply(Math,a);var =
+e=3D{computed:-Infinity};b.each(a,function(f,g,h){g=3Dc?c.call(d,f,g,h):f=
+;g>=3De.computed&&(e=3D{value:f,computed:g})});return =
+e.value};b.min=3Dfunction(a,c,d){if(!c&&b.isArray(a))return =
+Math.min.apply(Math,a);var =
+e=3D{computed:Infinity};b.each(a,function(f,g,h){g=3Dc?c.call(d,f,g,h):f;=
+g<e.computed&&(e=3D{value:f,computed:g})});return =
+e.value};b.sortBy=3Dfunction(a,c,d){return b.pluck(b.map(a,=0A=
+function(e,f,g){return{value:e,criteria:c.call(d,e,f,g)}}).sort(function(=
+e,f){e=3De.criteria;f=3Df.criteria;return =
+e<f?-1:e>f?1:0}),"value")};b.sortedIndex=3Dfunction(a,c,d){d=3Dd||b.ident=
+ity;for(var e=3D0,f=3Da.length;e<f;){var =
+g=3De+f>>1;d(a[g])<d(c)?(e=3Dg+1):(f=3Dg)}return =
+e};b.toArray=3Dfunction(a){if(!a)return[];if(a.toArray)return =
+a.toArray();if(b.isArray(a))return a;if(b.isArguments(a))return =
+k.call(a);return b.values(a)};b.size=3Dfunction(a){return =
+b.toArray(a).length};b.first=3Dfunction(a,c,d){return c&&!d?k.call(a,=0A=
+0,c):a[0]};b.rest=3Dfunction(a,c,d){return =
+k.call(a,b.isUndefined(c)||d?1:c)};b.last=3Dfunction(a){return =
+a[a.length-1]};b.compact=3Dfunction(a){return =
+b.select(a,function(c){return!!c})};b.flatten=3Dfunction(a){return =
+b.reduce(a,[],function(c,d){if(b.isArray(d))return =
+c.concat(b.flatten(d));c.push(d);return c})};b.without=3Dfunction(a){var =
+c=3Db.rest(arguments);return =
+b.select(a,function(d){return!b.include(c,d)})};b.uniq=3Dfunction(a,c){re=
+turn =
+b.reduce(a,[],function(d,e,f){if(0=3D=3Df||(c=3D=3D=3Dtrue?b.last(d)!=3De=
+:!b.include(d,=0A=
+e)))d.push(e);return d})};b.intersect=3Dfunction(a){var =
+c=3Db.rest(arguments);return b.select(b.uniq(a),function(d){return =
+b.all(c,function(e){return =
+b.indexOf(e,d)>=3D0})})};b.zip=3Dfunction(){for(var =
+a=3Db.toArray(arguments),c=3Db.max(b.pluck(a,"length")),d=3Dnew =
+Array(c),e=3D0;e<c;e++)d[e]=3Db.pluck(a,String(e));return =
+d};b.indexOf=3Dfunction(a,c){if(a.indexOf)return a.indexOf(c);for(var =
+d=3D0,e=3Da.length;d<e;d++)if(a[d]=3D=3D=3Dc)return =
+d;return-1};b.lastIndexOf=3Dfunction(a,c){if(a.lastIndexOf)return =
+a.lastIndexOf(c);for(var d=3D=0A=
+a.length;d--;)if(a[d]=3D=3D=3Dc)return =
+d;return-1};b.range=3Dfunction(a,c,d){var =
+e=3Db.toArray(arguments),f=3De.length<=3D1;a=3Df?0:e[0];c=3Df?e[0]:e[1];d=
+=3De[2]||1;e=3DMath.ceil((c-a)/d);if(e<=3D0)return[];e=3Dnew =
+Array(e);f=3Da;for(var g=3D0;1;f+=3Dd){if((d>0?f-c:c-f)>=3D0)return =
+e;e[g++]=3Df}};b.bind=3Dfunction(a,c){var d=3Db.rest(arguments,2);return =
+function(){return =
+a.apply(c||j,d.concat(b.toArray(arguments)))}};b.bindAll=3Dfunction(a){va=
+r =
+c=3Db.rest(arguments);if(c.length=3D=3D0)c=3Db.functions(a);b.each(c,func=
+tion(d){a[d]=3Db.bind(a[d],a)});=0A=
+return a};b.delay=3Dfunction(a,c){var d=3Db.rest(arguments,2);return =
+setTimeout(function(){return =
+a.apply(a,d)},c)};b.defer=3Dfunction(a){return =
+b.delay.apply(b,[a,1].concat(b.rest(arguments)))};b.wrap=3Dfunction(a,c){=
+return function(){var d=3D[a].concat(b.toArray(arguments));return =
+c.apply(c,d)}};b.compose=3Dfunction(){var =
+a=3Db.toArray(arguments);return function(){for(var =
+c=3Db.toArray(arguments),d=3Da.length-1;d>=3D0;d--)c=3D[a[d].apply(this,c=
+)];return c[0]}};b.keys=3Dfunction(a){if(b.isArray(a))return =
+b.range(0,a.length);=0A=
+var c=3D[];for(var d in a)q.call(a,d)&&c.push(d);return =
+c};b.values=3Dfunction(a){return =
+b.map(a,b.identity)};b.functions=3Dfunction(a){return =
+b.select(b.keys(a),function(c){return =
+b.isFunction(a[c])}).sort()};b.extend=3Dfunction(a,c){for(var d in =
+c)a[d]=3Dc[d];return a};b.clone=3Dfunction(a){if(b.isArray(a))return =
+a.slice(0);return b.extend({},a)};b.tap=3Dfunction(a,c){c(a);return =
+a};b.isEqual=3Dfunction(a,c){if(a=3D=3D=3Dc)return true;var d=3Dtypeof =
+a;if(d!=3Dtypeof c)return false;if(a=3D=3Dc)return =
+true;if(!a&&c||a&&!c)return false;=0A=
+if(a.isEqual)return a.isEqual(c);if(b.isDate(a)&&b.isDate(c))return =
+a.getTime()=3D=3D=3Dc.getTime();if(b.isNaN(a)&&b.isNaN(c))return =
+true;if(b.isRegExp(a)&&b.isRegExp(c))return =
+a.source=3D=3D=3Dc.source&&a.global=3D=3D=3Dc.global&&a.ignoreCase=3D=3D=3D=
+c.ignoreCase&&a.multiline=3D=3D=3Dc.multiline;if(d!=3D=3D"object")return =
+false;if(a.length&&a.length!=3D=3Dc.length)return =
+false;d=3Db.keys(a);var e=3Db.keys(c);if(d.length!=3De.length)return =
+false;for(var f in a)if(!b.isEqual(a[f],c[f]))return false;return =
+true};b.isEmpty=3Dfunction(a){return b.keys(a).length=3D=3D=0A=
+0};b.isElement=3Dfunction(a){return!!(a&&a.nodeType=3D=3D1)};b.isArray=3D=
+function(a){return!!(a&&a.concat&&a.unshift)};b.isArguments=3Dfunction(a)=
+{return =
+a&&b.isNumber(a.length)&&!b.isArray(a)&&!r.call(a,"length")};b.isFunction=
+=3Dfunction(a){return!!(a&&a.constructor&&a.call&&a.apply)};b.isString=3D=
+function(a){return!!(a=3D=3D=3D""||a&&a.charCodeAt&&a.substr)};b.isNumber=
+=3Dfunction(a){return p.call(a)=3D=3D=3D"[object =
+Number]"};b.isDate=3Dfunction(a){return!!(a&&a.getTimezoneOffset&&a.setUT=
+CFullYear)};b.isRegExp=3Dfunction(a){return!!(a&&=0A=
+a.test&&a.exec&&(a.ignoreCase||a.ignoreCase=3D=3D=3Dfalse))};b.isNaN=3Dfu=
+nction(a){return b.isNumber(a)&&isNaN(a)};b.isNull=3Dfunction(a){return =
+a=3D=3D=3Dnull};b.isUndefined=3Dfunction(a){return typeof =
+a=3D=3D"undefined"};b.noConflict=3Dfunction(){j._=3Dn;return =
+this};b.identity=3Dfunction(a){return a};b.breakLoop=3Dfunction(){throw =
+m;};var s=3D0;b.uniqueId=3Dfunction(a){var c=3Ds++;return =
+a?a+c:c};b.template=3Dfunction(a,c){a=3Dnew Function("obj","var =
+p=3D[],print=3Dfunction(){p.push.apply(p,arguments);};with(obj){p.push('"=
++a.replace(/[\r\t\n]/g,=0A=
+" =
+").replace(/'(?=3D[^%]*%>)/g,"\t").split("'").join("\\'").split("\t").joi=
+n("'").replace(/<%=3D(.+?)%>/g,"',$1,'").split("<%").join("');").split("%=
+>").join("p.push('")+"');}return p.join('');");return =
+c?a(c):a};b.forEach=3Db.each;b.foldl=3Db.inject=3Db.reduce;b.foldr=3Db.re=
+duceRight;b.filter=3Db.select;b.every=3Db.all;b.some=3Db.any;b.head=3Db.f=
+irst;b.tail=3Db.rest;b.methods=3Db.functions;var =
+l=3Dfunction(a,c){return =
+c?b(a).chain():a};b.each(b.functions(b),function(a){var =
+c=3Db[a];i.prototype[a]=3Dfunction(){var d=3Db.toArray(arguments);=0A=
+o.call(d,this._wrapped);return =
+l(c.apply(b,d),this._chain)}});b.each(["pop","push","reverse","shift","so=
+rt","splice","unshift"],function(a){var =
+c=3DArray.prototype[a];i.prototype[a]=3Dfunction(){c.apply(this._wrapped,=
+arguments);return =
+l(this._wrapped,this._chain)}});b.each(["concat","join","slice"],function=
+(a){var c=3DArray.prototype[a];i.prototype[a]=3Dfunction(){return =
+l(c.apply(this._wrapped,arguments),this._chain)}});i.prototype.chain=3Dfu=
+nction(){this._chain=3Dtrue;return =
+this};i.prototype.value=3Dfunction(){return this._wrapped}})();=0A=
+
+------=_NextPart_000_007F_01CF283D.4A77E040
+Content-Type: application/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://kindeditor.net/docs/_static/doctools.js
+
+/*=0A=
+ * doctools.js=0A=
+ * ~~~~~~~~~~~=0A=
+ *=0A=
+ * Sphinx JavaScript utilities for all documentation.=0A=
+ *=0A=
+ * :copyright: Copyright 2007-2011 by the Sphinx team, see AUTHORS.=0A=
+ * :license: BSD, see LICENSE for details.=0A=
+ *=0A=
+ */=0A=
+=0A=
+/**=0A=
+ * select a different prefix for underscore=0A=
+ */=0A=
+$u =3D _.noConflict();=0A=
+=0A=
+/**=0A=
+ * make the code below compatible with browsers without=0A=
+ * an installed firebug like debugger=0A=
+if (!window.console || !console.firebug) {=0A=
+  var names =3D ["log", "debug", "info", "warn", "error", "assert", =
+"dir",=0A=
+    "dirxml", "group", "groupEnd", "time", "timeEnd", "count", "trace",=0A=
+    "profile", "profileEnd"];=0A=
+  window.console =3D {};=0A=
+  for (var i =3D 0; i < names.length; ++i)=0A=
+    window.console[names[i]] =3D function() {};=0A=
+}=0A=
+ */=0A=
+=0A=
+/**=0A=
+ * small helper function to urldecode strings=0A=
+ */=0A=
+jQuery.urldecode =3D function(x) {=0A=
+  return decodeURIComponent(x).replace(/\+/g, ' ');=0A=
+}=0A=
+=0A=
+/**=0A=
+ * small helper function to urlencode strings=0A=
+ */=0A=
+jQuery.urlencode =3D encodeURIComponent;=0A=
+=0A=
+/**=0A=
+ * This function returns the parsed url parameters of the=0A=
+ * current request. Multiple values per key are supported,=0A=
+ * it will always return arrays of strings for the value parts.=0A=
+ */=0A=
+jQuery.getQueryParameters =3D function(s) {=0A=
+  if (typeof s =3D=3D 'undefined')=0A=
+    s =3D document.location.search;=0A=
+  var parts =3D s.substr(s.indexOf('?') + 1).split('&');=0A=
+  var result =3D {};=0A=
+  for (var i =3D 0; i < parts.length; i++) {=0A=
+    var tmp =3D parts[i].split('=3D', 2);=0A=
+    var key =3D jQuery.urldecode(tmp[0]);=0A=
+    var value =3D jQuery.urldecode(tmp[1]);=0A=
+    if (key in result)=0A=
+      result[key].push(value);=0A=
+    else=0A=
+      result[key] =3D [value];=0A=
+  }=0A=
+  return result;=0A=
+};=0A=
+=0A=
+/**=0A=
+ * small function to check if an array contains=0A=
+ * a given item.=0A=
+ */=0A=
+jQuery.contains =3D function(arr, item) {=0A=
+  for (var i =3D 0; i < arr.length; i++) {=0A=
+    if (arr[i] =3D=3D item)=0A=
+      return true;=0A=
+  }=0A=
+  return false;=0A=
+};=0A=
+=0A=
+/**=0A=
+ * highlight a given string on a jquery object by wrapping it in=0A=
+ * span elements with the given class name.=0A=
+ */=0A=
+jQuery.fn.highlightText =3D function(text, className) {=0A=
+  function highlight(node) {=0A=
+    if (node.nodeType =3D=3D 3) {=0A=
+      var val =3D node.nodeValue;=0A=
+      var pos =3D val.toLowerCase().indexOf(text);=0A=
+      if (pos >=3D 0 && !jQuery(node.parentNode).hasClass(className)) {=0A=
+        var span =3D document.createElement("span");=0A=
+        span.className =3D className;=0A=
+        span.appendChild(document.createTextNode(val.substr(pos, =
+text.length)));=0A=
+        node.parentNode.insertBefore(span, node.parentNode.insertBefore(=0A=
+          document.createTextNode(val.substr(pos + text.length)),=0A=
+          node.nextSibling));=0A=
+        node.nodeValue =3D val.substr(0, pos);=0A=
+      }=0A=
+    }=0A=
+    else if (!jQuery(node).is("button, select, textarea")) {=0A=
+      jQuery.each(node.childNodes, function() {=0A=
+        highlight(this);=0A=
+      });=0A=
+    }=0A=
+  }=0A=
+  return this.each(function() {=0A=
+    highlight(this);=0A=
+  });=0A=
+};=0A=
+=0A=
+/**=0A=
+ * Small JavaScript module for the documentation.=0A=
+ */=0A=
+var Documentation =3D {=0A=
+=0A=
+  init : function() {=0A=
+    this.fixFirefoxAnchorBug();=0A=
+    this.highlightSearchWords();=0A=
+    this.initIndexTable();=0A=
+  },=0A=
+=0A=
+  /**=0A=
+   * i18n support=0A=
+   */=0A=
+  TRANSLATIONS : {},=0A=
+  PLURAL_EXPR : function(n) { return n =3D=3D 1 ? 0 : 1; },=0A=
+  LOCALE : 'unknown',=0A=
+=0A=
+  // gettext and ngettext don't access this so that the functions=0A=
+  // can safely bound to a different name (_ =3D Documentation.gettext)=0A=
+  gettext : function(string) {=0A=
+    var translated =3D Documentation.TRANSLATIONS[string];=0A=
+    if (typeof translated =3D=3D 'undefined')=0A=
+      return string;=0A=
+    return (typeof translated =3D=3D 'string') ? translated : =
+translated[0];=0A=
+  },=0A=
+=0A=
+  ngettext : function(singular, plural, n) {=0A=
+    var translated =3D Documentation.TRANSLATIONS[singular];=0A=
+    if (typeof translated =3D=3D 'undefined')=0A=
+      return (n =3D=3D 1) ? singular : plural;=0A=
+    return translated[Documentation.PLURALEXPR(n)];=0A=
+  },=0A=
+=0A=
+  addTranslations : function(catalog) {=0A=
+    for (var key in catalog.messages)=0A=
+      this.TRANSLATIONS[key] =3D catalog.messages[key];=0A=
+    this.PLURAL_EXPR =3D new Function('n', 'return +(' + =
+catalog.plural_expr + ')');=0A=
+    this.LOCALE =3D catalog.locale;=0A=
+  },=0A=
+=0A=
+  /**=0A=
+   * add context elements like header anchor links=0A=
+   */=0A=
+  addContextElements : function() {=0A=
+    $('div[id] > :header:first').each(function() {=0A=
+      $('<a class=3D"headerlink">\u00B6</a>').=0A=
+      attr('href', '#' + this.id).=0A=
+      attr('title', _('Permalink to this headline')).=0A=
+      appendTo(this);=0A=
+    });=0A=
+    $('dt[id]').each(function() {=0A=
+      $('<a class=3D"headerlink">\u00B6</a>').=0A=
+      attr('href', '#' + this.id).=0A=
+      attr('title', _('Permalink to this definition')).=0A=
+      appendTo(this);=0A=
+    });=0A=
+  },=0A=
+=0A=
+  /**=0A=
+   * workaround a firefox stupidity=0A=
+   */=0A=
+  fixFirefoxAnchorBug : function() {=0A=
+    if (document.location.hash && $.browser.mozilla)=0A=
+      window.setTimeout(function() {=0A=
+        document.location.href +=3D '';=0A=
+      }, 10);=0A=
+  },=0A=
+=0A=
+  /**=0A=
+   * highlight the search words provided in the url in the text=0A=
+   */=0A=
+  highlightSearchWords : function() {=0A=
+    var params =3D $.getQueryParameters();=0A=
+    var terms =3D (params.highlight) ? params.highlight[0].split(/\s+/) =
+: [];=0A=
+    if (terms.length) {=0A=
+      var body =3D $('div.body');=0A=
+      window.setTimeout(function() {=0A=
+        $.each(terms, function() {=0A=
+          body.highlightText(this.toLowerCase(), 'highlighted');=0A=
+        });=0A=
+      }, 10);=0A=
+      $('<p class=3D"highlight-link"><a =
+href=3D"javascript:Documentation.' +=0A=
+        'hideSearchWords()">' + _('Hide Search Matches') + '</a></p>')=0A=
+          .appendTo($('#searchbox'));=0A=
+    }=0A=
+  },=0A=
+=0A=
+  /**=0A=
+   * init the domain index toggle buttons=0A=
+   */=0A=
+  initIndexTable : function() {=0A=
+    var togglers =3D $('img.toggler').click(function() {=0A=
+      var src =3D $(this).attr('src');=0A=
+      var idnum =3D $(this).attr('id').substr(7);=0A=
+      $('tr.cg-' + idnum).toggle();=0A=
+      if (src.substr(-9) =3D=3D 'minus.png')=0A=
+        $(this).attr('src', src.substr(0, src.length-9) + 'plus.png');=0A=
+      else=0A=
+        $(this).attr('src', src.substr(0, src.length-8) + 'minus.png');=0A=
+    }).css('display', '');=0A=
+    if (DOCUMENTATION_OPTIONS.COLLAPSE_INDEX) {=0A=
+        togglers.click();=0A=
+    }=0A=
+  },=0A=
+=0A=
+  /**=0A=
+   * helper function to hide the search marks again=0A=
+   */=0A=
+  hideSearchWords : function() {=0A=
+    $('#searchbox .highlight-link').fadeOut(300);=0A=
+    $('span.highlighted').removeClass('highlighted');=0A=
+  },=0A=
+=0A=
+  /**=0A=
+   * make the url absolute=0A=
+   */=0A=
+  makeURL : function(relativeURL) {=0A=
+    return DOCUMENTATION_OPTIONS.URL_ROOT + '/' + relativeURL;=0A=
+  },=0A=
+=0A=
+  /**=0A=
+   * get the current relative url=0A=
+   */=0A=
+  getCurrentURL : function() {=0A=
+    var path =3D document.location.pathname;=0A=
+    var parts =3D path.split(/\//);=0A=
+    $.each(DOCUMENTATION_OPTIONS.URL_ROOT.split(/\//), function() {=0A=
+      if (this =3D=3D '..')=0A=
+        parts.pop();=0A=
+    });=0A=
+    var url =3D parts.join('/');=0A=
+    return path.substring(url.lastIndexOf('/') + 1, path.length - 1);=0A=
+  }=0A=
+};=0A=
+=0A=
+// quick alias for translations=0A=
+_ =3D Documentation.gettext;=0A=
+=0A=
+$(document).ready(function() {=0A=
+  Documentation.init();=0A=
+});=0A=
+
+------=_NextPart_000_007F_01CF283D.4A77E040--

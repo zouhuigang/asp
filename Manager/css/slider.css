@@ -1,0 +1,26 @@
+/*slider*/
+.f_l{ float:left;}
+ .f_r{ float:right;}
+ #slider{width:980px;margin:0 auto;}
+.slider_box{width:980px; margin:0 auto;height: 296px;overflow: hidden;position: relative;}
+.silder_tip{width: 92px;height: 92px;overflow: hidden;position: absolute;top: 0;right: 0;z-index:1; text-indent:-999px;background:url(../images/tip-tt.gif) no-repeat;}
+#movie_tip{background-position: -93px 0;}
+.silder_con{height:282px;overflow: hidden;position: absolute;}
+.silder_panel{width:980px;height:282px;overflow: hidden;float: left;position: relative;background: #007c59;}
+.silder_panel img{width: 693px;height: 280px;display: block;overflow: hidden;border:1px solid #007c59}
+.silder_intro{width: 240px;height: 282px;line-height: 20px;overflow: hidden;color: #fff;padding: 0 30px 0 0;}
+.silder_intro h3{padding:10px 0;color:#fff;line-height: 30px;overflow: hidden;}
+ .silder_intro h3  a{font-size: 24px; color: #fff; font-weight:normal;display: block; line-height:28px;}
+.silder_intro p{overflow:hidden;margin-top:10px; line-height:22px;width:220px;}
+.silder_play{display: block;width:100px;height:30px;overflow: hidden;text-indent: -999px;position: absolute;bottom: 25px;right: 35px;background: url(../images/silder-play.jpg) 0 0 no-repeat;}	
+
+.silder_nav{width:980px;height:64px;margin: 0 auto;bottom: 0;position: absolute;overflow: hidden;padding-top:5px;}
+.silder_nav li{float: left;padding:0px; margin-right:4px;border:1px solid #eee;display: block;width:190px;height:50px;}
+.silder_nav li.current{border:1px solid #007c59;}
+.silder_nav li,.silder_nav img{display: block;width:190px;height:50px;overflow: hidden;}
+
+
+.slider_box a.prev,.slider_box a.next{display: block;width:45px;height:100px;overflow:hidden;text-indent: -999px;position: absolute;cursor: pointer;margin: 85px 0 0 0;background: url(../images/silder_btn.gif) no-repeat;}	
+.slider_box a.prev{left:0;background-position: left 0;}
+.slider_box a.next{right:0;background-position: right 0;}
+   

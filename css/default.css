@@ -1,0 +1,162 @@
+body {
+	font-family: "宋体";
+	font-size: 9pt;
+	color: #4F4F4D;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	background-color: #000000;
+	background-image: url(../image/include/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	line-height: 25px;
+	text-align: justify;   
+  list-style: none;
+  text-decoration: none;
+
+} 
+
+p {
+	text-indent: 2em;
+	text-align: justify;
+} 
+
+
+
+.zi{
+	
+	font-family: "Arial Unicode MS", "黑体";
+	font-size: 20px;
+	color: #660033;
+}
+
+
+
+
+table {
+	font-family: "宋体";
+	font-size: 9pt;
+	line-height: 22px;
+	text-align: left;
+} 
+
+.line{
+	font-family: "宋体";
+	font-size: 9pt;
+	background-image: url(../image/include/line.gif);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+} 
+
+
+.line1{
+	
+	background-position: center bottom;
+	border: 1px solid #CCCCCC;
+} 
+
+
+
+.new_line{
+	font-family: "宋体";
+	font-size: 9pt;
+	border-bottom-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: dashed;
+	border-left-style: none;
+	border-bottom-color: #C2C2C2;
+} 
+
+
+#vertmenu {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 100%;
+width: 160px;
+padding: 0px;
+margin: 0px;
+}
+
+#vertmenu h1 {
+display: block; 
+background-color:#FF9900;
+font-size: 90%; 
+padding: 3px 0 5px 3px;
+border: 1px solid #000000;
+color: #333333;
+margin: 0px;
+width:150px;
+}
+
+#vertmenu ul {
+list-style: none;
+margin: 0px;
+padding: 0px;
+border: none;
+}
+#vertmenu ul li {
+margin: 0px;
+padding: 0px;
+}
+#vertmenu ul li a {
+	font-size: 12px;
+	display: block;
+	border-bottom: 1px solid #D4B9C2;
+	padding: 5px 0px 2px 4px;
+	text-decoration: none;
+	color: #666666;
+	width:150px;
+}
+
+#vertmenu ul li a:hover, #vertmenu ul li a:focus {
+	color: #710034;
+	background-color: #D4B9C2;
+	font-weight: bold;
+}
+
+
+
+a:link {
+	font-size: 9pt;
+	color: #666666;
+	text-decoration: none
+} 
+a:visited {
+	font-size: 9pt;
+	color: #666666;
+	text-decoration: none
+} 
+a:hover {
+	font-size: 9pt;
+	color: #666666;
+	text-decoration: underline
+} 
+a:active {
+	font-size: 9pt;
+	color: #999999;
+	text-decoration: none
+} 
+a.1:link { font-size: 9pt; color: #3366cc; text-decoration: none} 
+a.1:visited { font-size: 9pt; color: #3366cc; text-decoration: none} 
+a.1:hover { font-size: 9pt; color: #FF9900; text-decoration: none} 
+a.1:active { font-size: 9pt; color: #FF9922; text-decoration: none} 
+.blue { font-family: "宋体"; font-size: 10.5pt; line-height: 20px; color: #0099FF; letter-spacing: 5em} 
+.STYLE1 {color: #CDDFAD}
+.STYLE2 {color: #5C723B}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

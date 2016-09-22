@@ -1,0 +1,32 @@
+ 
+.HS10, .HS15{overflow:hidden;clear:both;}
+.HS10{height:10px;}
+.HS15{height:15px;}
+.Hidden{display:none;}
+.Clearer{display:block;clear:both;font-size:1px;line-height:1px;margin:0;padding:0;}
+.FlLeft{float:right;}
+.FlRight{float:left;}
+/*幻灯片区域背景*/
+.MainBg{ width:830px;margin:0 auto;}
+/*标题和页码*/
+.Title{color:#EEE;padding:5px 20px 0 20px;text-align:center;line-height:40px;height:40px;}
+.Title h1{display:inline;}
+.Title .Counter{color:#666;}
+.Title .CounterCurrent{color:#C00;font-size:20px;font-weight:bold;}
+/*灰色分隔线*/
+.SpaceLine{ height:10px;font-size:1px;}
+/*大图展示区域*/
+.OriginalPicBorder{padding:15px 15px 0 8px;}
+#OriginalPic{width:830px;overflow:hidden;position:relative;font-size:12px;}
+#OriginalPic img{display:block;margin:0 auto;}
+/*鼠标手势*/
+.CursorL{position:absolute;z-index:999;width:100px;height:600px;color:#FFF;left:120px;cursor:url(../images/CurL.cur), auto;background:url(images/space.png) repeat scroll 0 0 transparent;}
+.CursorR{position:absolute;z-index:999;width:100px;height:600px;color:#FFF;right:0;cursor:url(../images/CurR.cur), auto;background:url(images/space.png) repeat scroll 0 0 transparent;}
+/*小图预览和滑动*/
+.SliderPicBorder{width:600px;height:405px;overflow:hidden;}
+.Summary{line-height:20px;display:block;width:210px;margin-right:10px;color:#999;overflow:hidden; border:#AA5599 solid 1px;padding:10px; height:405px;}
+.More{text-align:right;color:#666;line-height:40px;height:40px;font-size:12px;display:block;}        
+.ThumbPicBorder {width:830px; margin-top:10px;margin-bottom:40px; margin-left:-18px;}
+#ThumbPic img{border:1px solid #AA5599;cursor:pointer; margin:0 4px;width:140px;height:94px;display:block;}
+#ThumbPic img.active{border:1px solid #FF9900;}
+ 

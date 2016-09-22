@@ -1,0 +1,67 @@
+ nav {
+    margin: 0px auto; font-size:16px;
+	width:840px;
+    text-align: center;
+}
+ 
+nav ul ul {
+    display: none; width:170px;
+}
+ 
+    nav ul li:hover > ul {
+        display: block;
+    }
+ 
+ 
+nav ul {
+	padding: 0 0px;
+	width:840px;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	background-color: #efefef;
+	background-image: url(bg_menu3.jpg);
+}
+    nav ul:after {
+        content: ""; clear: both; display: block;
+    }
+ 
+    nav ul li {
+        float: left; width:140px;
+    }
+        nav ul li:hover {
+		background:url(11.png) bottom center no-repeat;
+         }
+            nav ul li:hover a {
+                color: #000;
+            }
+         
+        nav ul li a {
+            display: block; padding:0px height:43px; line-height:43px;
+            color: #757575; text-decoration: none;
+        }
+             
+         
+    nav ul ul {
+        background: #ECECEC; border-radius: 0px; padding: 0;
+        position: absolute; top: 100%;
+    }
+        nav ul ul li {
+            float: none; 
+             width:170px;
+            border-bottom: 1px solid #DCDCDC; position: relative;
+        }
+            nav ul ul li a {
+                
+				
+                color: #fff;
+            }   
+                nav ul ul li a:hover {
+                    background: #d0d0d0;
+                }
+         
+    nav ul ul ul {
+        position: absolute; left: 100%; top:0;
+    }
+	
+	 
